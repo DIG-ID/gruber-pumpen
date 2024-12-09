@@ -9,7 +9,7 @@
 							<span class="bar"></span>
 							<span class="bar"></span>
 						</span>
-						<span class="menu-toggle__text"><?php esc_html_e( 'Menu', 'baeren' ); ?></span>
+						<span class="menu-toggle__text"><?php esc_html_e( 'Menu', 'gruber-pumpen' ); ?></span>
 					</button>
 				</div>
 				<div class="hidden xl:block"><?php do_action( 'wpml_add_language_selector' ); ?></div>
