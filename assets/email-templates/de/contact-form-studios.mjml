@@ -1,0 +1,80 @@
+<mjml>
+  <mj-head>
+    <mj-font name="miller-headline" href="https://use.typekit.net/wel7pmx.css" />
+    <mj-title>Neue E-Mail von Hotel an der Aare</mj-title>
+    <mj-preview>Neue E-Mail über Ihr Studios-Kontaktformular!</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Poppins', sans-serif;" line-height="26px" font-size="14px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#F2FAFF">
+    <!-- Logo Header -->
+    <mj-section background-color="#F2FAFF" padding="60px 0">
+      <mj-column>
+        <mj-image width="252px" src="https://hotelaare.ch/wp-content/uploads/aare-logo.png" alt="Hotel an der Aare Logo"/>
+      </mj-column>
+    </mj-section>
+    <!-- Email Info  -->
+    <mj-section background-color="#0E324A" padding-top="40px" padding-bottom="40px">
+      <mj-column width="500px">
+        <mj-text font-size="20px" font-family="miller-headline, serif" color="#F2FAFF">
+          Neue E-Mail über Ihr Studios-Kontaktformular!
+        </mj-text>
+        <mj-text color="#F2FAFF">
+          Die E-Mail wurde über das Kontaktformular gesendet. Unten finden Sie die ausgefüllten Kontaktinformationen.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Email Content  -->
+    <mj-section padding="40px" background-color="white">
+      <mj-column>
+        <mj-text font-size="14px" font-weight="bold" color="#0E324A">
+          Details
+        </mj-text>
+        <mj-divider border-width="1px" border-style="solid" border-color="lightgrey" />
+        <mj-table cellpadding="5" cellspacing="0" width="100%" color="#0E324A">
+           <tr>
+            <th align="left" style="font-weight: bold;">Studio</th>
+            <td>[_post_title]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Vorname</th>
+            <td>[your-name]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Nachname</th>
+            <td>[your-surname]</td>
+          </tr>
+          <tr>
+            <th align="left"style="font-weight: bold;">Telefon</th>
+            <td>[your-phone]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">E-Mail</th>
+            <td>[your-email]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Aufenthaltsdauer</th>
+            <td>[stay-duration]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Anzahl Personen</th>
+            <td>[persons-number]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Anreisdatum</th>
+            <td>[your-date]</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section >
+    <!-- Email Content  -->
+    <mj-section padding="40px 0" full-width="full-width">
+      <mj-column width="100%" >
+        <mj-text color="#0E324A" align="center">
+          Dies ist eine Benachrichtigung, dass ein Kontaktformular auf Ihrer Website ([_site_title] [_site_url]) übermittelt wurde.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

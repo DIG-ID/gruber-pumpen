@@ -1,0 +1,50 @@
+.single-zimmer
+  .single-zimmer-header
+    background: linear-gradient(180deg, $brown-shade-4 0%, $brown-shade-4 70%, white 70%)
+  .section-zimmer-description
+    .zimmerSwiperThumbs
+      //@apply w-full
+      .swiper-wrapper
+        //@apply w-full flex-row
+        .swiper-slide
+          @apply opacity-60 hover:cursor-pointer transition-opacity duration-300 ease-in-out
+        .swiper-slide.swiper-slide-thumb-active
+          @apply opacity-100
+  .section-amenities-lists
+    @apply xl:flex justify-between
+    .amenities-list
+      @apply max-w-[300px]
+      li
+        @apply  font-poppins font-normal text-sm text-brown-shade-4 tracking-[0.14px] relative ml-5 mb-4
+        &:last-of-type
+          @apply mb-0
+        &::before
+          @apply absolute -left-5 inline-block text-brown-shade-2
+          content: '◆'
+
+  .features
+    @apply flex gap-x-4 mb-4
+
+.swiper-button-next
+  //right: -50px
+
+.swiper-button-prev
+  //left: -50px
+
+@media (max-width:1280px)
+  .single-zimmer
+    .single-zimmer-header
+      background: linear-gradient(180deg, $brown-shade-4 0%, $brown-shade-4 70%, $brown-shade-1 70%)
+    .section-zimmer-description
+      .zimmerSwiperThumbs
+        .swiper-wrapper
+          width: 100% !important
+
+@media (max-width:768px)
+  .single-zimmer
+    .section-zimmer-description
+      .zimmerSwiperThumbs
+        .swiper-wrapper
+          @apply gap-3
+          .swiper-slide
+            @apply max-w-[45px] max-h-[45px]

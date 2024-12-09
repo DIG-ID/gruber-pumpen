@@ -1,0 +1,84 @@
+<mjml>
+  <mj-head>
+    <mj-font name="miller-headline" href="https://use.typekit.net/wel7pmx.css" />
+    <mj-title>Vielen Dank für Ihre Anfrage!</mj-title>
+    <mj-preview>Vielen Dank für Ihre Anfrage!</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Poppins', sans-serif;" line-height="26px" font-size="14px" color="#0E324A"/>
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#F2FAFF">
+    <!-- Logo Header -->
+    <mj-section background-color="#F2FAFF" padding="60px 0">
+      <mj-column>
+        <mj-image width="252px" src="https://hotelaare.ch/wp-content/uploads/aare-logo.png" alt="Hotel an der Aare Logo"/>
+      </mj-column>
+    </mj-section>
+    <!-- Email Info  -->
+    <mj-section background-color="#fff" padding-top="40px" padding-bottom="40px">
+      <mj-column width="500px">
+        <mj-text font-size="20px" font-family="miller-headline, serif" color="#0E324A">
+          Vielen Dank für Ihre Anfrage!
+        </mj-text>
+        <mj-text color="#0E324A">
+          Sehr geehrte/r [your-name] [your-surname],
+        </mj-text>
+        <mj-text color="#0E324A">
+          Vielen Dank, dass Sie sich mit uns in Verbindung gesetzt haben. Ihre Nachricht wurde erfolgreich übermittelt und wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.
+        </mj-text>
+        <mj-text color="#0E324A">
+          Nachfolgend können Sie Ihre Angaben überprüfen:
+        </mj-text>
+        <mj-spacer height="10px" />
+        <mj-text font-size="14px" font-weight="bold">
+          Details
+        </mj-text>
+        <mj-divider border-width="1px" border-style="solid" border-color="lightgrey" />
+        <mj-table cellpadding="5" cellspacing="0" width="100%" color="#0E324A">
+ 					<tr>
+            <th align="left" style="font-weight: bold;">Studio</th>
+            <td>[_post_title]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Vorname</th>
+            <td>[your-name]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Nachname</th>
+            <td>[your-surname]</td>
+          </tr>
+          <tr>
+            <th align="left"style="font-weight: bold;">Telefon</th>
+            <td>[your-phone]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">E-Mail</th>
+            <td>[your-email]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Aufenthaltsdauer</th>
+            <td>[stay-duration]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Anzahl Personen</th>
+            <td>[persons-number]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">Anreisdatum</th>
+            <td>[your-date]</td>
+          </tr>
+        </mj-table>
+         <mj-divider border-width="1px" border-style="solid" border-color="lightgrey" />
+         <mj-spacer height="20px" />
+         <mj-text color="#0E324A">
+          Mit freundlichen Grüssen<br> Ihr Hotel an der Aare
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="60px" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -1,0 +1,66 @@
+.room
+  &__item
+    @apply grid pt-[1px] mt-[-1px]
+    > *
+      grid-area: 1 / 1
+    &:last-of-type
+      @apply border-b border-b-[#34302d4d]
+    &:hover
+      .room__item--clone
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    &--body
+      @apply relative
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    &--wrapper
+      @apply relative py-16 px-12 z-[2]
+      &::before
+        width: calc(100% - 5px)
+        height: 1px
+        background: rgba(52, 48, 45, 0.3)
+        position: absolute
+        content: ""
+        top: 0
+        left: 5px
+    &--bg
+      @apply absolute top-0 left-0 w-full h-full select-none z-[-1]
+      &::after
+        content: ''
+        background-color: #453D3B
+        mix-blend-mode: multiply
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        opacity: 0.8
+    &--details
+      @apply flex items-center justify-between
+      h2
+        @apply font-poppins font-medium text-brown-shade-4 text-3xl tracking-[2.4px] uppercase
+      ul.features
+        @apply flex gap-x-4 mt-2
+        li
+          @apply font-poppins text-xs text-brown-shade-4 uppercase tracking-wider
+          span
+            @apply font-bold
+      p
+        @apply font-poppins text-base text-brown-shade-4 leading-6 max-w-lg mt-8
+      a
+        @apply font-poppins font-light text-base text-brown-shade-4 tracking-[1.28px]
+        svg
+          path
+            @apply stroke-brown-shade-4
+    &--link
+      @apply flex items-center gap-x-3
+    &--clone
+      @apply transition-all duration-700 ease-in-out text-white block z-[2]
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%)
+      h2,
+      p,
+      a,
+      ul.features li
+        @apply text-white
+      a
+        svg
+          path
+            @apply stroke-white

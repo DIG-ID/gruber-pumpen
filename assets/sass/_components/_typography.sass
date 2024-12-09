@@ -1,0 +1,71 @@
+.text-title
+  @apply font-utopia font-light text-2xl md:text-4xl xl:text-5xl
+  font-feature-settings: 'ss02' on
+
+.text-title-h2
+  @apply font-poppins font-light text-2xl lg:text-5xl uppercase tracking-[6.4px] lg:leading-normal
+  font-feature-settings: 'ss02' on
+
+.text-title-h3
+  @apply font-poppins font-normal text-base md:text-xl tracking-[0.24px]
+  font-feature-settings: 'ss02' on
+
+.text-description
+  @apply font-utopia font-light text-sm md:text-lg tracking-[-0.14px] xl:tracking-[-0.24px]
+  font-feature-settings: 'ss02' on
+
+.text-hero-title
+  @apply font-utopia font-light italic tracking-[-0.92px] xl:tracking-[-1.92px] text-[46px] xl:text-8xl
+  font-feature-settings: 'ss02' on
+
+.text-subtitle,
+.text-description-small
+  @apply font-utopia font-normal text-sm xl:text-2xl xl:tracking-[1.92px]
+
+.text-bullets
+  &--primary
+    @apply font-utopia font-normal text-sm xl:text-2xl
+  &--secondary
+    @apply font-poppins font-normal text-sm
+
+.text-body
+  @apply font-poppins font-normal text-sm tracking-[0.14px]
+  &--serif
+    @apply font-utopia font-normal text-sm md:text-lg xl:text-2xl leading-[19px] lg:leading-[39px] tracking-[0.14px] lg:tracking-[0.24px] 
+    font-feature-settings: 'ss02' on
+  p
+    @apply font-poppins font-normal text-sm tracking-[0.14px] mb-6
+    &:last-of-type
+      @apply mb-0
+  &--subtitle
+    @apply font-bold
+
+.text-breadcrumbs
+  @apply font-poppins font-normal text-xs
+
+.list
+  li
+    @apply  font-poppins font-normal text-sm text-brown-shade-4 tracking-[0.14px] relative ml-4 mb-4
+    &:last-of-type
+      @apply mb-0
+    &::before
+      @apply absolute -left-4 inline-block
+      content: '•'
+
+.page-header
+  &--title
+    @apply font-poppins font-light text-[28px] md:text-[44px] leading-[41px] md:leading-[58px] tracking-[2.8px] md:tracking-[4.4px] uppercase
+  &--subtitle
+    @apply font-poppins font-normal text-base md:text-xl
+
+.page-template-page-stay
+  .text-title-h2
+    @apply font-poppins text-[24px] md:text-[40px] font-normal leading-[40px] md:leading-[54px] tracking-[2.88px] md:tracking-[4.8px]
+  .text-title-h3
+    @apply font-poppins font-medium text-3xl tracking-[2.4px]
+    font-feature-settings: 'ss02' on
+  .text-description
+    @apply font-poppins text-[16px] md:text-[20px] font-normal leading-[28px] md:leading-[28px] tracking-[1.28px] md:tracking-[1.6px]
+  .text-body
+    @apply font-poppins font-normal text-[14px] leading-[26px]
+    font-feature-settings: 'ss02' on

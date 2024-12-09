@@ -1,0 +1,40 @@
+<mjml>
+  <mj-head>
+    <mj-font name="utopia-std-subhead" href="https://use.typekit.net/bmp1ccb.css" />
+    <mj-title>Vielen Dank für Ihre Anfrage!</mj-title>
+    <mj-preview>Ihre Anfrage wurde erfolgreich übermittelt, vielen Dank!</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Poppins', sans-serif;" line-height="26px" font-size="14px" color="#0E324A" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#F5F0EF">
+    <!-- Logo Header -->
+    <mj-section background-color="#F5F0EF" padding="60px 0">
+      <mj-column>
+        <mj-image width="252px" src="https://baeren.yournewwebsite.ch/wp-content/uploads/complete-logo.svg"/>
+      </mj-column>
+    </mj-section>
+    <!-- Email Info  -->
+    <mj-section background-color="#fff" padding-top="40px" padding-bottom="40px">
+      <mj-column width="500px">
+        <mj-text font-size="20px" font-family="utopia-std-subhead, serif" color="#453D3B">
+          Vielen Dank für Ihre Anfrage!
+        </mj-text>
+        <mj-text color="#34302D">
+          Sehr geehrte/r [your-name],
+        </mj-text>
+        <mj-text color="#34302D">
+          Vielen Dank, dass Sie sich mit uns in Verbindung gesetzt haben. Ihre Nachricht wurde erfolgreich übermittelt und wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.
+        </mj-text>
+        <mj-text color="#34302D">
+          Mit freundlichen Grüssen<br> Ihr Hotel Bären
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="60px" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

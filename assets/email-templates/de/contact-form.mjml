@@ -1,0 +1,61 @@
+<mjml>
+  <mj-head>
+    <mj-font name="utopia-std-subhead" href="https://use.typekit.net/bmp1ccb.css" />
+    <mj-title>Neue E-Mail von Hotel Bären</mj-title>
+    <mj-preview>Neue E-Mail über Ihr Kontaktformular!</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Poppins', sans-serif;" line-height="26px" font-size="14px"  />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#F5F0EF">
+    <!-- Logo Header -->
+    <mj-section background-color="#F5F0EF" padding="60px 0">
+      <mj-column>
+        <mj-image width="252px" src="https://baeren.yournewwebsite.ch/wp-content/uploads/complete-logo.svg"/>
+      </mj-column>
+    </mj-section>
+    <!-- Email Info  -->
+    <mj-section background-color="#453D3B" padding-top="40px" padding-bottom="40px">
+      <mj-column width="500px">
+        <mj-text font-size="20px" font-family="utopia-std-subhead, serif" color="#F2FAFF">
+          Neue E-Mail von Hotel Bären website.
+        </mj-text>
+        <mj-text color="#F2FAFF">
+          Die E-Mail wurde über das Kontaktformular gesendet. Unten finden Sie die ausgefüllten Kontaktinformationen.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Email Content  -->
+    <mj-section padding="40px" background-color="white">
+      <mj-column>
+        <mj-table cellpadding="5" cellspacing="0" width="100%" color="#34302D">
+          <tr>
+            <th align="left" style="font-weight: bold;">Name</th>
+            <td>[your-name]</td>
+          </tr>
+          <tr>
+            <th align="left" style="font-weight: bold;">E-Mail</th>
+            <td>[your-email]</td>
+          </tr>
+
+        </mj-table>
+        <mj-table cellpadding="5" cellspacing="0" width="100%" color="#34302D">
+          <tr>
+            <th align="left" style="font-weight: bold;">Nachricht</th>
+          </tr>
+          <tr>
+            <td>[your-message]</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section >
+    <!-- Email Content  -->
+    <mj-section padding="40px 0" full-width="full-width">
+      <mj-column width="100%" >
+        <mj-text color="#34302D" align="center">
+          Dies ist eine Benachrichtigung, dass ein Kontaktformular auf Ihrer Website ([_site_title] [_site_url]) übermittelt wurde.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
