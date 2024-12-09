@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
-      utopia: [ 'utopia-std-subhead', 'serif']
+      ubuntu: [ 'Ubuntu', 'serif']
     },
 
     extend: {
@@ -31,6 +31,7 @@ module.exports = {
         'blue-shade-2': '#688494',
         'blue-shade-3': '#0D6394',
         'blue-shade-4': '#063047',
+        'blue-shade-5': '#010F34',
         'orange-shade-1': "#D3594A",
         'red': '#B63939',
         'green': '#95BE49',

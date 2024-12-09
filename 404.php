@@ -6,7 +6,7 @@ do_action( 'before_main_content' );
 	<div class="theme-container">
 		<div class="flex flex-col w-full text-center">
 			<div class="page-header--title">
-				<h1 class="font-utopia font-light text-5xl xl:text-[250px] text-brown-shade-2 py-5 lg:py-10 invisible"><?php echo esc_html__( '404', 'baeren' ) ?></h1>
+				<h1 class="font-ubuntu font-light text-5xl xl:text-[250px] text-brown-shade-2 py-5 lg:py-10 invisible"><?php echo esc_html__( '404', 'baeren' ) ?></h1>
 			</div>
 		</div>
 	</div>

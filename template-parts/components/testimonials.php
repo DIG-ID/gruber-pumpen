@@ -2,7 +2,7 @@
 	<div class="theme-container">
 		<div class="theme-grid">
 			<div class="col-span-2 lg:col-span-12 pb-12 lg:pb-20">
-				<h2 class="font-utopia font-light text-2xl xl:text-5xl leading-7 w-[40%] xl:w-full mx-auto xl:mx-0 text-brown-shade-2 text-center"><?php esc_html_e( 'Testimonials', 'baeren' ); ?></h2>
+				<h2 class="font-ubuntu font-light text-2xl xl:text-5xl leading-7 w-[40%] xl:w-full mx-auto xl:mx-0 text-brown-shade-2 text-center"><?php esc_html_e( 'Testimonials', 'baeren' ); ?></h2>
 			</div>
 			<div class="col-span-2 lg:col-span-10 lg:col-start-2 grid grid-cols-2 lg:grid-cols-10 gap-x-6">
 				<?php

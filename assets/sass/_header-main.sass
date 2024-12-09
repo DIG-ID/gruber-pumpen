@@ -2,13 +2,11 @@
     @apply fixed
     // Button open close in the header
     .menu-toggle
-        @apply flex items-center gap-x-4
-        &__text
-            @apply text-white font-poppins text-[16px] uppercase font-[500] leading-none tracking-[0.32px] transition-all duration-500 ease-out hidden invisible xl:block xl:visible
+        @apply flex items-center gap-x-4 lg:hidden
         &__bars
             @apply relative flex flex-col justify-center items-center overflow-hidden w-6 xl:w-8 h-6 xl:h-8
             .bar
-                @apply block w-6 h-[3px] bg-white relative opacity-100 rounded-full transition-all duration-500 ease-out
+                @apply block w-6 h-[3px] bg-blue-shade-3 relative opacity-100 rounded-full transition-all duration-500 ease-out
                 &:nth-child(1)
                     @apply left-0 mb-[6px]
                     transition: transform 0.5s ease, opacity 0.5s ease
@@ -29,6 +27,7 @@
             @apply xl:mr-5
     // Main header menu wrapper
     .header-wrapper
+        @apply border-4 border-red
         .wpml-ls-legacy-list-horizontal
             a
                 @apply px-[10px] py-[5px]
@@ -42,7 +41,7 @@
                     @apply border-l-2 border-white pl-[10px]
                 .wpml-ls-item
                     .wpml-ls-link
-                        @apply font-poppins font-normal text-[16px] text-white leading-[16px] uppercase transition-all duration-500 ease-out xl:flex
+                        @apply font-ubuntu font-normal text-[16px] text-white leading-[16px] uppercase transition-all duration-500 ease-out xl:flex
     // Mega menu wrapper
     .menu-wrapper
         .wpml-ls-legacy-list-horizontal
@@ -59,7 +58,7 @@
                     @apply border-x-2 border-brown-shade-2
                 .wpml-ls-item
                     .wpml-ls-link
-                        @apply font-poppins font-normal text-base text-brown-shade-4 tracking-[0.4px] leading-[20px] uppercase transition-all duration-500 ease-out xl:flex
+                        @apply font-ubuntu font-normal text-base text-blue-shade-4 tracking-[0.4px] leading-[20px] uppercase transition-all duration-500 ease-out xl:flex
     // Mega menu bg
     .menu-bg
         clip-path: rect(0% at 4% 4%)
@@ -74,11 +73,11 @@
     .menu-item
         @apply min-w-36 text-center
         a
-            @apply font-poppins font-normal text-[16px] text-white uppercase hover:text-brown-shade-2 hover:tracking-[0.07rem]
+            @apply font-ubuntu font-normal text-[16px] text-blue-shade-4 font-bold uppercase hover:text-brown-shade-2 hover:tracking-[0.07rem]
             transition: color .2s, letter-spacing .4s ease-out
     .current-menu-item
         a
-            @apply text-brown-shade-3 tracking-[0.07rem]
+            @apply text-blue-shade-3 font-bold tracking-[0.07rem]
     &.main-menu-top-level > .menu-item > a
         @apply inline-block min-w-[185px]
     // Mega Menu
@@ -87,14 +86,14 @@
         .second-level
             .menu-item
                 a
-                    @apply font-poppins text-[16px] xl:text-[30px] tracking-[0.16px] xl:tracking-[0.3px] font-light text-brown-shade-4 normal-case hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                    @apply font-ubuntu text-[16px] xl:text-[30px] tracking-[0.16px] xl:tracking-[0.3px] font-light text-brown-shade-4 normal-case hover:text-brown-shade-3 hover:tracking-[0.07rem]
                     transition: color .2s, letter-spacing .4s ease-out
         .menu-item:not(:nth-child(1))
             @apply xl:mt-11
         .menu-item
             @apply text-left mt-6
             a
-                @apply font-utopia text-[20px] xl:text-[30px] tracking-[3.2px] font-light text-brown-shade-4 normal-case hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                @apply font-ubuntu text-[20px] xl:text-[30px] tracking-[3.2px] font-light text-brown-shade-4 normal-case hover:text-brown-shade-3 hover:tracking-[0.07rem]
                 transition: color .2s, letter-spacing .4s ease-out
             .sub-menu
                 @apply invisible opacity-0 absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72 transition-all ease-out translate-x-16 duration-500
@@ -104,7 +103,7 @@
                     @apply text-left mt-3
                     // Items sub menu
                     a
-                        @apply font-poppins text-[16px] tracking-[0.32px] font-light text-brown-shade-5 hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                        @apply font-ubuntu text-[16px] tracking-[0.32px] font-light text-brown-shade-5 hover:text-brown-shade-3 hover:tracking-[0.07rem]
                         transition: color .2s, letter-spacing .4s ease-out uppercase
                         &::after
                             @apply absolute transition-all duration-500 ease-out -translate-x-8 top-1/2 -translate-y-1/2 opacity-0
@@ -123,7 +122,7 @@
                     @apply text-left mt-3
                     // Items sub Label
                     a
-                        @apply font-utopia text-[26px] font-normal text-brown-shade-4 normal-case tracking-normal hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                        @apply font-ubuntu text-[26px] font-normal text-brown-shade-4 normal-case tracking-normal hover:text-brown-shade-3 hover:tracking-[0.07rem]
                         transition: color .2s, letter-spacing .4s ease-out
                         &::after
                             @apply absolute transition-all duration-500 ease-out -translate-x-8 top-1/2 -translate-y-1/2 opacity-0
@@ -179,15 +178,15 @@
                 @apply mt-5
             // Secondary menu item
             a
-                @apply font-poppins font-normal text-base text-brown-shade-4 tracking-[1.6px] uppercase hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                @apply font-ubuntu font-normal text-base text-blue-shade-4 tracking-[1.6px] uppercase hover:text-blue-shade-3 hover:tracking-[0.07rem]
                 transition: color .2s, letter-spacing .4s ease-out
 
 #header-main
     transition: background-color 0.3s ease
-    @apply bg-transparent
+    @apply bg-white
 
 #header-main.sticky
-    @apply bg-blue-shade-3
+    @apply bg-white
 
 @media ( min-width: 1280px )
     #main-menu
@@ -208,10 +207,10 @@
     #header-main.menu-open
         .menu-toggle
             &__text
-                @apply text-brown-shade-4
+                @apply text-blue-shade-4
             &__bars
                 .bar
-                    @apply bg-white
+                    @apply bg-blue-shade-4
     /* General styles */
     ul
         list-style: none
