@@ -11,6 +11,7 @@ function gruber_pumpen_theme_setup()
 			'main-mega-menu' => __('Main Mega Menu', 'gruber-pumpen'),
 			'secondary-menu' => __('Secondary Menu', 'gruber-pumpen'),
 			'copyright-menu' => __('Copyright Menu', 'gruber-pumpen'),
+			'footer-menu' => __('Footer Menu', 'gruber-pumpen'),
 		)
 	);
 
@@ -72,13 +73,14 @@ if (!function_exists('gruber_pumpen_get_font_face_styles')):
 
 	/**
 	 * Get font face styles.
-	 * Called by functions dig_theme_enqueue_styles() and twentytwentytwo_editor_styles() above.
+	 * Called by functions gruber_pumpen_theme_enqueue_styles() and twentytwentytwo_editor_styles() above.
 	 */
 	function gruber_pumpen_get_font_face_styles()
 	{
 
 		return "
 				@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+				@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 		";
 
 	}
@@ -97,8 +99,12 @@ if (!function_exists('gruber_pumpen_preload_webfonts')):
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preload" as="style"
 			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+		<link rel="preload" as="style"
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
 		<link rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
 		<?php
 	}
 

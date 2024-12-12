@@ -13,9 +13,16 @@ module.exports = {
   theme: {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
-      ubuntu: [ 'Ubuntu', 'serif']
+      ubuntu: [ 'Ubuntu', 'serif'],
+      dm: ['DM Sans', 'sans-serif']
     },
-
+    screens: {
+      xs: '375px',
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     extend: {
       letterSpacing: {
         //wide: '.038em',
@@ -32,7 +39,10 @@ module.exports = {
         'blue-shade-3': '#0D6394',
         'blue-shade-4': '#063047',
         'blue-shade-5': '#010F34',
+        'blue-shade-6': '#1F2432',
         'orange-shade-1': "#D3594A",
+        'orange-shade-2': "#C54030",
+        'orange-shade-3': "#942719",
         'red': '#B63939',
         'green': '#95BE49',
         'orange': '#D7903B',
@@ -47,5 +57,18 @@ module.exports = {
     },
   },
   plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.clip-small': {
+          'clip-path': 'polygon(0 0, 85% 0, 82% 100%, 0% 100%)',
+        },
+        '.clip-medium': {
+          'clip-path': 'polygon(0 0, 55% 0, 52% 100%, 0% 100%)',
+        },
+        '.clip-large': {
+          'clip-path': 'polygon(0 0, 45% 0, 42% 100%, 0% 100%)',
+        },
+      });
+    },
   ],
 }

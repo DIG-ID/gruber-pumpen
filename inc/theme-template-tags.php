@@ -48,71 +48,6 @@ function theme_after_post_content()
 
 add_action('after_post_content', 'theme_after_post_content');
 
-/**
- * This function gest the rooms features.
- */
-function theme_room_features()
-{
-	if (have_rows('features')):
-		echo '<ul class="features">';
-		while (have_rows('features')):
-			the_row();
-			$fields = [
-				'bed' => __('Bett:', 'baeren'),
-				'size' => __('Fläche:', 'baeren'),
-				'capacity' => __('Belegung:', 'baeren'),
-				'view' => __('Aussicht:', 'baeren'),
-			];
-			foreach ($fields as $field_key => $label):
-				$field_value = get_sub_field($field_key);
-				if ($field_value):
-					?>
-					<li id="feature-item" class="font-poppins font-normal text-xs text-brown-shade-4 uppercase">
-						<p class="font-poppins font-normal text-sm text-brown-shade-4 tracking-[0.14px]">
-							<span class="font-bold"><?php echo $label; ?></span> <?php echo esc_html($field_value); ?>
-						</p>
-					</li>
-					<?php
-				endif;
-			endforeach;
-		endwhile;
-		echo '</ul>';
-	endif;
-}
-
-add_action('room_features', 'theme_room_features');
-
-/**
- * This function gest the rooms features from the Stay page.
- */
-function theme_stay_room_features()
-{
-	if (have_rows('features')):
-		echo '<ul class="features">';
-		while (have_rows('features')):
-			the_row();
-			$fields = [
-				'bed' => __('Bett:', 'baeren'),
-				'size' => __('Fläche:', 'baeren'),
-				'capacity' => __('Belegung:', 'baeren'),
-				'view' => __('Aussicht:', 'baeren'),
-			];
-			foreach ($fields as $field_key => $label):
-				$field_value = get_sub_field($field_key);
-				if ($field_value):
-					?>
-					<li id="feature-item" class="font-poppins font-normal text-sm text-brown-shade-4">
-						<span class="font-bold"><?php echo $label; ?></span> <?php echo esc_html($field_value); ?>
-					</li>
-					<?php
-				endif;
-			endforeach;
-		endwhile;
-		echo '</ul>';
-	endif;
-}
-
-add_action('stay_room_features', 'theme_stay_room_features');
 
 /**
  * This theme logo.
@@ -273,3 +208,49 @@ function theme_breadcrumbs()
 }
 
 add_action('breadcrumbs', 'theme_breadcrumbs');
+
+/**
+ * Socials for the website.
+ */
+function theme_socials()
+{
+	$socials = [
+		'facebook' => [
+			'url' => get_field('socials_facebook', 'options'),
+			'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none"><path d="M7.62891 8.31543H5.57812V14.4404H2.84375V8.31543H0.601562V5.7998H2.84375V3.8584C2.84375 1.6709 4.15625 0.44043 6.15234 0.44043C7.10938 0.44043 8.12109 0.631836 8.12109 0.631836V2.79199H7C5.90625 2.79199 5.57812 3.44824 5.57812 4.15918V5.7998H8.01172L7.62891 8.31543Z" fill="#050B20"/></svg>',
+		],
+		'twitter' => [
+			'url' => get_field('socials_x', 'options'),
+			'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none"><path d="M12.5508 3.59668C12.5508 3.7334 12.5508 3.84277 12.5508 3.97949C12.5508 7.78027 9.67969 12.1279 4.40234 12.1279C2.76172 12.1279 1.25781 11.6631 0 10.8428C0.21875 10.8701 0.4375 10.8975 0.683594 10.8975C2.02344 10.8975 3.25391 10.4326 4.23828 9.66699C2.98047 9.63965 1.91406 8.81934 1.55859 7.6709C1.75 7.69824 1.91406 7.72559 2.10547 7.72559C2.35156 7.72559 2.625 7.6709 2.84375 7.61621C1.53125 7.34277 0.546875 6.19434 0.546875 4.7998V4.77246C0.929688 4.99121 1.39453 5.10059 1.85938 5.12793C1.06641 4.6084 0.574219 3.7334 0.574219 2.74902C0.574219 2.20215 0.710938 1.70996 0.957031 1.2998C2.37891 3.02246 4.51172 4.1709 6.89062 4.30762C6.83594 4.08887 6.80859 3.87012 6.80859 3.65137C6.80859 2.06543 8.09375 0.780273 9.67969 0.780273C10.5 0.780273 11.2383 1.1084 11.7852 1.68262C12.4141 1.5459 13.043 1.2998 13.5898 0.97168C13.3711 1.65527 12.9336 2.20215 12.332 2.55762C12.9062 2.50293 13.4805 2.33887 13.9727 2.12012C13.5898 2.69434 13.0977 3.18652 12.5508 3.59668Z" fill="#050B20"/></svg>',
+		],
+		'instagram' => [
+			'url' => get_field('socials_instagram', 'options'),
+			'svg' => '<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 3.40625C9.96875 3.40625 11.5938 5.03125 11.5938 7C11.5938 9 9.96875 10.5938 8 10.5938C6 10.5938 4.40625 9 4.40625 7C4.40625 5.03125 6 3.40625 8 3.40625ZM8 9.34375C9.28125 9.34375 10.3125 8.3125 10.3125 7C10.3125 5.71875 9.28125 4.6875 8 4.6875C6.6875 4.6875 5.65625 5.71875 5.65625 7C5.65625 8.3125 6.71875 9.34375 8 9.34375ZM12.5625 3.28125C12.5625 2.8125 12.1875 2.4375 11.7188 2.4375C11.25 2.4375 10.875 2.8125 10.875 3.28125C10.875 3.75 11.25 4.125 11.7188 4.125C12.1875 4.125 12.5625 3.75 12.5625 3.28125ZM14.9375 4.125C15 5.28125 15 8.75 14.9375 9.90625C14.875 11.0312 14.625 12 13.8125 12.8438C13 13.6562 12 13.9062 10.875 13.9688C9.71875 14.0312 6.25 14.0312 5.09375 13.9688C3.96875 13.9062 3 13.6562 2.15625 12.8438C1.34375 12 1.09375 11.0312 1.03125 9.90625C0.96875 8.75 0.96875 5.28125 1.03125 4.125C1.09375 3 1.34375 2 2.15625 1.1875C3 0.375 3.96875 0.125 5.09375 0.0625C6.25 0 9.71875 0 10.875 0.0625C12 0.125 13 0.375 13.8125 1.1875C14.625 2 14.875 3 14.9375 4.125ZM13.4375 11.125C13.8125 10.2188 13.7188 8.03125 13.7188 7C13.7188 6 13.8125 3.8125 13.4375 2.875C13.1875 2.28125 12.7188 1.78125 12.125 1.5625C11.1875 1.1875 9 1.28125 8 1.28125C6.96875 1.28125 4.78125 1.1875 3.875 1.5625C3.25 1.8125 2.78125 2.28125 2.53125 2.875C2.15625 3.8125 2.25 6 2.25 7C2.25 8.03125 2.15625 10.2188 2.53125 11.125C2.78125 11.75 3.25 12.2188 3.875 12.4688C4.78125 12.8438 6.96875 12.75 8 12.75C9 12.75 11.1875 12.8438 12.125 12.4688C12.7188 12.2188 13.2188 11.75 13.4375 11.125Z" fill="#F0F7FA"/>
+</svg>
+',
+		],
+		'linkedin' => [
+			'url' => get_field('socials_linkedin', 'options'),
+			'svg' => '<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.125 15H0.21875V5.65625H3.125V15ZM1.65625 4.40625C0.75 4.40625 0 3.625 0 2.6875C0 1.40625 1.375 0.59375 2.5 1.25C3.03125 1.53125 3.34375 2.09375 3.34375 2.6875C3.34375 3.625 2.59375 4.40625 1.65625 4.40625ZM13.9688 15H11.0938V10.4688C11.0938 9.375 11.0625 8 9.5625 8C8.0625 8 7.84375 9.15625 7.84375 10.375V15H4.9375V5.65625H7.71875V6.9375H7.75C8.15625 6.21875 9.09375 5.4375 10.5 5.4375C13.4375 5.4375 14 7.375 14 9.875V15H13.9688Z" fill="#F0F7FA"/>
+</svg>
+',
+		],
+	];
+	$html = '<div class="social-links">';
+	foreach ($socials as $platform => $social_data):
+		if ($social_data['url']):
+			$html .= sprintf(
+				'<a href="%s" target="_blank" rel="noopener noreferrer" class="social-link social-link--%s">%s</a>',
+				esc_url($social_data['url']),
+				esc_attr($platform),
+				$social_data['svg']
+				//ucfirst( $platform )
+			);
+		endif;
+	endforeach;
+	$html .= '</div>';
+	echo $html;
+}
+add_action('socials', 'theme_socials');
