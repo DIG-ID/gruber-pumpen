@@ -1,8 +1,8 @@
-<section class="section-cta bg-brown-shade-2 py-16 relative overflow-hidden">
+<section class="section-cta bg-blue-shade-2 py-16 relative overflow-hidden">
 	<div class="theme-container">
 		<div class="flex justify-between">
 			<div class="text max-w-96">
-				<h2 class="font-poppins font-normal text-2xl tracking-wider text-brown-shade-4"><?php the_field( 'call_to_action_text' ); ?></h2>
+				<h2 class="font-poppins font-normal text-2xl tracking-wider text-blue-shade-4"><?php the_field( 'call_to_action_text' ); ?></h2>
 			</div>
 			<?php
 			$blink = get_field( 'call_to_action_button' );

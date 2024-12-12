@@ -17,13 +17,13 @@
 			$news_query->the_post();
 			?>
 			<li>
-				<a class="bg-brown-shade-3 transition-all duration-500 ease-in-out hover:bg-brown-shade-3 block rounded-[20px] overflow-hidden mb-6 lg:mb-0" href="<?php echo esc_url( get_the_permalink() ); ?>">
+				<a class="bg-blue-shade-3 transition-all duration-500 ease-in-out hover:bg-blue-shade-3 block rounded-[20px] overflow-hidden mb-6 lg:mb-0" href="<?php echo esc_url( get_the_permalink() ); ?>">
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news card-news--related p-3   flex ' ); ?>>
 						<?php
 						if ( has_post_thumbnail() ) :
 							the_post_thumbnail( 'full', array( 'class' => 'w-[108px] lg:w-[135px] object-cover h-[108px] lg:h-[135px] rounded-[12px]' ) );
 						else :
-							?><span class="min-w-[108px] lg:min-w-[135px] h-[108px] lg:h-[135px] bg-brown-shade-1 text-brown-shade-2 flex flex-col justify-center items-center rounded-[12px] font-poppins text-xs text-center">no featured image</span> <?php
+							?><span class="min-w-[108px] lg:min-w-[135px] h-[108px] lg:h-[135px] bg-blue-shade-1 text-blue-shade-2 flex flex-col justify-center items-center rounded-[12px] font-poppins text-xs text-center">no featured image</span> <?php
 						endif;
 						?>
 						<div class="ml-4 pr-6 flex flex-col justify-between">

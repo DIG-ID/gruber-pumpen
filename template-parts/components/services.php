@@ -1,5 +1,5 @@
-<section class="section-services bg-brown-shade-3 relative overflow-hidden">
-	<h2 class="text-subtitle text-brown-shade-1 absolute top-24 left-1/2 -translate-x-1/2 z-20"><?php the_field( 'services_title', 'options' ); ?></h2>
+<section class="section-services bg-blue-shade-3 relative overflow-hidden">
+	<h2 class="text-subtitle text-blue-shade-1 absolute top-24 left-1/2 -translate-x-1/2 z-20"><?php the_field( 'services_title', 'options' ); ?></h2>
 	<div class="services-teaser flex">
 		<?php
 		if ( have_rows( 'services_list', 'options' ) ) :

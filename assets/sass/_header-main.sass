@@ -64,19 +64,19 @@
         .wpml-ls-statics-shortcode_actions
             @apply border-none px-0 py-12 flex justify-center
             ul
-                @apply border-t border-b border-brown-shade-4 py-6
+                @apply border-t border-b py-6
                 .wpml-ls-current-language
                     .wpml-ls-link
                         font-weight: 700 !important
                 .wpml-ls-item:not(.wpml-ls-first-item):not(.wpml-ls-last-item)
-                    @apply border-x-2 border-brown-shade-2
+                    @apply border-x-2 border-blue-shade-2
                 .wpml-ls-item
                     .wpml-ls-link
                         @apply font-ubuntu font-normal text-base text-blue-shade-4 tracking-[0.4px] leading-[20px] uppercase transition-all duration-500 ease-out xl:flex
     // Mega menu bg
     .menu-bg
         clip-path: rect(0% at 4% 4%)
-        @apply fixed w-full h-svh bg-brown-shade-2 left-0 top-0 -z-[1] transition-all duration-700 ease-in-out
+        @apply fixed w-full h-svh bg-blue-shade-2 left-0 top-0 -z-[1] transition-all duration-700 ease-in-out
 
     .site-branding
         svg
@@ -100,14 +100,14 @@
         .second-level
             .menu-item
                 a
-                    @apply font-ubuntu text-[16px] xl:text-[30px] tracking-[0.16px] xl:tracking-[0.3px] font-light text-blue-shade-4 normal-case hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                    @apply font-ubuntu text-[16px] xl:text-[30px] tracking-[0.16px] xl:tracking-[0.3px] font-light text-blue-shade-4 normal-case hover:text-blue-shade-3 hover:tracking-[0.07rem]
                     transition: color .2s, letter-spacing .4s ease-out
         .menu-item:not(:nth-child(1))
             @apply xl:mt-11
         .menu-item
             @apply text-left mt-6
             a
-                @apply font-ubuntu text-[20px] xl:text-[30px] tracking-[3.2px] font-light text-brown-shade-4 normal-case hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                @apply font-ubuntu text-[20px] xl:text-[30px] tracking-[3.2px] font-light text-blue-shade-4 normal-case hover:text-blue-shade-3 hover:tracking-[0.07rem]
                 transition: color .2s, letter-spacing .4s ease-out
             .sub-menu
                 @apply invisible opacity-0 absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72 transition-all ease-out translate-x-16 duration-500
@@ -117,7 +117,7 @@
                     @apply text-left mt-3
                     // Items sub menu
                     a
-                        @apply font-ubuntu text-[16px] tracking-[0.32px] font-light text-brown-shade-5 hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                        @apply font-ubuntu text-[16px] tracking-[0.32px] font-light text-blue-shade-5 hover:text-blue-shade-3 hover:tracking-[0.07rem]
                         transition: color .2s, letter-spacing .4s ease-out uppercase
                         &::after
                             @apply absolute transition-all duration-500 ease-out -translate-x-8 top-1/2 -translate-y-1/2 opacity-0
@@ -136,7 +136,7 @@
                     @apply text-left mt-3
                     // Items sub Label
                     a
-                        @apply font-ubuntu text-[26px] font-normal text-brown-shade-4 normal-case tracking-normal hover:text-brown-shade-3 hover:tracking-[0.07rem]
+                        @apply font-ubuntu text-[26px] font-normal text-blue-shade-4 normal-case tracking-normal hover:text-blue-shade-3 hover:tracking-[0.07rem]
                         transition: color .2s, letter-spacing .4s ease-out
                         &::after
                             @apply absolute transition-all duration-500 ease-out -translate-x-8 top-1/2 -translate-y-1/2 opacity-0

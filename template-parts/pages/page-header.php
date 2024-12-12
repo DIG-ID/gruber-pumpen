@@ -1,4 +1,4 @@
-<section class="page-header flex items-center bg-blue-shade-4 text-brown-shade-1 relative <?php
+<section class="page-header flex items-center bg-blue-shade-4 text-blue-shade-1 relative <?php
 $intro_image_id = get_field('intro_image');
 if ($intro_image_id):
     echo 'min-h-[100vh]';
