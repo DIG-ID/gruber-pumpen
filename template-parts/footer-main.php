@@ -10,13 +10,27 @@
 		</div>
 
 		<div class="flex flex-col md:flex-row gap-6">
-			<a class="bot-header btn--primary">
-				<?php esc_html_e('UNSERE SERVICES', 'gruber-pumpen'); ?>
-			</a>
+		<?php
+			$services_url = get_field('footer_write_us_services', 'options');
+			if ($services_url):
+				?>
+				<a href="<?php echo esc_url($services_url); ?>" class="btn--primary">
+					<?php esc_html_e('UNSERE SERVICES', 'gruber-pumpen'); ?>
+				</a>
+				<?php
+			endif;
+			?>
+			<?php
+			$write_us_link = get_field('footer_write_us_link', 'options');
+			if ($write_us_link):
+				?>
+				<a href="<?php echo esc_url($write_us_link); ?>" class="btn--secundary">
+					<?php esc_html_e('SCHREIBEN SIE UNS', 'gruber-pumpen'); ?>
+				</a>
+				<?php
+			endif;
+			?>
 
-			<a class="bot-header btn--secundary">
-				<?php esc_html_e('SCHREIBEN SIE UNS', 'gruber-pumpen'); ?>
-			</a>
 		</div>
 	</section>
 
