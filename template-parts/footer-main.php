@@ -39,7 +39,7 @@
 
 		<!-- Logo && Socials -->
 		<div
-			class="row-start-1 row-span-1 col-span-2 lg:order-2 lg:col-span-1 lg:max-h-auto border-b lg:border-b-0 flex flex-col gap-8 items-center md:p-8 lg:p-16 xl:px-28 lg:border-x border-orange-shade-1 lg:mx-auto">
+			class="top-logo-footer row-start-1 row-span-1 col-span-2 lg:order-2 lg:col-span-1 lg:max-h-auto border-b lg:border-b-0 flex flex-col gap-8 items-center md:p-8 lg:p-16 xl:px-28 lg:border-x border-orange-shade-1 lg:mx-auto">
 			<div class="flex items-center my-auto">
 				<?php do_action('footer_theme_logo'); ?>
 			</div>
