@@ -1,4 +1,14 @@
-<section class="section-introflex items-end bg-black  text-blue-shade-1 min-h-[464px] mt-32 relative py-32 px-8">
+<section class="section-intro flex items-end bg-black  text-blue-shade-1 min-h-[464px] mt-32 relative py-32 px-8">
+    <?php
+    $intro_video = get_field('intro_video');
+    if ($intro_video):
+        $video_url = esc_url($intro_video);
+        ?>
+        <video class="absolute inset-0 w-full h-full object-cover z-40" autoplay muted loop playsinline>
+            <source src="<?php echo $video_url; ?>" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <?php endif; ?>
     <div class="relative">
         <div class="flex flex-col w-full mx-24">
             <div class="flex items-center gap-4  invisible fade-in--noscroll">
