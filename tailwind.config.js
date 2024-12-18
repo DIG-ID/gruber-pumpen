@@ -12,7 +12,6 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      poppins: ['Poppins', 'sans-serif'],
       outfit: [ 'Outfit', 'sans-serif'],
       dm: ['DM Sans', 'sans-serif']
     },

@@ -1,61 +1,42 @@
 .text-title
-  @apply font-outfit font-light text-2xl md:text-4xl xl:text-5xl
+  @apply font-outfit font-light text-[84px] md:text-4xl xl:text-5xl
   font-feature-settings: 'ss02' on
 
 .text-title-h2
-  @apply font-poppins font-light text-2xl lg:text-5xl uppercase tracking-[6.4px] lg:leading-normal
-  font-feature-settings: 'ss02' on
+  @apply [leading-trim:both] [text-edge:cap] font-outfit text-4xl font-bold [font-feature-settings:'ss02'_on]
 
 .text-title-h3
-  @apply font-poppins font-normal text-base md:text-xl tracking-[0.24px]
+  @apply font-outfit font-normal text-[36px] tracking-[0.24px]
   font-feature-settings: 'ss02' on
 
 .text-description
-  @apply font-outfit font-light text-sm md:text-lg tracking-[-0.14px] xl:tracking-[-0.24px]
-  font-feature-settings: 'ss02' on
-
-.text-hero-title
-  @apply font-outfit font-light italic tracking-[-0.92px] xl:tracking-[-1.92px] text-[46px] xl:text-8xl
+  @apply font-outfit font-light text-[18px] md:text-lg tracking-[-0.14px] xl:tracking-[-0.24px]
   font-feature-settings: 'ss02' on
 
 .text-subtitle,
 .text-description-small
   @apply font-outfit font-normal text-sm xl:text-2xl xl:tracking-[1.92px]
 
-.text-bullets
-  &--primary
-    @apply font-outfit font-normal text-sm xl:text-2xl
-  &--secondary
-    @apply font-poppins font-normal text-sm
-
 .text-body
-  @apply font-poppins font-normal text-sm tracking-[0.14px]
+  @apply font-dm font-normal text-sm tracking-[0.14px]
   &--serif
     @apply font-outfit font-normal text-sm md:text-lg xl:text-2xl leading-[19px] lg:leading-[39px] tracking-[0.14px] lg:tracking-[0.24px] 
     font-feature-settings: 'ss02' on
   p
-    @apply font-poppins font-normal text-sm tracking-[0.14px] mb-6
+    @apply text-blue-shade-2 [leading-trim:both] [text-edge:cap] font-dm text-base font-bold leading-[28px]
+
     &:last-of-type
       @apply mb-0
   &--subtitle
     @apply font-bold
 
 .text-breadcrumbs
-  @apply font-poppins font-normal text-xs
-
-.list
-  li
-    @apply  font-poppins font-normal text-sm text-blue-shade-4 tracking-[0.14px] relative ml-4 mb-4
-    &:last-of-type
-      @apply mb-0
-    &::before
-      @apply absolute -left-4 inline-block
-      content: '•'
+  @apply font-outfit font-normal text-xs
 
 .page-header
   &--title
     @apply font-outfit text-[54px] font-semibold leading-[74px]
   &--desc
-    @apply font-poppins font-normal text-base md:text-xl
+    @apply font-outfit font-normal text-base md:text-xl
 
 
