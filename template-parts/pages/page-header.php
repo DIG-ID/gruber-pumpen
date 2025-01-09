@@ -1,4 +1,4 @@
-<section class="page-header flex items-end bg-black text-blue-shade-1 min-h-[464px] mt-32 relative py-11 px-8 <?php
+<section class="page-header flex items-end bg-black text-blue-shade-0 min-h-[464px] mt-32 relative py-11 px-8 <?php
 $intro_image_id = get_field('page_header_image');
 if ($intro_image_id):
     echo '';
@@ -18,7 +18,7 @@ endif;
 
     <div class="relative">
         <div class="flex flex-col w-full mx-24">
-            <div class="page-header--title max-w-[60%]">
+            <div class="page-header--title max-w-[60%]  invisible fade-in--noscroll">
                 <?php
                 $page_header_title = get_field('page_header_title');
                 if ($page_header_title): ?>
@@ -26,7 +26,7 @@ endif;
                 <?php endif; ?>
             </div>
 
-            <div class="page-header--breadcrumbs">
+            <div class="page-header--breadcrumbs invisible fade-in--noscroll">
                 <?php do_action('breadcrumbs'); ?>
             </div>
 

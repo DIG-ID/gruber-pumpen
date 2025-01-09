@@ -1,12 +1,16 @@
 .text-title
-  @apply font-outfit font-light text-[84px] md:text-4xl xl:text-5xl
+  @apply font-outfit text-[5.25rem] font-bold leading-[84px]
   font-feature-settings: 'ss02' on
 
 .text-title-h2
-  @apply [leading-trim:both] [text-edge:cap] font-outfit text-4xl font-bold [font-feature-settings:'ss02'_on]
+  @apply [leading-trim:both] [text-edge:cap] font-outfit text-[3rem] leading-[54px] font-bold [font-feature-settings:'ss02'_on]
 
 .text-title-h3
-  @apply font-outfit font-normal text-[36px] tracking-[0.24px]
+  @apply font-outfit font-normal text-[2.25rem] tracking-[0.24px] leading-[46px]
+  font-feature-settings: 'ss02' on
+
+.text-title-h4
+  @apply font-outfit text-[24px] font-semibold leading-[34px] tracking-[0.24px]
   font-feature-settings: 'ss02' on
 
 .text-description
@@ -16,6 +20,18 @@
 .text-subtitle,
 .text-description-small
   @apply font-outfit font-normal text-sm xl:text-2xl xl:tracking-[1.92px]
+
+.text-p1
+  @apply [leading-trim:both] [text-edge:cap] font-dm text-base leading-[28px] text-blue-shade-2
+
+.text-description
+  @apply text-blue-shade-2 leading-[26px] [leading-trim:both] [text-edge:cap] text-[16px] font-normal not-italic
+
+
+
+.text-breadcrumbs
+  @apply font-outfit font-normal text-xs
+
 
 .text-body
   @apply font-dm font-normal text-sm tracking-[0.14px]
@@ -30,8 +46,7 @@
   &--subtitle
     @apply font-bold
 
-.text-breadcrumbs
-  @apply font-outfit font-normal text-xs
+
 
 .page-header
   &--title

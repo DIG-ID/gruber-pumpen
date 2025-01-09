@@ -19,7 +19,7 @@ get_template_part( 'template-parts/pages/page-header' );
 								the_post_thumbnail( 'full', array( 'class' => 'w-full object-cover h-[275px] lg:h-[345px]' ) );
 							else :
 								?>
-								<span class="bg-blue-shade-1 w-full h-[275px] lg:h-[345px] flex justify-center items-center font-poppins text-blue-shade-2">no thumbnail</span>
+								<span class="bg-blue-shade-0 w-full h-[275px] lg:h-[345px] flex justify-center items-center font-poppins text-blue-shade-2">no thumbnail</span>
 								<?php
 							endif;
 							?>
@@ -42,7 +42,7 @@ get_template_part( 'template-parts/pages/page-header' );
 								the_post_thumbnail( 'full', array( 'class' => 'w-full object-cover h-[275px] lg:h-[345px]' ) );
 							else :
 								?>
-								<span class="bg-blue-shade-1 w-full h-[275px] lg:h-[345px] flex justify-center items-center font-poppins text-blue-shade-2">no thumbnail</span>
+								<span class="bg-blue-shade-0 w-full h-[275px] lg:h-[345px] flex justify-center items-center font-poppins text-blue-shade-2">no thumbnail</span>
 								<?php
 							endif;
 							?>

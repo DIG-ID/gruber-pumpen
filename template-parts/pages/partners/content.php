@@ -7,7 +7,7 @@
 					the_row();
 					?>
 					<div
-						class="flex flex-col bg-blue-shade-1 col-span-2 lg:col-span-6 overflow-hidden mb-8 lg:mb-16 invisible fade-in--noscroll">
+						class="flex flex-col bg-blue-shade-0 col-span-2 lg:col-span-6 overflow-hidden mb-8 lg:mb-16 invisible fade-in--noscroll">
 						<div class="partner-card-img">
 							<?php
 							if (get_sub_field('image')):

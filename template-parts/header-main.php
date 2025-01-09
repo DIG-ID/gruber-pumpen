@@ -119,7 +119,7 @@
 
 			<div class="grid grid-cols-12 px-0 py-0 h-full">
 				<!-- Mobile Navigation Column -->
-				<div class="col-span-12 px-0 py-0 xl:pl-8 xl:pt-12 bg-blue-shade-1 block xl:hidden mobile__nav">
+				<div class="col-span-12 px-0 py-0 xl:pl-8 xl:pt-12 bg-blue-shade-0 block xl:hidden mobile__nav">
 					<!-- Mobile Main Menu -->
 					<nav>
 						<?php
@@ -162,7 +162,7 @@
 				</div>
 
 				<!-- Secondary Menu Column (Desktop) -->
-				<div id="menu-secondary-col" class="col-span-4 bg-blue-shade-1 pt-44 text-center hidden xl:block">
+				<div id="menu-secondary-col" class="col-span-4 bg-blue-shade-0 pt-44 text-center hidden xl:block">
 					<!-- Decorative SVG -->
 					<div class="w-full mb-20 flex justify-center items-center">
 						<svg width="64" height="67" viewBox="0 0 64 67" fill="none" xmlns="http://www.w3.org/2000/svg">
