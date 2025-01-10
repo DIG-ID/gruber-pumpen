@@ -11,7 +11,9 @@ mix
   })
 
   .js('assets/js/main.js', 'js')
-  .sass('assets/sass/main.sass', 'css')
+  .sass('assets/sass/main.sass', 'css', {
+    implementation: require('sass')
+  })
   .sass('assets/sass/admin-login.sass', 'css')
   .options({
     postCss: [ tailwindcss('./tailwind.config.js') ],
@@ -31,7 +33,10 @@ mix
 if (!mix.inProduction()) {
   mix
     .webpackConfig({
-      devtool: "source-map"
+      devtool: "source-map",
+      stats: {
+        children: true
+      }
     })
     .sourceMaps();
 }
