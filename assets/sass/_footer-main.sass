@@ -6,10 +6,13 @@
     .menu-item
         @apply py-2 max-h-[300px] overflow-scroll
         a
-          color: $blue-shade-1
-
-  p
-    color: $blue-shade-1
+          @apply hover:text-blue-shade-2 hover:tracking-[0.04rem] 
+          transition: color .2s, letter-spacing .4s ease-out
+          color: $blue-shade-0
+    
+  .contact-section
+    p
+      color: $blue-shade-0
 
 
 .footer-menu
@@ -33,3 +36,16 @@
   gap: 9px
   a
     @apply p-4 bg-blue-shade-6 rounded-md
+
+.testimonials-card
+  background-color: white
+  border-radius: 20px
+  width: 500px
+  position: relative
+  clip-path: polygon(40px 0,100% 0,100% calc(100% - 40px),calc(100% - 40px) 100%,0 100%,0 40px)
+
+  
+@media ( max-width: 768px )
+  .footer-main
+    .top-logo-footer 
+      max-height: 220px

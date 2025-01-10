@@ -79,8 +79,7 @@ if (!function_exists('gruber_pumpen_get_font_face_styles')):
 	{
 
 		return "
-				@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-				@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
 		";
 
 	}
@@ -97,14 +96,7 @@ if (!function_exists('gruber_pumpen_preload_webfonts')):
 		?>
 		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" as="style"
-			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
-		<link rel="preload" as="style"
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap">
 		<?php
 	}
 
@@ -181,8 +173,7 @@ require get_template_directory() . '/inc/theme-admin-settings.php';
 require get_template_directory() . '/inc/theme-custom-menu-walker.php';
 
 
-function my_console_log(...$data)
-{
+function my_console_log(...$data) {
 	$json = json_encode($data);
 	add_action('shutdown', function () use ($json) {
 		echo "<script>console.log({$json})</script>";

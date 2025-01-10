@@ -12,15 +12,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      poppins: ['Poppins', 'sans-serif'],
-      ubuntu: [ 'Ubuntu', 'serif'],
+      outfit: [ 'Outfit', 'sans-serif'],
       dm: ['DM Sans', 'sans-serif']
     },
     screens: {
       xs: '375px',
       sm: '480px',
       md: '768px',
-      lg: '976px',
+      lg: '1094px',
       xl: '1440px',
     },
     extend: {
@@ -29,12 +28,8 @@ module.exports = {
         //wider: '.06em',
       },
       colors: {
-        'blue-shade-1': '#F5F0EF',
-        'blue-shade-2': '#E7DBD9',
-        'blue-shade-3': '#8E827B',
-        'blue-shade-4': '#34302D',
-        'blue-shade-5': '#453D3B',
-        'blue-shade-1': '#F0F7FA',
+        'blue-shade-0': '#F0F7FA',
+        'blue-shade-1': '#F5F7FA',
         'blue-shade-2': '#688494',
         'blue-shade-3': '#0D6394',
         'blue-shade-4': '#063047',

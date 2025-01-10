@@ -1,4 +1,4 @@
-$blue-shade-1: #F0F7FA
+$blue-shade-0: #F0F7FA
 $blue-shade-2: #688494
 $blue-shade-3: #0D6394
 $blue-shade-4: #063047
@@ -17,10 +17,10 @@ $orange: #D7903B
   --swiper-theme-color: #fff
 
 ::-moz-selection
-  @apply bg-blue-shade-1 text-blue-shade-4
+  @apply bg-blue-shade-0 text-blue-shade-4
 
 ::selection
-  @apply bg-blue-shade-1 text-blue-shade-4
+  @apply bg-blue-shade-0 text-blue-shade-4
 
 //reCaptcha hide badge
 .grecaptcha-badge
@@ -30,7 +30,7 @@ body
   text-rendering: optimizelegibility
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  //font-family: font-poppins
+  font-family: DM Sans, sans-serif
   //@apply transition-all duration-300 ease-in-out
   height: auto
 
@@ -55,7 +55,7 @@ html.lenis body
   pointer-events: none
 
 .theme-container
-  @apply px-6 mx-auto w-full lg:max-w-[1440px]
+  @apply px-6 mx-auto w-full
 
 .theme-grid
   @apply grid grid-cols-2 lg:grid-cols-12 gap-x-6
