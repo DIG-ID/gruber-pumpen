@@ -13,22 +13,26 @@
 
 		<div class="flex flex-col md:flex-row gap-6">
 			<?php
-			$services_url = get_field('footer_write_us_services', 'options');
-			if ($services_url):
+			$services_link = get_field('footer_write_us_services', 'options');
+			if ($services_link):
+				$services_url = $services_link['url'];
+				$services_title = $services_link['title'];
+				$services_target = $services_link['target'] ? $link['target'] : '_self';
 				?>
-				<a href="<?php echo esc_url($services_url); ?>" class="btn--primary">
-					<?php esc_html_e('UNSERE SERVICES', 'gruber-pumpen'); ?>
-				</a>
+				<a class="btn--primary" href="<?php echo esc_url($services_url); ?>"
+					target="<?php echo esc_attr($services_target); ?>"><?php echo esc_html($services_title); ?></a>
 				<?php
 			endif;
 			?>
 			<?php
 			$write_us_link = get_field('footer_write_us_link', 'options');
 			if ($write_us_link):
+				$write_us_url = $services_link['url'];
+				$write_us_title = $services_link['title'];
+				$write_us_target = $services_link['target'] ? $link['target'] : '_self';
 				?>
-				<a href="<?php echo esc_url($write_us_link); ?>" class="btn--transparent">
-					<?php esc_html_e('SCHREIBEN SIE UNS', 'gruber-pumpen'); ?>
-				</a>
+				<a class="btn--transparent" href="<?php echo esc_url($write_us_url); ?>"
+					target="<?php echo esc_attr($write_us_target); ?>"><?php echo esc_html($write_us_title); ?></a>
 				<?php
 			endif;
 			?>
