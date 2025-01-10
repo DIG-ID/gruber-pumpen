@@ -3,7 +3,7 @@
         <div class="relative">
 
             <?php
-            $image = get_field('homepage_about_us_image');
+            $image = get_field('about_us_image');
             if ($image):
                 echo wp_get_attachment_image($image, 'full', false, array('class' => 'max-w-[491px] max-h-[502px] rounded-[2rem] invisible fade-in'));
             endif;
