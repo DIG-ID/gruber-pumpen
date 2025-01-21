@@ -92,29 +92,7 @@ if ($(".fade-in--n")[0]) {
 		},*/
   });
 }
-/* 
-if ($(".number-animate")[0]) {
-    var numberItems = gsap.utils.toArray('.number-animate');
 
-    numberItems.forEach((numberItem) => {
-        const targetValue = parseInt(numberItem.dataset.target); // Get the target number from a data attribute
-
-        gsap.fromTo(numberItem, {
-            innerText: 0,
-        }, {
-            innerText: targetValue,
-            duration: 1, // Duration of the animation (2 seconds in this case)
-            ease: "power1.out", // Easing function for smooth animation
-            roundProps: "innerText", // Ensures numbers animate smoothly
-            scrollTrigger: {
-                trigger: numberItem,
-                start: 'top 80%', // Trigger when the element reaches 80% from the top of the viewport
-                once: true, // Only trigger the animation once
-                // No "scrub" here, so the animation will not be tied to the scroll position
-            },
-        });
-    });
-} */
 
 if ($(".count-animation")[0]) {
   var numberItems = gsap.utils.toArray(".count-animation");
@@ -133,7 +111,7 @@ if ($(".count-animation")[0]) {
       },
       {
         innerText: targetValue,
-        duration: 1, // Duration of the animation (2 seconds)
+        duration: 2, // Duration of the animation (2 seconds)
         ease: "power1.out", // Easing function for smooth animation
         roundProps: "innerText", // Ensures numbers animate smoothly
         scrollTrigger: {
