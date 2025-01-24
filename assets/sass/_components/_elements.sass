@@ -1,37 +1,8 @@
-/*Page Header*/
-.bg-overlay
-    background: #453D3B
-    opacity: 0.8
-    mix-blend-mode: multiply
-
-.scroll-down-arrows
-    display: inline-block
-    width: 10px
-    height: 16px
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEwIDE2IiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTkgMC44ODc2OTVMNSA2LjY0NDdMMSAwLjg4NzY5NU05IDkuMTExOTlMNSAxNC44NjlMMSA5LjExMTk5IiBzdHJva2U9IndoaXRlIi8+Cjwvc3ZnPgo=")
-    background-size: contain
-    background-repeat: no-repeat
-
-/*FROM AARE*/    
-.wave-separator
-    height: 100px
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 321"><path d="M1229.5 30.5c-171.3 0-169-30.5-310.8-30.5S775.5 30.3 609.9 30.5C440.7 30.3 442.4 0 301.2 0S161.7 29.4 0 30.5V321h1440V7.1c-57 9-92.6 23.5-210.5 23.5Z" style="fill:%23f2faff"/></svg>') repeat-x #0E324A
-    background-size: 100% auto
-    background-position: center 30px
-    overflow: hidden
-
-    &__inverted
-        height: 100px
-        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 321"><path d="M1229.5 30.5c-171.3 0-169-30.5-310.8-30.5S775.5 30.3 609.9 30.5C440.7 30.3 442.4 0 301.2 0S161.7 29.4 0 30.5V321h1440V7.1c-57 9-92.6 23.5-210.5 23.5Z" style="fill:%23f2faff"/></svg>') repeat-x #0E324A
-        background-size: 100% auto
-        background-position: center 30px
-        transform: rotate(180deg)
-        overflow: hidden
-
-        &--light
-            height: 100px
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 321"><path d="M1229.5 30.5c-171.3 0-169-30.5-310.8-30.5S775.5 30.3 609.9 30.5C440.7 30.3 442.4 0 301.2 0S161.7 29.4 0 30.5V321h1440V7.1c-57 9-92.6 23.5-210.5 23.5Z" style="fill:%230E324A"/></svg>') repeat-x #D2E8F7
-            background-size: 100% auto
-            background-position: center 30px
-            transform: rotate(180deg)
-            overflow: hidden
+.box
+  @apply bg-white
+  &--sm
+    @apply py-5 px-7 rounded-[1.25rem]
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.05)
+  &--xl
+    @apply py-14 px-14 rounded-[1.875rem]
+    box-shadow: -6px 6px 50px 0px rgba(0, 0, 0, 0.06)

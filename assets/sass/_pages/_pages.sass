@@ -1,5 +1,21 @@
-@import page-home
-@import page-services
+/*Page Header*/
+
+.page-header
+  @apply flex flex-col justify-end mt-16 md:mt-24 lg:mt-36 pb-4 md:pb-8 lg:pb-28 relative min-h-[180px] md:min-h-[464px]
+  &--title
+    @appy text-blue-shade-4
+  &--background-image
+    @apply bg-blue-shade-4 text-blue-shade-0 bg-cover bg-center bg-no-repeat
+
+
+.bg-overlay
+    background: #063047
+    opacity: 1
+    mix-blend-mode: soft-light
+    &-2
+      background: #063047
+      opacity: .4
+      mix-blend-mode: hard-light
 
 .page-template-default
   .section-page-content-wrapper
@@ -45,3 +61,7 @@
 
     img
       @apply mb-6
+
+
+@import page-home
+@import page-services
