@@ -1,14 +1,10 @@
 
 .btn
-  @apply cursor-pointer font-dm text-base py-2 px-4 font-normal border whitespace-nowrap break-keep transition-all duration-300 ease-in-out relative flex items-center gap-x-2
-  
-  &--primary,
-  &--secundary
-    @apply cursor-pointer font-dm hover:tracking-[0.01rem] 
-    transition: color .2s, letter-spacing .4s ease-out
+  @apply font-dm font-bold text-sm leading-6 uppercase whitespace-nowrap break-keep inline-flex py-4 px-7 rounded-[0.625rem] cursor-pointer transition-all duration-300 ease-in-out [leading-trim:both] [text-edge:cap]
+
 
   &--primary
-    @apply  text-blue-shade-0 bg-orange-shade-1 py-4 px-7 text-sm rounded-xl
+    @apply text-blue-shade-0 bg-orange-shade-1 py-4 px-7 text-sm rounded-xl
     &:hover
       @apply bg-orange-shade-2 text-blue-shade-0 border-blue-shade-3
     &:focus
@@ -16,7 +12,7 @@
     &:active
       @apply bg-orange-shade-3 border-blue-shade-2
 
-  &--secundary
+  &--secondary
     @apply text-blue-shade-0 bg-blue-shade-3 py-4 px-7 text-sm rounded-xl
     &:hover
       @apply brightness-150

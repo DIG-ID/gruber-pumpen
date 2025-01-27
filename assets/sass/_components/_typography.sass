@@ -1,29 +1,31 @@
 .text-title
-  @apply font-outfit text-[5.25rem] font-bold leading-[84px]
-  font-feature-settings: 'ss02' on
+  @apply font-outfit font-bold text-[2.125rem] md:text-[4rem] xl:text-[5.25rem] leading-[2.75rem] md:leading-[4.625rem] xl:leading-[84px] [leading-trim:both] [text-edge:cap]
 
 .text-title-h2
-  @apply [leading-trim:both] [text-edge:cap] font-outfit text-[3rem] leading-[54px] font-bold [font-feature-settings:'ss02'_on]
+  @apply font-outfit font-semibold text-[1.875rem] md:text-[3rem] xl:text-[3rem] leading-[2.125rem] md:leading-[3.375rem] xl:leading-[3.375rem] [leading-trim:both] [text-edge:cap]
 
 .text-title-h3
-  @apply font-outfit font-normal text-[2.25rem] tracking-[0.24px] leading-[46px]
-  font-feature-settings: 'ss02' on
+  @apply font-outfit font-semibold text-[1.5rem] md:text-[2.25rem] xl:text-[2.25rem] leading-[2.875rem] md:leading-[2.875rem] xl:leading-[2.875rem] [leading-trim:both] [text-edge:cap]
 
 .text-title-h4
-  @apply font-outfit text-[24px] font-semibold leading-[34px] tracking-[0.24px]
-  font-feature-settings: 'ss02' on
+  @apply font-outfit font-semibold text-[1rem] md:text-[1.5rem] xl:text-[1.5rem] leading-[2.125rem] md:leading-[2.125rem] xl:leading-[2.125rem] [leading-trim:both] [text-edge:cap]
+
+.text-subtitle
+  @apply font-outfit font-medium text-[0.75rem] md:text-[1.25rem] xl:text-[1.25rem] leading-[0.875rem] md:leading-[1.875rem] xl:leading-[1.875rem] [leading-trim:both] [text-edge:cap]
+
+.text-overline
+ @apply font-outfit font-medium text-[0.875rem] md:text-[1.125rem] xl:text-[1.125rem] leading-[1.75rem] md:leading-[1.75rem] xl:leading-[1.75rem] [leading-trim:both] [text-edge:cap]
+
+.text-p
+  &--1
+    @apply font-dm font-bold text-[0.875rem] md:text-[1.125rem] xl:text-[1.125rem] leading-[1.25rem] md:leading-[1.75rem] xl:leading-[1.75rem] text-blue-shade-2 [leading-trim:both] [text-edge:cap]
+  &--2
+    @apply font-dm font-normal text-[0.875rem] md:text-[1rem] xl:text-[1rem] leading-[1.125rem] md:leading-[1.625rem] xl:leading-[1.625rem] text-blue-shade-2 [leading-trim:both] [text-edge:cap]
+
 
 .text-description
   @apply font-outfit font-light text-[18px] md:text-lg tracking-[-0.14px] xl:tracking-[-0.24px]
   font-feature-settings: 'ss02' on
-
-.text-subtitle,
-.text-description-small
-  @apply font-outfit font-normal text-sm xl:text-2xl xl:tracking-[1.92px]
-
-.text-p1
-  @apply [leading-trim:both] [text-edge:cap] font-dm text-base leading-[28px] text-blue-shade-2
-
 .text-description
   @apply text-blue-shade-2 leading-[26px] [leading-trim:both] [text-edge:cap] text-[16px] font-normal not-italic
 
@@ -33,18 +35,6 @@
   @apply font-outfit font-normal text-xs
 
 
-.text-body
-  @apply font-dm font-normal text-sm tracking-[0.14px]
-  &--serif
-    @apply font-outfit font-normal text-sm md:text-lg xl:text-2xl leading-[19px] lg:leading-[39px] tracking-[0.14px] lg:tracking-[0.24px] 
-    font-feature-settings: 'ss02' on
-  p
-    @apply text-blue-shade-2 [leading-trim:both] [text-edge:cap] font-dm text-base font-bold leading-[28px]
-
-    &:last-of-type
-      @apply mb-0
-  &--subtitle
-    @apply font-bold
 
 
 
