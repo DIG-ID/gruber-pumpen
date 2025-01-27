@@ -103,7 +103,7 @@
 			</div>
 
 			<p class="hidden lg:inline-block text-white mt-16"><?php the_field('footer_any_questions', 'options') ?></p>
-			<a class="hidden lg:inline-block bot-header btn--primary">
+			<a class="hidden lg:inline-flex btn btn--primary">
 				<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 			</a>
 			<div class="hidden lg:inline-block">
@@ -147,11 +147,11 @@
 		<!-- Mobile socials -->
 		<div class="row-span-1 col-span-2 gap-4 p-16 lg:hidden flex flex-col justify-center items-center">
 			<p class=" text-white"><?php the_field('footer_any_questions', 'options') ?></p>
-			<a class="bot-header btn--primary">
+			<a class="bot-header btn btn--primary">
 				<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 			</a>
 			<div class="lg:hidden">
-				<?php do_action('socials'); ?>
+				<?php do_action( 'socials' ); ?>
 			</div>
 		</div>
 

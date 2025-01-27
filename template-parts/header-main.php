@@ -88,7 +88,7 @@
 				$booking_url = get_field('header_booking_url', 'options');
 				if ($booking_url):
 					?>
-					<a href="<?php echo esc_url($booking_url); ?>" class="hidden md:inline-block bot-header btn--primary">
+					<a href="<?php echo esc_url($booking_url); ?>" class="hidden md:inline-block bot-header btn btn--primary">
 						<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 					</a>
 					<?php
