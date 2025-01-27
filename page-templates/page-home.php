@@ -10,7 +10,7 @@ if ( have_posts() ) :
 		do_action( 'before_main_content' );
 		get_template_part( 'template-parts/pages/home/intro');
 		get_template_part( 'template-parts/pages/home/about-us');
-		get_template_part( 'template-parts/pages/home/why-us');
+		get_template_part( 'template-parts/components/why-us');
 		get_template_part( 'template-parts/pages/home/services-and-brands');
 		get_template_part( 'template-parts/pages/home/info-bar');
 		get_template_part( 'template-parts/pages/home/trainings');
