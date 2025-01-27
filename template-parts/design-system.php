@@ -13,7 +13,7 @@
 			</div>
 			<div class="inline-flex flex-col justify-center text-center">
 				<span class="bg-blue-shade-4 text-white py-4 px-8 mb-4">Theme Color 3</span>
-				#063047 <br> .bg-blue-shade-3
+				#063047 <br> .bg-blue-shade-4
 			</div>
 			<div class="inline-flex flex-col justify-center text-center">
 				<span class="bg-blue-shade-1 text-blue-shade-4 py-4 px-8 mb-4">Theme Color 4</span>
@@ -80,11 +80,20 @@
 				<span class="text-blue-shade-1 whitespace-nowrap break-keep">.btn .btn--transparent</span>
 			</div>
 			<div class="col bg-blue-shade-1 flex flex-col justify-center items-center gap-y-3 p-8">
-
+				<a class="btn--icon btn--icon__light" href=""><i class="fa-brands fa-instagram"></i></a>
+				<a class="btn--icon btn--icon__light" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+				.btn--icon .btn--icon__light
+				<a class="btn--icon btn--icon__dark" href=""><i class="fa-brands fa-instagram"></i></a>
+				<a class="btn--icon btn--icon__dark" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+				.btn--icon .btn--icon__dark
 			</div>
 			<div class="col flex flex-col justify-center items-center gap-y-3 p-8">
-
-</div>
+				<div class="flex gap-4">
+					<a class="btn--arrow" href=""><i class="fa-solid fa-chevron-left"></i></a>
+					<a class="btn--arrow" href=""><i class="fa-solid fa-chevron-right"></i></a>
+				</div>
+				.btn--arrow
+			</div>
 		</div>
 	</section>
 </div>

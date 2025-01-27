@@ -1,31 +1,57 @@
 
 .btn
   @apply font-dm font-bold text-sm leading-6 uppercase whitespace-nowrap break-keep inline-flex py-4 px-7 rounded-[0.625rem] cursor-pointer transition-all duration-300 ease-in-out [leading-trim:both] [text-edge:cap]
-
-
   &--primary
-    @apply text-blue-shade-0 bg-orange-shade-1 py-4 px-7 text-sm rounded-xl
+    @apply text-blue-shade-0 bg-orange-shade-1
     &:hover
-      @apply bg-orange-shade-2 text-blue-shade-0 border-blue-shade-3
+      @apply bg-orange-shade-2 text-blue-shade-0
     &:focus
-      @apply outline-blue-shade-3 border-blue-shade-3
+      @apply bg-orange-shade-2 text-blue-shade-0
     &:active
-      @apply bg-orange-shade-3 border-blue-shade-2
-
+      @apply bg-orange-shade-3
   &--secondary
-    @apply text-blue-shade-0 bg-blue-shade-3 py-4 px-7 text-sm rounded-xl
+    @apply text-blue-shade-0 bg-blue-shade-3
     &:hover
-      @apply brightness-150
+      @apply bg-[#0B527A]
     &:focus
-      @apply outline-blue-shade-3 border-blue-shade-3
+      @apply bg-[#0B527A]
     &:active
-      @apply bg-orange-shade-3 border-blue-shade-2
-
+      @apply bg-blue-shade-4
   &--transparent
-    @apply text-blue-shade-0 border border-blue-shade-0 bg-blue-shade-3 py-4 px-7 text-sm rounded-xl
+    @apply text-blue-shade-0 border border-blue-shade-0 bg-blue-shade-3
     &:hover
-      @apply brightness-150
+      @apply bg-[#0B527A]
     &:focus
-      @apply outline-blue-shade-3 border-blue-shade-3
+      @apply bg-[#0B527A]
     &:active
-      @apply bg-orange-shade-3 border-blue-shade-2
+      @apply bg-blue-shade-4
+  &--icon
+    @apply py-2 px-3 rounded-[0.625rem] transition-all duration-300 ease-in-out
+    &:hover
+      @apply cursor-pointer
+    &__light
+      @apply bg-white text-blue-shade-4
+      &:hover
+        @apply bg-blue-shade-3 text-blue-shade-1
+      &:focus
+        @apply bg-blue-shade-4 text-blue-shade-1
+      &:active
+        @apply bg-blue-shade-4 text-blue-shade-1
+    &__dark
+      @apply bg-[#1F2432] text-blue-shade-1
+      &:hover
+        @apply bg-blue-shade-3 text-blue-shade-1
+      &:focus
+        @apply bg-blue-shade-3 text-blue-shade-1
+      &:active
+        @apply bg-white text-blue-shade-3
+  &--arrow
+    @apply rounded-full flex justify-center items-center bg-white text-blue-shade-3 border border-blue-shade-3 cursor-pointer w-8 h-8 text-sm transition-all duration-300 ease-in-out
+    i
+      @apply transition-all duration-300 ease-in-out
+    &:hover
+      @apply bg-blue-shade-3 text-blue-shade-0
+    &:focus
+      @apply bg-blue-shade-3 text-blue-shade-0
+    &:active
+      @apply bg-blue-shade-4 text-blue-shade-0

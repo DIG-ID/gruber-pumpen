@@ -114,6 +114,10 @@ function gruber_pumpen_theme_enqueue_styles() {
 
 	wp_enqueue_script( 'jquery', false, array(), $theme_version, true);
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/main.js', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'font-awesome-kit', 'https://kit.fontawesome.com/eb1cd80e07.js', array(), $theme_version, true );
+
+	wp_script_add_data( 'font-awesome-kit', 'crossorigin', 'anonymous' );
+
 	if ( is_page_template( 'page-templates/page-home.php' ) || is_page_template( 'page-templates/page-arrival-contacts.php' ) || is_admin() ) :
 		wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/assets/js/google-maps.js', array( 'jquery' ), $theme_version, true );
 		wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0&callback=initMap', array(), $theme_version, true );
