@@ -10,7 +10,7 @@ endif;
 ?>
 
 	<div class="theme-container relative z-10">
-		<h1 class="page-header--title py-4"><?php the_field( 'page_header_title' ) ?></h1>
+		<h1 class="page-header--title xl:py-4"><?php the_field( 'page_header_title' ) ?></h1>
 		<?php do_action( 'breadcrumbs' ); ?>
 	</div>
 </section>

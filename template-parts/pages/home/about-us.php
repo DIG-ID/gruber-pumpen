@@ -1,7 +1,6 @@
-<section class="section-about-us py-28 px-32 overflow-hidden">
-    <div class="theme-container flex gap-8">
-        <div class="relative">
-
+<section class="section-about-us py-28 overflow-hidden">
+    <div class="theme-container theme-grid">
+        <div class="col-span-2 md:col-span-6 xl:col-span-5 col-start-1 md:col-start-1 xl:col-start-2 relative">
             <?php
             $image = get_field('about_us_image');
             if ($image):
@@ -25,7 +24,7 @@
                 <?php endif; ?>
             </span>
         </div>
-        <div class="flex flex-col max-w-[575px]">
+        <div class="col-span-2 md:col-span-6 xl:col-span-6 max-w-[575px]">
             <div class="flex items-center gap-4  invisible fade-in">
                 <?php
                 $about_eyebrow = get_field('about_us_eyebrow');
@@ -50,7 +49,17 @@
                 <?php
                 $about_us_description = get_field('about_us_description');
                 if ($about_us_description): ?>
-                    <p class="text-p1 py-4 invisible fade-in"><?php echo $about_us_description; ?></p>
+                    <p class="text-p1 pt-4 pb-8 invisible fade-in"><?php echo $about_us_description; ?></p>
+                <?php endif; ?>
+
+                <?php
+                $about_us_link = get_field('about_us_link');
+
+                if ($about_us_link):
+                    $about_us_link_target = $about_us_link['target'] ? $about_us_link['target'] : '_self';
+                    ?>
+                    <a class="btn btn--secondary uppercase inline-block" href="<?php echo esc_url($about_us_link['url']); ?>"
+                        target="<?php echo esc_attr($about_us_link_target); ?>"><?php echo esc_html($about_us_link['title']); ?></a>
                 <?php endif; ?>
             </div>
         </div>

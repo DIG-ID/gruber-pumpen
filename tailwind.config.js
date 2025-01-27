@@ -15,13 +15,6 @@ module.exports = {
       outfit: [ 'Outfit', 'sans-serif'],
       dm: ['DM Sans', 'sans-serif']
     },
-    screens: {
-      xs: '375px',
-      sm: '480px',
-      md: '768px',
-      lg: '1094px',
-      xl: '1440px',
-    },
     extend: {
       letterSpacing: {
         //wide: '.038em',

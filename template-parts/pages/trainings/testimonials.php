@@ -1,4 +1,4 @@
-<section class="testimonials-section py-40 px-12 bg-blue-shade-0">
+<section class="testimonials-section py-24 md:py-40 bg-blue-shade-0">
     <div class="theme-container theme-grid">
         <div class="col-span-2 md:col-span-6 xl:col-span-12">
             <div class="flex items-center justify-center gap-4 invisible fade-in">
@@ -19,7 +19,7 @@
             <?php endif; ?>
         </div>
         <div class="col-span-2 md:col-span-6 xl:col-span-12">
-            <div class="theme-grid mt-24">
+            <div class="theme-grid mt-12 md:mt-24">
                 <?php
                 $testimonials = get_field('testimonials_list');
                 foreach ($testimonials as $testimonial):
@@ -28,16 +28,16 @@
                     $review = $testimonial['quote'];
                     if ($testimonial):
                         ?>
-                        <div class="testimonial-box col-span-2 md:col-span-4 xl:col-span-4 bg-white rounded-[20px] flex flex-col justify-between px-12 py-6 invisible fade-in relative">
+                        <div class="testimonial-box col-span-2 md:col-span-4 xl:col-span-4 bg-white rounded-[20px] flex flex-col justify-between mb-14 md:mb-12 xl:mb-0 px-9 md:px-10 py-6 md:py-10 invisible fade-in relative">
                             <p
-                                class="text-blue-shade-2 p-4 [leading-trim:both] [text-edge:cap] font-dm-sans text-base italic font-normal leading-[26px]">
+                                class="text-p--2 italic leading-[26px]">
                                 <?php echo $review ?>
                             </p>
                             <div>
                                 <h4 class="text-title-h4 mt-4 text-blue-shade-4">
                                     <?php echo $name ?>
                                 </h4>
-                                <p class="text-blue-shade-2 text-sm font-normal leading-[24px]">
+                                <p class="text-p--2">
                                     <?php echo $role ?>
                                 </p>
                             </div>

@@ -3,9 +3,9 @@
 
 		<!-- Services and Products -->
 		<div
-			class="services-and-brands-container relative flex flex-col gap-36 bg-blue-shade-0 py-44 px-56 rounded-[50px]">
+			class="services-and-brands-container theme-grid relative flex flex-col gap-36 bg-blue-shade-0 py-44 rounded-[50px]">
 			<!-- Services -->
-			<div class="flex flex-col gap-12">
+			<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col gap-12">
 				<div class="flex items-center gap-4 invisible fade-in">
 					<hr class="border border-orange-shade-1 w-[4.5rem]" />
 					<?php
@@ -48,7 +48,7 @@
 			</div>
 
 			<!-- Products -->
-			<div class="flex flex-col gap-12">
+			<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col gap-12">
 				<?php
 				$products_title = get_field('products_title');
 				if ($products_title): ?>
@@ -83,7 +83,7 @@
 
 
 			<!-- Brands -->
-			<div class="flex flex-col items-center gap-12 pt-32">
+			<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col items-center gap-12 pt-32">
 				<div class="flex items-center gap-4 invisible fade-in">
 					<hr class="border border-orange-shade-1 w-[4.5rem]" />
 					<?php
