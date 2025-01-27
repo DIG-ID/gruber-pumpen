@@ -19,7 +19,7 @@
 				$services_title = $services_link['title'];
 				$services_target = $services_link['target'] ? $link['target'] : '_self';
 				?>
-				<a class="btn--primary" href="<?php echo esc_url($services_url); ?>"
+				<a class="btn btn--primary" href="<?php echo esc_url($services_url); ?>"
 					target="<?php echo esc_attr($services_target); ?>"><?php echo esc_html($services_title); ?></a>
 				<?php
 			endif;
@@ -31,7 +31,7 @@
 				$write_us_title = $services_link['title'];
 				$write_us_target = $services_link['target'] ? $link['target'] : '_self';
 				?>
-				<a class="btn--transparent" href="<?php echo esc_url($write_us_url); ?>"
+				<a class="btn btn--transparent" href="<?php echo esc_url($write_us_url); ?>"
 				target="<?php echo esc_attr($write_us_target); ?>"><?php echo esc_html($write_us_title); ?></a>
 				<?php
 			endif;
