@@ -1,26 +1,29 @@
-<section class="section-homepage-intro flex items-end bg-black  text-blue-shade-0 min-h-[464px] mt-32 relative py-32 px-8">
-    <div class="video-background">
-        <iframe
+<section class="section-homepage-intro flex items-end bg-black  text-blue-shade-0 min-h-[464px] mt-32 relative py-32">
+
+    <div class="video-background absolute inset-0 w-full h-full overflow-hidden">
+        <iframe 
+            class="absolute top-0 left-0 w-full h-full object-cover"
             src="https://player.vimeo.com/video/1041960866?title=0&byline=0&portrait=0&badge=0&autopause=0&controls=0&background=1&dnt=1"
             frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
             title="Video Header">
         </iframe>
     </div>
 
+
     <script src="https://player.vimeo.com/api/player.js"></script>
 
 
-    <div class="relative">
-        <div class="flex flex-col w-full mx-24">
-            <div class="flex items-center gap-4  invisible fade-in--noscroll">
+    <div class="relative theme-container theme-grid">
+        <div class=" col-span-2 md:col-span-6 xl:col-span-12 flex flex-col w-full xl:px-24">
+            <div class="flex items-center gap-4 invisible fade-in--noscroll">
                 <?php
                 $intro_eyebrow = get_field('intro_eyebrow');
                 if ($intro_eyebrow): ?>
-                    <h4 class="text-orange-shade-1 uppercase"><?php echo $intro_eyebrow; ?></h4>
+                    <h4 class="text-orange-shade-1 text-eyebrow uppercase"><?php echo $intro_eyebrow; ?></h4>
                 <?php endif; ?>
                 <hr class="border border-orange-shade-1  w-[4.5rem]" />
             </div>
-            <div class="page-header--title max-w-[60%]  invisible fade-in--noscroll">
+            <div class="page-header--title xl:max-w-[60%] invisible fade-in--noscroll">
                 <?php
                 $intro_title = get_field('intro_title');
                 if ($intro_title): ?>
@@ -28,7 +31,7 @@
                 <?php endif; ?>
             </div>
 
-            <div class="page-header--description invisible fade-in--noscroll w-1/3 pt-4">
+            <div class="page-header--description invisible fade-in--noscroll md:w-2/3 xl:w-1/3 pt-4">
                 <?php
                 $intro_description = get_field('intro_description');
                 if ($intro_description):

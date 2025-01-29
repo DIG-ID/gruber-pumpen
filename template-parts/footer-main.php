@@ -42,9 +42,9 @@
 
 	<?php if (is_front_page()): ?>
 
-		<section class="testimonials-section py-40 px-12 bg-blue-shade-0">
-			<div class="flex flex-col gap-6">
-				<div class="flex items-center justify-center gap-4 invisible fade-in">
+		<section class="testimonials-section py-40 bg-blue-shade-0">
+			<div class="theme-container theme-grid flex flex-col gap-6">
+				<div class="col-span-2 md:col-span-6 xl:col-span-12 flex items-center justify-center gap-4 invisible fade-in">
 					<hr class="border border-orange-shade-1 w-[4.5rem]" />
 					<?php
 					$testimonials_eyebrow = get_field('footer_testimonials_eyebrow', 'options');
@@ -53,16 +53,18 @@
 					<?php endif; ?>
 					<hr class="border border-orange-shade-1  w-[4.5rem]" />
 				</div>
-				<?php
-				$testimonials_title = get_field('footer_testimonials_title', 'options');
-				if ($testimonials_title): ?>
-					<h2 class="text-title-h2 text-center text-blue-shade-4 invisible fade-in">
-						<?php echo $testimonials_title; ?>
-					</h2>
-				<?php endif; ?>
+				<div class="col-span-2 md:col-span-6 xl:col-span-12">
+					<?php
+					$testimonials_title = get_field('footer_testimonials_title', 'options');
+					if ($testimonials_title): ?>
+						<h2 class="text-title-h2 text-center text-blue-shade-4 invisible fade-in">
+							<?php echo $testimonials_title; ?>
+						</h2>
+					<?php endif; ?>
+				</div>
 			</div>
 
-			<div class="flex gap-8 justify-center mt-24">
+			<div class="theme-container theme-grid flex justify-center mt-24">
 				<?php
 				$testimonials = get_field('footer_testimonials_list', 'options');
 				foreach ($testimonials as $testimonial):
@@ -71,7 +73,7 @@
 					$review = $testimonial['testimonial'];
 					if ($testimonial):
 						?>
-						<div class="testimonials-card flex flex-col justify-between px-12 py-6 invisible fade-in">
+						<div class="testimonials-card col-span-2 md:col-span-6 xl:col-span-6 px-12 py-6 mb-12 xl:mb-14 invisible fade-in">
 							<p
 								class="text-blue-shade-2 p-4 [leading-trim:both] [text-edge:cap] font-dm-sans text-base italic font-normal leading-[26px]">
 								<?php echo $review ?>
