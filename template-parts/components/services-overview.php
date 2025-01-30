@@ -33,7 +33,7 @@
 		$services_args = array(
 			'post_type'   => 'service',
 			'post_status' => 'publish',
-			'nopaging'    => true,
+			'posts_per_page' => 4,
 			'orderby'     => 'date',
 			'order'       => 'ASC',
 		);

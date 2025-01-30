@@ -25,7 +25,7 @@
         $products_args = array(
             'post_type'   => 'product',
             'post_status' => 'publish',
-            'nopaging'    => true,
+            'posts_per_page' => 3,
             'orderby'     => 'date',
             'order'       => 'ASC',
         );
