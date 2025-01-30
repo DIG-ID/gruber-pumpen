@@ -40,7 +40,7 @@
                     <?php
                     $image = get_post_thumbnail_id(); 
                     if ($image):
-                        echo wp_get_attachment_image($image, 'full', false, array('class' => 'max-w-[294px] fade-in'));
+                        echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-full max-w-[294px] fade-in'));
                     endif;
                     ?>
 
