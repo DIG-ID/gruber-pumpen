@@ -3,7 +3,7 @@
 		<div class="col-span-2 md:col-span-4 xl:col-span-12 col-start-1 md:col-start-2 xl:col-start-1 flex flex-col items-center">
 			<div class="flex items-center gap-4 invisible fade-in">
 				<hr class="border border-orange-shade-1 w-[4.5rem]" />
-				<h3 class="text-orange-shade-1 text-center uppercase"><?php the_field( 'why_us_eyebrow', 'options' ); ?></h3>
+				<h3 class="text-orange-shade-1 text-center text-eyebrow"><?php the_field( 'why_us_eyebrow', 'options' ); ?></h3>
 				<hr class="border border-orange-shade-1 w-[4.5rem]" />
 			</div>
 			<h2 class="text-title-h2 text-blue-shade-4 py-8 text-center invisible fade-in"><?php the_field( 'why_us_title', 'options' ); ?></h2>

@@ -1,4 +1,4 @@
-<section class="section-about-us py-9 md:py-20 xl:py-28 overflow-hidden">
+<section class="section-about-us py-9 md:py-20 xl:pt-44 xl:pb-28 overflow-hidden">
     <div class="theme-container grid grid-cols-4 md:grid-cols-6 xl:grid-cols-12 gap-x-6">
         <div class="col-span-3 md:col-span-4 xl:col-span-5 col-start-2 md:col-start-2 xl:col-start-2 relative mb-14 xl:mb-0">
             <?php
