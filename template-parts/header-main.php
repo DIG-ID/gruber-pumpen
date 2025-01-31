@@ -11,50 +11,50 @@
 		aria-label="<?php esc_attr_e('Main menu', 'gruber-pumpen'); ?>">
 
 		<!-- Top Information Bar -->
-		<div class="hidden sm:flex top-section justify-start lg:justify-end gap-8 items-end px-12 py-2">
+		<div class="top-section">
+			<div class="theme-container theme-grid min-h-[45px]">
+				<!-- Left Text -->
+				<div class="col-span-1 md:col-span-3 lg:col-span-2 xl:col-span-6 flex flex-row items-center z-10 grow">
+					<p class="text-[#E2ECF2] font-dm text-[10px] md:text-[12px] xl:text-[16px] font-medium leading-[28px]">
+						<?php the_field('header_subtitle', 'options') ?>
+					</p>
+				</div>
 
-			<!-- Left Text -->
-			<div class="z-10 grow">
-				<p class="text-white text-sm lg:text-center">
-					<?php the_field('header_subtitle', 'options') ?>
-				</p>
-			</div>
+				<!-- Right Content -->
+				<div class="col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-6 flex items-center justify-end grow">
+					<?php
+					$schedules = get_field('header_schedule', 'options');
+					foreach ($schedules as $schedule):
+						$title = $schedule['title'];
+						$description = $schedule['description'];
+						if ($title && $description):
+							?>
+							<p class="hidden lg:inline-block font-dm text-blue-shade-2 font-bold text-[10px] leading-[26px]">
+								<?php echo $title ?>:&nbsp;
+							</p>
+							<p class="hidden lg:inline-block font-dm text-blue-shade-2 text-[10px] leading-[26px] mr-3">
+								<?php echo $description ?>
+							</p>
+							<?php
+						endif;
+					endforeach;
+					?>
 
-			<!-- Right Content -->
-			<div class="flex gap-2 justify-end xl:justify-center grow">
-				<?php
-				$schedules = get_field('header_schedule', 'options');
-				foreach ($schedules as $schedule):
-					$title = $schedule['title'];
-					$description = $schedule['description'];
-					if ($title && $description):
-						?>
-						<p class="hidden lg:inline-block text-blue-shade-4 font-bold text-[10px]">
-							<?php echo $title ?>:
-						</p>
-						<p class="hidden lg:inline-block text-blue-shade-4 text-[10px]">
-							<?php echo $description ?>
-						</p>
-						<?php
-					endif;
-				endforeach;
-				?>
-
-				<p class="flex gap-2 text-blue-shade-4 text-sm font-bold ml-8 z-10">
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M3.21778 6.92444C4.49778 9.44 6.56 11.4933 9.07556 12.7822L11.0311 10.8267C11.2711 10.5867 11.6267 10.5067 11.9378 10.6133C12.9333 10.9422 14.0089 11.12 15.1111 11.12C15.6 11.12 16 11.52 16 12.0089V15.1111C16 15.6 15.6 16 15.1111 16C6.76444 16 0 9.23556 0 0.888889C0 0.4 0.4 0 0.888889 0H4C4.48889 0 4.88889 0.4 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"
-							fill="#063047" />
-					</svg>
-					<?php the_field('header_phone', 'options') ?>
-				</p>
+					<p class="gap-2 text-blue-shade-4 font-outfit text-sm font-medium items-center ml-8 z-10 hidden sm:flex">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M3.21778 6.92444C4.49778 9.44 6.56 11.4933 9.07556 12.7822L11.0311 10.8267C11.2711 10.5867 11.6267 10.5067 11.9378 10.6133C12.9333 10.9422 14.0089 11.12 15.1111 11.12C15.6 11.12 16 11.52 16 12.0089V15.1111C16 15.6 15.6 16 15.1111 16C6.76444 16 0 9.23556 0 0.888889C0 0.4 0.4 0 0.888889 0H4C4.48889 0 4.88889 0.4 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"
+								fill="#063047" />
+						</svg>
+						<?php the_field('header_phone', 'options') ?>
+					</p>
+				</div>
 			</div>
 		</div>
 
 
 		<!-- Main Header Wrapper -->
-		<div
-			class="header-wrapper relative flex items-center justify-between lg:justify-center px-6 gap-4 md:px-8 xl:px-16 z-40 xl:z-auto">
+		<div class="header-wrapper theme-container relative flex items-center justify-between lg:justify-center z-40 xl:z-auto">
 
 			<!-- Left Side: Logo and Main Menu -->
 			<div class="flex justify-start lg:justify-center gap-8 items-center">
@@ -83,12 +83,12 @@
 			</div>
 
 			<!-- Right Side: Contact and Mobile Menu Toggle -->
-			<div class="flex justify-end items-center gap-8 md:gap-16 xl:z-50">
+			<div class="block text-right w-full xl:z-50">
 				<?php
 				$booking_url = get_field('header_booking_url', 'options');
 				if ($booking_url):
 					?>
-					<a href="<?php echo esc_url($booking_url); ?>" class="hidden md:inline-block bot-header btn btn--primary">
+					<a href="<?php echo esc_url($booking_url); ?>" class="!hidden md:!inline-block bot-header btn btn--primary">
 						<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 					</a>
 					<?php
@@ -96,7 +96,7 @@
 				?>
 
 				<!-- Mobile Menu Toggle -->
-				<div class="menu-toggle-wrapper item-end lg:hidden">
+				<div class="menu-toggle-wrapper inline-block item-end lg:hidden">
 					<button class="menu-toggle">
 						<span class="menu-toggle__bars">
 							<span class="bar"></span>

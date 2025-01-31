@@ -2,7 +2,7 @@
     @apply fixed
 
     .top-section 
-        @apply px-2 text-xs md:px-6 md:text-sm xl:px-12 lg:text-base md:after:clip-medium
+        @apply text-xs md:text-sm lg:text-base md:after:clip-medium
         position: relative
         background-color: $blue-shade-0
         &::before
@@ -81,6 +81,10 @@
     .site-branding
         svg
             @apply w-[180px] xl:w-[230px]
+
+.navbar-brand.custom-logo-link
+    & > svg
+        @apply xl:-ml-6
 
 #main-menu
     @apply flex flex-row justify-around items-center
