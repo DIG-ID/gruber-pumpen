@@ -6,7 +6,7 @@
 		
 		<?php get_template_part( 'template-parts/components/products-overview'); ?> 
 
-		<div class="theme-container theme-grid relative flex flex-col gap-36 bg-blue-shade-0 xl:py-44 rounded-[50px]">
+		<div class="hidden flex-col gap-36 bg-blue-shade-0 xl:py-44 rounded-[50px]">
 
 			<!-- Brands -->
 			<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col items-center gap-12 pt-32">

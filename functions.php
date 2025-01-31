@@ -24,6 +24,8 @@ function gruber_pumpen_theme_setup() {
 
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
+	add_image_size('training-overview-img', 250, 280, array('center', 'center'));
+
 	add_image_size('training-featured-img', 540, 425, array('center', 'center'));
 
 }

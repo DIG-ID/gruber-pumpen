@@ -1,42 +1,44 @@
 <footer class="footer-main">
 	<!-- Write US -->
-	<section class="flex flex-col lg:flex-row justify-between gap-12 items-start lg:items-center bg-blue-shade-3 p-16">
-		<div class="flex flex-col gap-6">
-			<div class="flex items-center gap-4 ">
-				<h4 class="text-orange-shade-1"><?php the_field('footer_write_us_subtitle', 'options'); ?></h4>
-				<hr class="border border-orange-shade-1  w-[4.5rem]" />
+	<section class="contact-bar bg-blue-shade-3">
+		<div class="theme-container theme-grid pt-14 pb-16 flex flex-row items-center justify-between">
+			<div class="col-span-2 md:col-span-6 xl:col-span-6 mb-10 xl:mb-0">
+				<div class="flex items-center mb-3">
+					<h4 class="text-orange-shade-1"><?php the_field('footer_write_us_subtitle', 'options'); ?></h4>
+					<hr class="border border-orange-shade-1  w-[4.5rem]" />
+				</div>
+				<h2 class="text-white text-5xl font-outfit font-bold">
+					<?php the_field('footer_write_us_title', 'options'); ?>
+				</h2>
 			</div>
-			<h2 class="text-white text-5xl font-outfit font-bold">
-				<?php the_field('footer_write_us_title', 'options'); ?>
-			</h2>
-		</div>
 
-		<div class="flex flex-col md:flex-row gap-6">
-			<?php
-			$services_link = get_field('footer_write_us_services', 'options');
-			if ($services_link):
-				$services_url = $services_link['url'];
-				$services_title = $services_link['title'];
-				$services_target = $services_link['target'] ? $link['target'] : '_self';
-				?>
-				<a class="btn btn--primary" href="<?php echo esc_url($services_url); ?>"
-					target="<?php echo esc_attr($services_target); ?>"><?php echo esc_html($services_title); ?></a>
+			<div class="col-span-2 md:col-span-6 xl:col-span-6 xl:text-right">
 				<?php
-			endif;
-			?>
-			<?php
-			$write_us_link = get_field('footer_write_us_link', 'options');
-			if ($write_us_link):
-				$write_us_url = $services_link['url'];
-				$write_us_title = $services_link['title'];
-				$write_us_target = $services_link['target'] ? $link['target'] : '_self';
+				$services_link = get_field('footer_write_us_services', 'options');
+				if ($services_link):
+					$services_url = $services_link['url'];
+					$services_title = $services_link['title'];
+					$services_target = $services_link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="btn btn--primary mr-6" href="<?php echo esc_url($services_url); ?>"
+						target="<?php echo esc_attr($services_target); ?>"><?php echo esc_html($services_title); ?></a>
+					<?php
+				endif;
 				?>
-				<a class="btn btn--transparent" href="<?php echo esc_url($write_us_url); ?>"
-				target="<?php echo esc_attr($write_us_target); ?>"><?php echo esc_html($write_us_title); ?></a>
 				<?php
-			endif;
-			?>
+				$write_us_link = get_field('footer_write_us_link', 'options');
+				if ($write_us_link):
+					$write_us_url = $services_link['url'];
+					$write_us_title = $services_link['title'];
+					$write_us_target = $services_link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="btn btn--transparent" href="<?php echo esc_url($write_us_url); ?>"
+					target="<?php echo esc_attr($write_us_target); ?>"><?php echo esc_html($write_us_title); ?></a>
+					<?php
+				endif;
+				?>
 
+			</div>
 		</div>
 	</section>
 
