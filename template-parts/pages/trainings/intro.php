@@ -1,4 +1,4 @@
-<section class="section-intro pt-10 md:pt-20 xl:pt-24 overflow-hidden bg-blue-shade-0">
+<section class="section-intro pt-10 md:pt-20 xl:pt-24 pb-24 xl:pb-8 overflow-hidden bg-blue-shade-0">
     <div class="theme-container theme-grid">
         <!-- Intro -->
         <div class="col-span-2 md:col-span-6 xl:col-span-12 theme-grid flex justify-between invisible fade-in--noscroll">

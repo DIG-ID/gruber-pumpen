@@ -60,7 +60,7 @@
                         </div>
                         <div class="col-span-2 md:col-span-5">
                             <h2 class="text-title-h4 text-blue-shade-4 text-left mb-5 md:mb-6 fade-in"><?php the_field('title'); ?></h2>
-                            <p class="text-p--2 invisible fade-in"><?php the_field('text'); ?></p>
+                            <div class="text-p--2 invisible fade-in"><?php the_field('text_complete'); ?></div>
                             <a class="btn btn--secondary uppercase inline-block mt-10" href="<?php the_permalink(); ?>">
                             <?php esc_html_e('MEHR ERFAHREN', 'gruber-pumpen'); ?>
                             </a>
