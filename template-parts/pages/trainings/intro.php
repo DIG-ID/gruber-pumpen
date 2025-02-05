@@ -1,4 +1,4 @@
-<section class="section-intro pt-10 md:pt-20 xl:py-24 overflow-hidden bg-blue-shade-0">
+<section class="section-intro pt-10 md:pt-20 xl:pt-24 overflow-hidden bg-blue-shade-0">
     <div class="theme-container theme-grid">
         <!-- Intro -->
         <div class="col-span-2 md:col-span-6 xl:col-span-12 theme-grid flex justify-between invisible fade-in--noscroll">
@@ -95,28 +95,8 @@
             ?>
         </div>
 
-
-        <!------>
-
-        <!-- Questions -->
-
-        <div class="col-span-2 md:col-span-6 xl:col-span-12 flex justify-between items-start bg-blue-shade-4 invisible fade-in p-20 mt-12 rounded-[20px]">
-            <h2 class="text-title-h2 max-w-[475px] text-blue-shade-0">
-                <?php the_field('questions_title'); ?>
-            </h2>
-            <p class="text-p1 text-blue-shade-0 max-w-[414px]"><?php the_field('questions_description'); ?></p>
-            <div>
-                <?php
-                $questions_link = get_field('questions_link');
-                if ($questions_link):
-                    ?>
-                    <a href="<?php echo esc_url($questions_link); ?>" class="btn btn--primary">
-                        <?php esc_html_e('JETZT ANFRAGEN', 'gruber-pumpen'); ?>
-                    </a>
-                    <?php
-                endif;
-                ?>
-            </div>
-        </div>
     </div>
 </section>
+        <!------>
+
+<?php get_template_part( 'template-parts/components/questions'); ?> 
