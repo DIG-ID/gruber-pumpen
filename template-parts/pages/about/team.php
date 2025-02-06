@@ -1,12 +1,12 @@
-<section class="section-team py-28 overflow-hidden">
+<section class="section-team py-14 md:py-16 lg:py-24 overflow-hidden">
 		<div class="theme-container theme-grid">
-			<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col items-center mb-24">
-				<div class="flex items-center gap-4 invisible fade-in">
+			<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col items-center mb-8 md:mb-20">
+				<div class="flex items-center lg:gap-x-4 invisible fade-in">
 					<hr class="border border-orange-shade-1 w-[4.5rem]" />
 					<h3 class="text-orange-shade-1 text-center uppercase"><?php the_field( 'team_eyebrow' ); ?></h3>
 					<hr class="border border-orange-shade-1 w-[4.5rem]" />
 				</div>
-				<h2 class="text-title-h2 text-blue-shade-4 py-8 text-center invisible fade-in"><?php the_field( 'team_title' ); ?></h2>
+				<h2 class="text-title-h2 text-blue-shade-4 py-4 md:py-6 text-center invisible fade-in"><?php the_field( 'team_title' ); ?></h2>
 			</div>
 			<div class="col-span-2 md:col-span-6 xl:col-span-12">
 				<?php

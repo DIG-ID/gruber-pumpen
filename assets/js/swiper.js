@@ -5,34 +5,19 @@ window.addEventListener(
   "load",
   () => {
     if ($(".page-template-page-about")[0]) {
-      var aboutSwiper = new Swiper(".aboutSwiper", {
+      var aboutSwiper = new Swiper(".opinionSwiper", {
         slidesPerView: 1,
         spaceBetween: 24,
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 24,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 24,
-          },
-          1024: {
-            slidesPerView: 1.4,
-            spaceBetween: 24,
-          },
-          1200: {
-            slidesPerView: 1.4,
-            spaceBetween: 24,
-          },
+        loop: true,
+        speed: 1200,
+        //effect: "fade",
+        /*autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },*/
+        navigation: {
+          nextEl: ".opinion-swiper-button-next",
+          prevEl: ".opinion-swiper-button-prev",
         },
       });
     }
