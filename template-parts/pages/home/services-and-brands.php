@@ -1,4 +1,4 @@
-<section class="section-page-services-and-brands xl:mx-14 bg-[#F5F7FA] xl:rounded-[50px] overflow-hidden">
+<section class="section-page-services-and-brands xl:mx-14 pb-40 mb-12 bg-[#F5F7FA] xl:rounded-[50px] overflow-hidden">
 	
 		<!-- Services and Products -->
 		

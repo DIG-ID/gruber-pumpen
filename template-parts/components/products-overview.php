@@ -1,4 +1,4 @@
-<section class="section-products py-8 xl:py-40">
+<section class="section-products">
     <div class="theme-container theme-grid">
         <!-- Services -->
         <div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col">
