@@ -16,8 +16,8 @@
 				if ( $index % 2 == 0 ) :
 					//Item par.
 					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 xl:col-span-12 even-post theme-grid my-12 md:my-16' ); ?>>
-						<div class="col-span-2 md:col-span-6 xl:col-span-6 mb-6 md:mb-10 xl:mb-0">
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 xl:col-span-12 even-post theme-grid my-12 md:my-16 invisible fade-in' ); ?>>
+						<div class="col-span-2 md:col-span-6 xl:col-span-6 mb-6 md:mb-10 xl:mb-0 ">
 							<?php
 							$gallery = get_field( 'gallery' );
 							if ( $gallery ) :
@@ -67,7 +67,7 @@
 				else :
 					//Item impar.
 					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 xl:col-span-12 odd-post theme-grid my-12 md:my-16' ); ?>>
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 xl:col-span-12 odd-post theme-grid my-12 md:my-16 invisible fade-in' ); ?>>
 						<div class="col-span-2 md:col-span-6 xl:col-span-5 order-2 xl:order-1">
 							<h2 class="text-title-h2 text-blue-shade-4 mb-6 md:mb-10 xl:mb-12"><?php the_title(); ?></h2>
 							<div class="text-p--2"><?php the_content(); ?></div>

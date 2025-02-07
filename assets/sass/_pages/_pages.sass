@@ -7,6 +7,9 @@
   &--background-image
     @apply bg-blue-shade-4 text-blue-shade-0 bg-cover bg-center bg-no-repeat pb-4 md:pb-8 lg:pb-28
 
+    .page-header--title
+      @apply text-white
+
 
 .bg-overlay
     background: #063047
@@ -17,50 +20,7 @@
       opacity: .4
       mix-blend-mode: hard-light
 
-.page-template-default
-  .section-page-content-wrapper
-    @apply text-blue-shade-4
-    h2,
-    h3,
-    h4,
-    h5,
-    h6
-      @apply font-outfit mb-6
-      font-feature-settings: 'ss02' on
-    h2
-      @apply text-2xl lg:text-4xl
-    h3
-      @apply text-3xl
-    h4
-      @apply text-2xl
-    h5
-      @apply text-xl
-    h6
-      @apply text-lg
-    p
-      @apply font-outfit font-normal text-sm tracking-[0.14px] mb-6
-      &:last-of-type
-        @apply mb-0
-    a
-      @apply font-outfit font-normal text-sm tracking-[0.14px] mb-6 transition-all duration-300
-    ul
-      @apply mb-6
-      li
-        @apply  font-outfit font-normal text-sm tracking-[0.14px] relative ml-4 mb-4
-        &:last-of-type
-          @apply mb-0
-        &::before
-          @apply absolute -left-4 inline-block
-          content: '•'
-    ol
-      @apply mb-6
-      li
-        @apply  font-outfit font-normal text-sm tracking-[0.14px] relative ml-[1.3rem] mb-4 list-decimal
-        &:last-of-type
-          @apply mb-0
 
-    img
-      @apply mb-6
 
 
 @import page-home

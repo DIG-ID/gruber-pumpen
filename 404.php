@@ -49,7 +49,7 @@ do_action( 'before_main_content' );
 			</svg>
 		</div>
 		<p class="font-outfit font-medium text-sm md:text-xl [leading-trim: both] [text-edge: cap] text-blue-shade-4 text-center mb-8 max-w-xl"><?php esc_html_e( 'Wir konnten nicht finden, wonach Sie gesucht haben. Gehen Sie zurück zur Homepage oder erkunden Sie unsere Produkte!', 'gruber-pumpen' ) ?></p>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn--secondary"><?php esc_html_e( 'Homepage', 'gruber-pumpen' ); ?></a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn--secondary"><?php esc_html_e( 'ZUR STARTSEITE', 'gruber-pumpen' ); ?></a>
 		</div>
 </section>
 <?php

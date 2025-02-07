@@ -1,9 +1,23 @@
 #breadcrumbs
   > span
-    @apply font-outfit font-normal text-[10px] md:text-xs lg:text-base
-    font-feature-settings: 'ss02' on
+    @apply font-outfit font-bold text-xs md:text-sm xl:text-base
     span
       a
-        @apply text-[10px] md:text-xs lg:text-base transition-all duration-200 ease-in-out hover:text-blue-shade-3 inline-block
+        @apply font-outfit font-bold text-xs md:text-sm xl:text-base transition-all duration-200 ease-in-out
     //span.breadcrumb_last
       // @apply block md:inline
+
+.page-header
+  #breadcrumbs
+    > span
+      @apply text-blue-shade-4
+      span
+        a
+          @apply text-blue-shade-4 hover:text-blue-shade-3
+  &--background-image
+      #breadcrumbs
+        > span
+          @apply text-white
+          span
+            a
+              @apply text-white hover:text-blue-shade-2

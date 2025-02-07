@@ -39,3 +39,44 @@
     @apply font-outfit font-normal text-base md:text-xl
 
 
+.page-template-default
+  .section-page-content-wrapper
+    @apply text-blue-shade-4
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+      @apply font-outfit font-semibold [leading-trim:both] [text-edge:cap] mb-2 md:mb-4 xl:mb-6
+    h2
+      @apply text-[1.875rem] md:text-[3rem] xl:text-[3rem] leading-[2.125rem] md:leading-[3.375rem] xl:leading-[3.375rem]
+    h3
+      @apply text-[1.5rem] md:text-[2.25rem] xl:text-[2.25rem] leading-[2.875rem] md:leading-[2.875rem] xl:leading-[2.875rem]
+    h4
+      @apply text-[1rem] md:text-[1.5rem] xl:text-[1.5rem] leading-[2.125rem] md:leading-[2.125rem] xl:leading-[2.125rem]
+    h5
+      @apply text-xl
+    h6
+      @apply text-lg
+    p
+      @apply font-dm font-normal text-[0.875rem] md:text-[1rem] xl:text-[1rem] leading-[1.125rem] md:leading-[1.625rem] xl:leading-[1.625rem] text-blue-shade-2 [leading-trim:both] [text-edge:cap] mb-6
+    a
+      @apply font-outfit font-normal text-sm tracking-[0.14px] mb-6 transition-all duration-300 underline
+    ul
+      @apply mb-6
+      li
+        @apply  font-outfit font-normal text-sm tracking-[0.14px] relative ml-4 mb-4
+        &:last-of-type
+          @apply mb-0
+        &::before
+          @apply absolute -left-4 inline-block
+          content: '•'
+    ol
+      @apply mb-6
+      li
+        @apply  font-outfit font-normal text-sm tracking-[0.14px] relative ml-[1.3rem] mb-4 list-decimal
+        &:last-of-type
+          @apply mb-0
+
+    img
+      @apply mb-6

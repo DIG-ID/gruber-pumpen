@@ -1,6 +1,6 @@
 <section class="section-partner-products py-14 md:py-16 xl:py-24">
-	<div class="theme-container theme-grid partner-wrapper">
-		<div class="col-span-2 md:col-span-6 xl:col-span-5">
+	<div class="theme-container theme-grid">
+		<div class="col-span-2 md:col-span-6 xl:col-span-5 invisible fade-in">
 			<div class="flex items-center gap-4 mb-4">
 				<h4 class="text-orange-shade-1"><?php the_field( 'partnerprodukte_eyebrow' ); ?></h4>
 				<hr class="border border-orange-shade-1  w-[4.5rem]" />
@@ -20,7 +20,7 @@
 			endif;
 			?>
 		</div>
-		<div class="col-span-2 md:col-span-6 xl:col-start-7 xl:col-span-6 mt-11 md:mt-16 xl:mt-0">
+		<div class="col-span-2 md:col-span-6 xl:col-start-7 xl:col-span-6 mt-11 md:mt-16 xl:mt-0 invisible fade-in">
 			<div class="grid grid-cols-2 gap-8">
 				<?php get_template_part( 'template-parts/components/partner-products-loop' ); ?>
 			</div>
