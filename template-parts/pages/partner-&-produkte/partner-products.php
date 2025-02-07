@@ -22,11 +22,7 @@
 		</div>
 		<div class="col-span-2 md:col-span-6 lg:col-start-7 lg:col-span-6">
 			<div class="grid grid-cols-2 gap-8">
-				<div class="col-span-1">
-					<div class="box box--sm w-full flex justify-center items-center">
-						logo 1
-					</div>
-				</div>
+				<?php get_template_part( 'template-parts/components/partner-products-loop' ); ?>
 			</div>
 		</div>
 	</div>

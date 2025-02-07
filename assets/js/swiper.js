@@ -21,6 +21,23 @@ window.addEventListener(
         },
       });
     }
+    if ($(".page-template-page-partner-products")[0]) {
+      document.querySelectorAll(".gallery-swiper").forEach((swiperEl, index) => {
+        new Swiper(swiperEl, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 24,
+            navigation: {
+              nextEl: ".gallery-" + (index + 1) + " .swiper-button-next",
+              prevEl: ".gallery-" + (index + 1) + " .swiper-button-prev",
+            },
+            pagination: {
+              el: ".gallery-" + (index + 1) + " .swiper-pagination",
+              clickable: true,
+          },
+        });
+      });
+    }
     if ($(".page-template-page-solothurn-what-to-do")[0]) {
       var eventSwiper = new Swiper(".eventSwiper", {
         slidesPerView: 1,
