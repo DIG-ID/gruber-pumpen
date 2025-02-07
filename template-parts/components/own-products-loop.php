@@ -1,6 +1,6 @@
 <?php
 $products_args = array(
-	'post_type'      => 'produkte',
+	'post_type'      => 'eigenprodukte',
 	'post_status'    => 'publish',
 	'posts_per_page' => 3,
 	'orderby'        => 'date',
