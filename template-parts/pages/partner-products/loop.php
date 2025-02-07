@@ -1,4 +1,4 @@
-<section class="section-own-products-loop py-14 pt-0 md:py-16 xl:py-24">
+<section class="section-own-products-loop">
 	<div class="theme-container theme-grid">
 		<?php
 		$products_args = array(
