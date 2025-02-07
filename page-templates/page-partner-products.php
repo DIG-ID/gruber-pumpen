@@ -11,6 +11,7 @@ if ( have_posts() ) :
 			get_template_part( 'template-parts/pages/page-header' );
 			get_template_part( 'template-parts/pages/partner-products/intro' );
 			get_template_part( 'template-parts/pages/partner-products/loop' );
+			get_template_part( 'template-parts/pages/partner-products/services-overview' );
 		do_action( 'after_main_content' );
 	endwhile;
 endif;
