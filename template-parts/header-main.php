@@ -29,10 +29,10 @@
 						$description = $schedule['description'];
 						if ($title && $description):
 							?>
-							<p class="hidden lg:inline-block font-dm text-blue-shade-2 font-bold text-[10px] leading-[26px]">
+							<p class="hidden lg:inline-block font-dm text-blue-shade-2 font-bold text-[12px] leading-[26px]">
 								<?php echo $title ?>:&nbsp;
 							</p>
-							<p class="hidden lg:inline-block font-dm text-blue-shade-2 text-[10px] leading-[26px] mr-3">
+							<p class="hidden lg:inline-block font-dm text-blue-shade-2 text-[12px] leading-[26px] mr-3">
 								<?php echo $description ?>
 							</p>
 							<?php
