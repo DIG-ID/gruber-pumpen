@@ -1,13 +1,13 @@
-<section class="section-opinion py-14 md:py-16 lg:py-24 overflow-hidden">
+<section class="section-opinion py-14 md:py-16 xl:py-24 overflow-hidden">
 	<div class="theme-container theme-grid relative">
-		<div class="opinion--title col-span-2 md:col-span-6 lg:col-span-12 z-10 lg:absolute lg:left-[41%] lg:top-10">
+		<div class="opinion--title col-span-2 md:col-span-6 xl:col-span-12 z-10 xl:absolute xl:left-[41%] xl:top-10">
 			<div class="flex items-center gap-4 mb-4">
 				<h4 class="text-orange-shade-1"><?php the_field( 'opinion_eyebrow' ); ?></h4>
 				<hr class="border border-orange-shade-1  w-[4.5rem]" />
 			</div>
 			<h2 class="text-title-h2 text-blue-shade-4 mb-12"><?php the_field( 'opinion_title' ); ?></h2>
 		</div>
-		<div class="col-span-2 md:col-span-6 lg:col-span-12">
+		<div class="col-span-2 md:col-span-6 xl:col-span-12">
 			<?php
 			if ( have_rows( 'opinion_items' ) ) :
 				echo '<div class="swiper opinionSwiper"><div class="swiper-wrapper">';
@@ -55,7 +55,7 @@
 			endif;
 			?>
 		</div>
-		<div class="col-span-2 md:col-span-6 lg:col-span-12 flex justify-center gap-x-4 mt-12">
+		<div class="col-span-2 md:col-span-6 xl:col-span-12 flex justify-center gap-x-4 mt-12">
 			<div class="btn--arrow opinion-swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
 			<div class="btn--arrow opinion-swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
 		</div>

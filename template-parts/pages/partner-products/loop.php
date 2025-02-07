@@ -1,4 +1,4 @@
-<section class="section-own-products-loop py-14 md:py-16 lg:py-24">
+<section class="section-own-products-loop py-14 md:py-16 xl:py-24">
 	<div class="theme-container theme-grid">
 		<?php
 		$products_args = array(
@@ -16,8 +16,8 @@
 				if ( $index % 2 == 0 ) :
 					//Item par.
 					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 lg:col-span-12 even-post theme-grid my-16' ); ?>>
-						<div class="col-span-2 md:col-span-6 lg:col-span-6 mb-6 md:mb-10 lg:mb-0">
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 xl:col-span-12 even-post theme-grid my-16' ); ?>>
+						<div class="col-span-2 md:col-span-6 xl:col-span-6 mb-6 md:mb-10 xl:mb-0">
 							<?php
 							$gallery = get_field( 'gallery' );
 							if ( $gallery ) :
@@ -40,8 +40,8 @@
 							endif;
 							?>
 						</div>
-						<div class="col-span-2 md:col-span-6 lg:col-start-8 lg:col-span-5">
-							<h2 class="text-title-h2 text-blue-shade-4 mb-6 md:mb-10 lg:mb-12"><?php the_title(); ?></h2>
+						<div class="col-span-2 md:col-span-6 xl:col-start-8 xl:col-span-5">
+							<h2 class="text-title-h2 text-blue-shade-4 mb-6 md:mb-10 xl:mb-12"><?php the_title(); ?></h2>
 							<div class="text-p--2 "><?php the_content(); ?></div>
 							<?php
 							$blink = get_field( 'link' );
@@ -54,7 +54,7 @@
 									<?php
 									echo '<span class="mb-4">' . esc_html( $link_title ) . '</span>';
 									if ( has_post_thumbnail() ) :
-										the_post_thumbnail( 'full', array( 'class' => 'max-w-20 md:max-w-24 lg:max-w-full max-h-full h-auto object-cover' ) );
+										the_post_thumbnail( 'full', array( 'class' => 'max-w-20 md:max-w-24 xl:max-w-full max-h-full h-auto object-cover' ) );
 									endif
 									?>
 								</a>
@@ -67,9 +67,9 @@
 				else :
 					//Item impar.
 					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 lg:col-span-12 odd-post theme-grid my-16' ); ?>>
-						<div class="col-span-2 md:col-span-6 lg:col-span-5 order-2 lg:order-1">
-							<h2 class="text-title-h2 text-blue-shade-4 mb-6 md:mb-10 lg:mb-12"><?php the_title(); ?></h2>
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 xl:col-span-12 odd-post theme-grid my-16' ); ?>>
+						<div class="col-span-2 md:col-span-6 xl:col-span-5 order-2 xl:order-1">
+							<h2 class="text-title-h2 text-blue-shade-4 mb-6 md:mb-10 xl:mb-12"><?php the_title(); ?></h2>
 							<div class="text-p--2"><?php the_content(); ?></div>
 							<?php
 							$blink = get_field( 'link' );
@@ -82,7 +82,7 @@
 									<?php
 									echo '<span class="mb-4">' . esc_html( $link_title ) . '</span>';
 									if ( has_post_thumbnail() ) :
-										the_post_thumbnail( 'full', array( 'class' => 'max-w-20 md:max-w-24 lg:max-w-full max-h-full h-auto object-cover' ) );
+										the_post_thumbnail( 'full', array( 'class' => 'max-w-20 md:max-w-24 xl:max-w-full max-h-full h-auto object-cover' ) );
 									endif
 									?>
 								</a>
@@ -90,7 +90,7 @@
 							endif;
 							?>
 						</div>
-						<div class="col-span-2 md:col-span-6 lg:col-span-6 lg:col-start-7 order-1 lg:order-2 mb-6 md:mb-10 lg:mb-0">
+						<div class="col-span-2 md:col-span-6 xl:col-span-6 xl:col-start-7 order-1 xl:order-2 mb-6 md:mb-10 xl:mb-0">
 							<?php
 							$gallery = get_field( 'gallery' );
 							if ( $gallery ) :
