@@ -4,7 +4,7 @@
             <?php
             $contact_title = get_field('products_contact_title', 'option');
             if ($contact_title): ?>
-                <h2 class="text-title-h4 !text-[1rem] md:!text-[3rem] xl:!text-[3rem] text-blue-shade-4 pb-2 md:pb-10 xl:pb-11 invisible fade-in xl:max-w-[350px]">
+                <h2 class="text-title-h2 text-blue-shade-4 pb-2 md:pb-10 xl:pb-11 invisible fade-in xl:max-w-[350px]">
                     <?php echo $contact_title; ?>
                 </h2>
             <?php endif; ?>
