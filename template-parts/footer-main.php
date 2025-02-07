@@ -3,8 +3,8 @@
 	<section class="contact-bar bg-blue-shade-3">
 		<div class="theme-container theme-grid pt-14 pb-16 flex flex-row items-center justify-between">
 			<div class="col-span-2 md:col-span-6 xl:col-span-6 mb-10 xl:mb-0">
-				<div class="flex items-center mb-3">
-					<h4 class="text-orange-shade-1"><?php the_field('footer_write_us_subtitle', 'options'); ?></h4>
+				<div class="flex items-center mb-3 gap-4">
+					<h4 class="text-orange-shade-1 text-eyebrow"><?php the_field('footer_write_us_subtitle', 'options'); ?></h4>
 					<hr class="border border-orange-shade-1  w-[4.5rem]" />
 				</div>
 				<h2 class="text-white text-5xl font-outfit font-bold">
@@ -105,7 +105,8 @@
 				</div>
 				<div class="flex flex-col items-center gap-4">
 					<p class="hidden xl:inline-block text-white"><?php the_field('footer_any_questions', 'options') ?></p>
-					<a class="!hidden xl:!inline-flex btn btn--primary">
+					<?php $booking_url = get_field('header_booking_url', 'option'); ?>
+					<a href="<?php echo esc_url($booking_url); ?>" class="!hidden xl:!inline-flex btn btn--primary">
 						<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 					</a>
 					<div class="hidden xl:inline-block">
@@ -148,9 +149,10 @@
 			</div>
 
 			<!-- Mobile socials -->
-			<div class="col-span-2 md:col-span-6 p-16 xl:hidden flex flex-col justify-center items-center order-4">
+			<div class="col-span-2 md:col-span-6 p-16 xl:hidden flex flex-col justify-center items-center order-4 gap-4">
 				<p class=" text-white"><?php the_field('footer_any_questions', 'options') ?></p>
-				<a class="bot-header btn btn--primary">
+				
+				<a href="<?php echo esc_url($booking_url); ?>" class="bot-header btn btn--primary">
 					<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 				</a>
 				<div class="lg:hidden">
