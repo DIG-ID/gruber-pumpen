@@ -11,7 +11,7 @@
 		aria-label="<?php esc_attr_e('Main menu', 'gruber-pumpen'); ?>">
 
 		<!-- Top Information Bar -->
-		<div class="top-section">
+		<div class="top-section hidden md:block">
 			<div class="theme-container theme-grid min-h-[45px]">
 				<!-- Left Text -->
 				<div class="col-span-1 md:col-span-3 lg:col-span-2 xl:col-span-6 flex flex-row items-center z-10 grow">

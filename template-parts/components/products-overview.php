@@ -21,6 +21,6 @@
                 <?php endif; ?>
             </div>
         </div>
-        <?php get_template_part( 'template-part/components/own-products-loop' ); ?>
+        <?php get_template_part( 'template-parts/components/own-products-loop' ); ?>
     </div>
 </section>

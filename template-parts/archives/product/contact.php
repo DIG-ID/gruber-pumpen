@@ -2,15 +2,15 @@
     <div class="theme-container theme-grid fade-in bg-white px-4 md:px-8 xl:px-9 pt-4 pb-4 md:pt-10 md:pb-10 mb-10 xl:mb-0 rounded-3xl">
         <div class="col-span-1 md:col-span-3 xl:col-span-5 relative">
             <?php
-            $contact_title = get_field('contact_title');
+            $contact_title = get_field('products_contact_title', 'option');
             if ($contact_title): ?>
-                <h2 class="text-title-h2 !text-[1rem] md:!text-[3rem] xl:!text-[3rem] text-blue-shade-4 pb-2 md:pb-10 xl:pb-11 invisible fade-in xl:max-w-[350px]">
+                <h2 class="text-title-h4 !text-[1rem] md:!text-[3rem] xl:!text-[3rem] text-blue-shade-4 pb-2 md:pb-10 xl:pb-11 invisible fade-in xl:max-w-[350px]">
                     <?php echo $contact_title; ?>
                 </h2>
             <?php endif; ?>
-            <p class="text-p--2 !text-[10px] md:!text-[1rem] xl:!text-[1rem] xl:max-w-[360px] invisible fade-in"><?php the_field('contact_text'); ?></p>
+            <p class="text-p--2 !text-[10px] md:!text-[1rem] xl:!text-[1rem] xl:max-w-[360px] invisible fade-in"><?php the_field('products_contact_text', 'option'); ?></p>
             <?php
-            $contact_link = get_field('contact_link');
+            $contact_link = get_field('products_contact_link', 'option');
             if ($contact_link):
                 $contact_link_target = $contact_link['target'] ? $contact_link['target'] : '_self';
                 ?>
@@ -20,13 +20,13 @@
         </div>
         <div class="col-span-1 md:col-span-3 xl:col-span-7 md:flex flex-row justify-end xl:justify-between">
             <?php
-            $image = get_field( 'contact_image_1' );
+            $image = get_field( 'products_contact_image_1', 'option' );
             if ($image):
                 echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-full max-w-[354px] rounded-3xl hidden xl:block fade-in'));
             endif;
             ?>
             <?php
-            $image_2 = get_field( 'contact_image_2' );
+            $image_2 = get_field( 'products_contact_image_2', 'option' );
             if ($image_2):
                 echo wp_get_attachment_image($image_2, 'full', false, array('class' => 'w-full h-auto max-w-[265px] rounded-3xl fade-in'));
             endif;
