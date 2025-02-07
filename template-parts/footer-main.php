@@ -144,8 +144,8 @@
 					<?php the_field('footer_contact_title', 'options') ?>
 				</h3>
 				<?php the_field('footer_contact_address', 'options') ?>
-				<p class="text-white mt-6"><?php the_field('footer_contact_phone', 'options') ?></p>
-				<p class="text-white"><?php the_field('footer_contact_email', 'options') ?></p>
+				<a href="tel:<?php the_field('footer_contact_phone', 'options') ?>" class="text-white mt-6"><?php the_field('footer_contact_phone', 'options') ?></a>
+				<a href="mailto:<?php the_field('footer_contact_email', 'options') ?>" class="text-white"><?php the_field('footer_contact_email', 'options') ?></a>
 			</div>
 
 			<!-- Mobile socials -->
