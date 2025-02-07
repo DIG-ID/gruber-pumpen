@@ -96,70 +96,68 @@
 			</div>
 		</section>
 	<?php endif; ?>
-	<section
-		class="grid grid-rows-4 grid-cols-1 md:grid-rows-3 md:grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 border-b border-orange-shade-1 bg-blue-shade-4">
-
+	<section class="border-b border-orange-shade-1 bg-blue-shade-4">
+		<div class="theme-container grid grid-cols-2 md:grid-cols-6 xl:grid-cols-12 xl:min-h-[439px]">
 		<!-- Logo && Socials -->
-		<div
-			class="top-logo-footer row-start-1 row-span-1 col-span-2 lg:order-2 lg:col-span-1 lg:max-h-auto border-b lg:border-b-0 flex flex-col gap-8 items-center md:p-8 lg:p-16 xl:px-28 lg:border-x border-orange-shade-1 lg:mx-auto">
-			<div class="flex items-center my-auto">
-				<?php do_action('footer_theme_logo'); ?>
+			<div class="top-logo-footer w-full col-span-2 md:col-span-6 xl:col-span-4 order-1 xl:order-2 border-b lg:border-b-0 flex flex-col justify-evenly items-center lg:border-x border-orange-shade-1 lg:mx-auto">
+				<div class="flex items-center">
+					<?php do_action('footer_theme_logo'); ?>
+				</div>
+
+				<p class="hidden xl:inline-block text-white"><?php the_field('footer_any_questions', 'options') ?></p>
+				<a class="!hidden xl:!inline-flex btn btn--primary">
+					<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
+				</a>
+				<div class="hidden xl:inline-block">
+					<?php do_action('socials'); ?>
+				</div>
 			</div>
 
-			<p class="hidden lg:inline-block text-white mt-16"><?php the_field('footer_any_questions', 'options') ?></p>
-			<a class="hidden lg:inline-flex btn btn--primary">
-				<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
-			</a>
-			<div class="hidden lg:inline-block">
-				<?php do_action('socials'); ?>
+			<!-- Menu -->
+			<div
+				class="border-b lg:border-b-0 border-orange-shade-1 col-span-2 md:col-span-3 xl:col-span-4 order-2 xl:order-1 flex flex-col py-8 md:py-20">
+
+				<h4 class="text-orange-shade-1 border-b-2 border-orange-shade-1 text-xl font-bold max-w-[4rem] pb-4 mb-6">
+					<?php the_field('footer_menu_title', 'options'); ?>
+				</h4>
+				<nav>
+					<?php
+					wp_nav_menu([
+						'theme_location' => 'footer-menu',
+						'menu_id' => 'footer-menu',
+						'container_class' => 'footer-menu-container pt-0',
+						'menu_class' => 'footer-menu',
+						'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'fallback_cb' => '__return_false',
+					]);
+					?>
+				</nav>
+
 			</div>
-		</div>
 
-		<!-- Menu -->
-		<div
-			class="border-b lg:border-b-0 border-orange-shade-1 row-start-2 md:row-start-2 md:row-span-2 md:col-span-1 lg:row-start-1 lg:order-1 lg:col-span-1 lg:row-span-1 flex flex-col py-8 md:py-20 pl-20">
-
-			<h4 class="text-orange-shade-1 border-b-2 border-orange-shade-1 text-xl font-bold max-w-[4rem] pb-4 mb-6">
-				<?php the_field('footer_menu_title', 'options'); ?>
-			</h4>
-			<nav>
-				<?php
-				wp_nav_menu([
-					'theme_location' => 'footer-menu',
-					'menu_id' => 'footer-menu',
-					'container_class' => 'footer-menu-container pt-0',
-					'menu_class' => 'footer-menu',
-					'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-					'fallback_cb' => '__return_false',
-				]);
-				?>
-			</nav>
-
-		</div>
-
-		<!-- Contact -->
-		<div
-			class="contact-section border-b md:border-l lg:border-none border-orange-shade-1 row-start-3 md:row-start-2 md:row-span-2 md:col-span-1 lg:row-span-1 lg:row-start-1 lg:order-3 lg:col-span-2 flex flex-col py-8 md:py-20 pl-20 pr-4">
-			<h3 class="text-orange-shade-1 border-b-2 border-orange-shade-1 text-xl font-bold max-w-[4rem] pb-4 mb-6">
-				<?php the_field('footer_contact_title', 'options') ?>
-			</h3>
-			<?php the_field('footer_contact_address', 'options') ?>
-			<p class="text-white mt-6"><?php the_field('footer_contact_phone', 'options') ?></p>
-			<p class="text-white"><?php the_field('footer_contact_email', 'options') ?></p>
-		</div>
-
-		<!-- Mobile socials -->
-		<div class="row-span-1 col-span-2 gap-4 p-16 lg:hidden flex flex-col justify-center items-center">
-			<p class=" text-white"><?php the_field('footer_any_questions', 'options') ?></p>
-			<a class="bot-header btn btn--primary">
-				<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
-			</a>
-			<div class="lg:hidden">
-				<?php do_action( 'socials' ); ?>
+			<!-- Contact -->
+			<div
+				class="contact-section border-b md:border-l lg:border-none border-orange-shade-1 col-span-2 md:col-span-3 xl:col-span-4 order-3 xl:order-3 flex flex-col py-8 md:py-20 xl:pl-12">
+				<h3 class="text-orange-shade-1 border-b-2 border-orange-shade-1 text-xl font-bold max-w-[4rem] pb-4 mb-6">
+					<?php the_field('footer_contact_title', 'options') ?>
+				</h3>
+				<?php the_field('footer_contact_address', 'options') ?>
+				<p class="text-white mt-6"><?php the_field('footer_contact_phone', 'options') ?></p>
+				<p class="text-white"><?php the_field('footer_contact_email', 'options') ?></p>
 			</div>
+
+			<!-- Mobile socials -->
+			<div class="col-span-2 md:col-span-6 p-16 xl:hidden flex flex-col justify-center items-center order-4">
+				<p class=" text-white"><?php the_field('footer_any_questions', 'options') ?></p>
+				<a class="bot-header btn btn--primary">
+					<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
+				</a>
+				<div class="lg:hidden">
+					<?php do_action( 'socials' ); ?>
+				</div>
+			</div>
+
 		</div>
-
-
 	</section>
 
 	<section class="bg-blue-shade-4">
