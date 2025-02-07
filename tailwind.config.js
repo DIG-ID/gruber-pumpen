@@ -7,6 +7,7 @@ module.exports = {
     './footer.php',
     './404.php',
     './inc/*.php',
+    './post-templates/**/*.php',
     './page-templates/**/*.php',
     './template-parts/**/*.php',
   ],

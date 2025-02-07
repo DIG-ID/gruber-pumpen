@@ -62,7 +62,7 @@
                                     $sust_btn_title  = $sust_btn['title'];
                                     $sust_btn_target = $sust_btn['target'] ? $sust_btn['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--transparent self-start uppercase" href="<?php echo esc_url( $sust_btn_url ); ?>" target="<?php echo esc_attr( $sust_btn_target ); ?>"><?php echo esc_html_e( 'Mehr Erfahren', 'gruber pumpen' ) ?></a>
+                                    <a class="btn btn--transparent self-start uppercase" href="/schulungen/" target="_self"><?php echo esc_html_e( 'Mehr Erfahren', 'gruber pumpen' ) ?></a>
                                     <?php
                                 endif;
                                 ?>

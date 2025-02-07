@@ -8,13 +8,13 @@
 					<hr class="border border-orange-shade-1  w-[4.5rem]" />
 				</div>
 				<h2 class="text-white text-5xl font-outfit font-bold">
-					<?php the_field('footer_write_us_title', 'options'); ?>
+					<?php the_field('footer_write_us_title', 'option'); ?>
 				</h2>
 			</div>
 
 			<div class="col-span-2 md:col-span-6 xl:col-span-6 xl:text-right">
 				<?php
-				$services_link = get_field('footer_write_us_services', 'options');
+				$services_link = get_field('footer_write_us_services', 'option');
 				if ($services_link):
 					$services_url = $services_link['url'];
 					$services_title = $services_link['title'];
@@ -26,11 +26,11 @@
 				endif;
 				?>
 				<?php
-				$write_us_link = get_field('footer_write_us_link', 'options');
+				$write_us_link = get_field('footer_write_us_link', 'option');
 				if ($write_us_link):
-					$write_us_url = $services_link['url'];
-					$write_us_title = $services_link['title'];
-					$write_us_target = $services_link['target'] ? $link['target'] : '_self';
+					$write_us_url = $write_us_link['url'];
+					$write_us_title = $write_us_link['title'];
+					$write_us_target = $write_us_link['target'] ? $link['target'] : '_self';
 					?>
 					<a class="btn btn--transparent" href="<?php echo esc_url($write_us_url); ?>"
 					target="<?php echo esc_attr($write_us_target); ?>"><?php echo esc_html($write_us_title); ?></a>
