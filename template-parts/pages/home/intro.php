@@ -1,16 +1,19 @@
 <section class="section-homepage-intro flex items-end bg-black  text-blue-shade-0 min-h-[464px] relative">
+    <?php
+    $video_field = get_field('intro_video_file'); // This will return an array
+    $video_url = $video_field['url']; // Extract the URL from the array
+    ?>
 
     <div class="video-background absolute inset-0 w-full h-full overflow-hidden">
-        <iframe 
-            class="absolute top-0 left-0 w-full h-full object-cover"
-            src="https://player.vimeo.com/video/1041960866?title=0&byline=0&portrait=0&badge=0&autopause=0&controls=0&background=1&dnt=1"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-            title="Video Header">
-        </iframe>
+        <video 
+            class="absolute top-0 left-0 w-full h-full object-cover" 
+            src="<?php echo esc_url($video_url); ?>" 
+            autoplay 
+            muted 
+            loop 
+            playsinline>
+        </video>
     </div>
-
-
-    <script src="https://player.vimeo.com/api/player.js"></script>
 
 
     <div class="relative theme-container theme-grid">
