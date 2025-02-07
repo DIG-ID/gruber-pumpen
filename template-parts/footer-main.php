@@ -103,13 +103,14 @@
 				<div class="flex items-center">
 					<?php do_action('footer_theme_logo'); ?>
 				</div>
-
-				<p class="hidden xl:inline-block text-white"><?php the_field('footer_any_questions', 'options') ?></p>
-				<a class="!hidden xl:!inline-flex btn btn--primary">
-					<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
-				</a>
-				<div class="hidden xl:inline-block">
-					<?php do_action('socials'); ?>
+				<div class="flex flex-col items-center gap-4">
+					<p class="hidden xl:inline-block text-white"><?php the_field('footer_any_questions', 'options') ?></p>
+					<a class="!hidden xl:!inline-flex btn btn--primary">
+						<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
+					</a>
+					<div class="hidden xl:inline-block">
+						<?php do_action('socials'); ?>
+					</div>
 				</div>
 			</div>
 
