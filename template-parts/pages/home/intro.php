@@ -13,6 +13,7 @@
             loop 
             playsinline>
         </video>
+        <div class="absolute inset-0 bg-black opacity-40"></div>
     </div>
 
 
