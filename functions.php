@@ -28,6 +28,8 @@ function gruber_pumpen_theme_setup() {
 
 	add_image_size('training-featured-img', 540, 425, array('center', 'center'));
 
+	add_image_size('products-gallery-thumbs', 282, 187, array('center', 'center'));
+
 }
 
 add_action( 'after_setup_theme', 'gruber_pumpen_theme_setup' );
