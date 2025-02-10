@@ -1,0 +1,2 @@
+<h4 class="text-title-h4 !text-base md:!text-3xl text-blue-shade-4 mb-9 md:mb-7"><?php the_field( 'content_2_title' ); ?></h4>
+<p class="text-p--2"><?php the_field( 'content_2_text' ); ?></p>
