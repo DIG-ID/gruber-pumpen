@@ -10,7 +10,7 @@ if ( have_posts() ) :
 		the_post();
 		do_action( 'before_main_content' );
 		get_template_part( 'template-parts/pages/page-header' );
-		get_template_part( 'template-parts/pages/products/intro');
+		get_template_part( 'template-parts/posts/pe-behalter/layout');
 		do_action( 'after_main_content' );
 	endwhile;
 endif;
