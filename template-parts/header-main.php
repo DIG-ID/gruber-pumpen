@@ -5,10 +5,8 @@
  * This template handles the site's header, navigation, and responsive menu
  */
 ?>
-<header id="header-main" class="header-main absolute top-0 left-0 w-full z-[999] overflow-hidden" itemscope
-	itemtype="http://schema.org/WebSite">
-	<nav class="navbar relative overflow-hidden" role="navigation"
-		aria-label="<?php esc_attr_e('Main menu', 'gruber-pumpen'); ?>">
+<header id="header-main" class="header-main absolute top-0 left-0 w-full z-[999] overflow-hidden <?php echo is_admin_bar_showing() ? ' top-8' : ''; ?>" itemscope itemtype="http://schema.org/WebSite">
+	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e('Main menu', 'gruber-pumpen'); ?>">
 
 		<!-- Top Information Bar -->
 		<div class="top-section hidden md:block">
@@ -24,20 +22,22 @@
 				<div class="col-span-1 md:col-span-3 lg:col-span-4 xl:col-span-6 flex items-center justify-end grow">
 					<?php
 					$schedules = get_field('header_schedule', 'options');
-					foreach ($schedules as $schedule):
-						$title = $schedule['title'];
-						$description = $schedule['description'];
-						if ($title && $description):
-							?>
-							<p class="hidden lg:inline-block font-dm text-blue-shade-2 font-bold text-[12px] leading-[26px]">
-								<?php echo $title ?>:&nbsp;
-							</p>
-							<p class="hidden lg:inline-block font-dm text-blue-shade-2 text-[12px] leading-[26px] mr-3">
-								<?php echo $description ?>
-							</p>
-							<?php
-						endif;
-					endforeach;
+					if ( $schedules ) :
+						foreach ($schedules as $schedule):
+							$title = $schedule['title'];
+							$description = $schedule['description'];
+							if ($title && $description):
+								?>
+								<p class="hidden lg:inline-block font-dm text-blue-shade-2 font-bold text-[12px] leading-[26px]">
+									<?php echo $title ?>:&nbsp;
+								</p>
+								<p class="hidden lg:inline-block font-dm text-blue-shade-2 text-[12px] leading-[26px] mr-3">
+									<?php echo $description ?>
+								</p>
+								<?php
+							endif;
+						endforeach;
+					endif;
 					?>
 
 					<p class="gap-2 text-blue-shade-4 font-outfit text-sm font-medium items-center ml-8 z-10 hidden sm:flex">
