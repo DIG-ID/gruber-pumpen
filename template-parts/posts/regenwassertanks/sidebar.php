@@ -18,18 +18,17 @@
                 $max_quantity = 45; 
                 $bar_width = ($quantity / $max_quantity) * 100;
             ?>
-
-                <div>
-                    <h3 class="text-overline text-blue-shade-5 mb-2"><?php echo esc_html($title); ?></h3>
+                <div class="mb-2">
+                    <h3 class="text-overline text-blue-shade-5 mb-0"><?php echo esc_html($title); ?></h3>
                     <div class="flex items-center space-x-4">
                         <div class="relative h-5 rounded-full w-full">
                             <div 
-                                class="absolute left-0 top-0 h-full rounded-full bg-[#D3594A]" 
+                                class="absolute left-0 top-0 h-full rounded-full bg-orange-shade-2" 
                                 style="width: <?php echo esc_attr($bar_width); ?>%; border-radius: 50px;">
                             </div>
                         </div>
                         <span class="text-p--2 w-1/4">
-                            <?php echo esc_html($quantity); ?> Liters
+                            <?php echo esc_html($quantity); ?> Liter
                         </span>
                     </div>
                 </div>
