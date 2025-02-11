@@ -52,7 +52,7 @@
     <?php endif; ?>
 
 </div>
-<div class="col-span-2 md:col-span-6 xl:col-span-4 col-start-1 md:col-start-1 xl:col-start-9 mt-14 xl:mt-24 pt-14">
+<div class="col-span-2 md:col-span-6 xl:col-span-4 col-start-1 md:col-start-1 xl:col-start-9 mt-14 xl:mt-24 xl:pt-14">
 <?php
     if( have_rows('content_3_water_list') ):
         while( have_rows('content_3_water_list') ) : the_row(); ?>

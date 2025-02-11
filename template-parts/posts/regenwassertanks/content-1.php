@@ -1,9 +1,9 @@
 <div class="col-span-2 md:col-span-5 xl:col-span-7">
     <h2 class="text-title-h2 text-blue-shade-5 mb-9 md:mb-7 xl:mb-20"><?php the_field( 'content_1_title' ); ?></h2>
-    <p class="text-p--2"><?php the_field( 'content_1_text' ); ?></p>
+    <p class="text-p--2 mb-11 xl:mb-0"><?php the_field( 'content_1_text' ); ?></p>
 </div>
 <div class="col-span-2 md:col-span-6 xl:col-span-4 col-start-1 md:col-start-1 xl:col-start-9">
-    <div class="box--info rounded-[20px] border border-blue-shade-5 flex flex-col justify-between xl:mb-0 invisible fade-in relative">
+    <div class="box--info rounded-[20px] border border-blue-shade-5 flex flex-col justify-between xl:mb-0 invisible fade-in relative max-w-[385px] xl:max-w-none">
         <p class="text-p--2"><?php the_field( 'content_1_extra_text' ); ?></p>
         <div class="absolute left-0 top-0">
             <svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">

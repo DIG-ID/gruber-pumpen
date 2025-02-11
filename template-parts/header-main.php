@@ -12,7 +12,7 @@
 
 		<!-- Top Information Bar -->
 		<div class="top-section hidden md:block">
-			<div class="theme-container theme-grid min-h-[45px]">
+			<div class="theme-container theme-grid md:min-h-[32px] xl:min-h-[45px]">
 				<!-- Left Text -->
 				<div class="col-span-1 md:col-span-3 lg:col-span-2 xl:col-span-6 flex flex-row items-center z-10 grow">
 					<p class="text-[#E2ECF2] font-dm text-[10px] md:text-[12px] xl:text-[16px] font-medium leading-[28px]">
@@ -83,12 +83,12 @@
 			</div>
 
 			<!-- Right Side: Contact and Mobile Menu Toggle -->
-			<div class="block text-right w-full xl:z-50">
+			<div class="flex flex-row items-center justify-end text-right w-full xl:z-50">
 				<?php
 				$booking_url = get_field('header_booking_url', 'options');
 				if ($booking_url):
 					?>
-					<a href="<?php echo esc_url($booking_url); ?>" class="!hidden md:!inline-block bot-header btn btn--primary">
+					<a href="<?php echo esc_url($booking_url); ?>" class="!hidden md:!inline-block bot-header btn btn--primary mr-12 xl:mr-0">
 						<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 					</a>
 					<?php
