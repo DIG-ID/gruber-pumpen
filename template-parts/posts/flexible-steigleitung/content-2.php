@@ -1,4 +1,4 @@
-<h4 class="text-title-h4 !text-base md:!text-3xl text-blue-shade-4 mb-9 md:mb-7"><?php the_field( 'content_2_title' ); ?></h4>
+<h4 class="text-title-h4 !text-base md:!text-3xl text-blue-shade-5 mb-9 md:mb-7"><?php the_field( 'content_2_title' ); ?></h4>
 <p class="text-p--2 mb-12 md:mb-16"><?php the_field( 'content_2_text_1' ); ?></p>
 
 <div class="border-b border-blue-shade-2 w-full"></div>
