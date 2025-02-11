@@ -1,4 +1,4 @@
-<div class="box--info rounded-[20px] border border-blue-shade-5 flex flex-col justify-between invisible fade-in relative xl:mb-24">
+<div class="box--info rounded-[20px] border border-blue-shade-5 flex flex-col justify-between invisible fade-in relative mb-14 xl:mb-24 max-w-[385px] xl:max-w-none">
     <p class="text-p--2"><?php the_field( 'sidebar_text' ); ?></p>
     <div class="absolute left-0 top-0">
         <svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@
         </div>
 <?php endif; ?>
 
-<div class="mt-10 md:mt-12 xl:mt-24">
+<div class="mt-10 md:mt-12 xl:mt-24 hidden xl:block">
     <?php
     $product_link = get_field('sidebar_button');
     if ($product_link):

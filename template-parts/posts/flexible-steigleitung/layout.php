@@ -16,7 +16,7 @@
             <?php get_template_part( 'template-parts/posts/flexible-steigleitung/gallery'); ?>
         </div>
         
-        <div id="sidebar" class="col-span-2 md:col-span-6 xl:col-span-4 col-start-1 xl:col-start-9 xl:row-start-1 xl:row-span-2">
+        <div id="sidebar" class="col-span-2 md:col-span-6 xl:col-span-4 col-start-1 xl:col-start-9 xl:row-start-1 xl:row-span-2 pt-16 xl:pt-0">
             <?php get_template_part( 'template-parts/posts/flexible-steigleitung/sidebar'); ?>
         </div>
     </div>
