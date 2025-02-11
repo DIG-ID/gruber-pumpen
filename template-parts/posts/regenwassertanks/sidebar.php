@@ -1,4 +1,4 @@
-<div class="box--info rounded-[20px] border border-blue-shade-5 flex flex-col justify-between xl:mb-0 invisible fade-in relative">
+<div class="box--info rounded-[20px] border border-blue-shade-5 flex flex-col justify-between invisible fade-in relative xl:mb-24">
     <p class="text-p--2"><?php the_field( 'sidebar_text' ); ?></p>
     <div class="absolute left-0 top-0">
         <svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7,7 +7,38 @@
         </svg>
     </div>
 </div>
-<div class="mt-10 md:mt-12 xl:mt-14">
+
+<?php 
+    if( have_rows('sidebar_water_graph') ) : ?>
+        <div>
+            <?php while( have_rows('sidebar_water_graph') ) : the_row(); 
+                $title = get_sub_field('title');
+                $quantity = get_sub_field('quantity'); 
+                
+                $max_quantity = 45; 
+                $bar_width = ($quantity / $max_quantity) * 100;
+            ?>
+
+                <div>
+                    <h3 class="text-overline text-blue-shade-5 mb-2"><?php echo esc_html($title); ?></h3>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative h-5 rounded-full w-full">
+                            <div 
+                                class="absolute left-0 top-0 h-full rounded-full bg-[#D3594A]" 
+                                style="width: <?php echo esc_attr($bar_width); ?>%; border-radius: 50px;">
+                            </div>
+                        </div>
+                        <span class="text-p--2 w-1/4">
+                            <?php echo esc_html($quantity); ?> Liters
+                        </span>
+                    </div>
+                </div>
+
+            <?php endwhile; ?>
+        </div>
+<?php endif; ?>
+
+<div class="mt-10 md:mt-12 xl:mt-24">
     <?php
     $product_link = get_field('sidebar_button');
     if ($product_link):

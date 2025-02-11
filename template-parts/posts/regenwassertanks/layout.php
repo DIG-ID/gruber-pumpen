@@ -8,7 +8,7 @@
             <?php get_template_part( 'template-parts/posts/regenwassertanks/content-2'); ?>
         </div>
         
-        <div id="content-3" class="col-span-2 md:col-span-6 xl:col-span-12 col-start-1 theme-grid border-b border-blue-shade-2 pb-12 md:pb-7 xl:pb-16 mb-7 md:mb-9 xl:mb-14">
+        <div id="content-3" class="col-span-2 md:col-span-6 xl:col-span-12 col-start-1 theme-grid border-b border-blue-shade-2 pb-12 md:pb-7 xl:pb-16 mb-7 md:mb-9 xl:mb-16">
             <?php get_template_part( 'template-parts/posts/regenwassertanks/content-3'); ?>
         </div>
         
