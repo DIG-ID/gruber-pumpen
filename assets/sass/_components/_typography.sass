@@ -116,6 +116,12 @@
         &::before
           @apply absolute -left-4 inline-block
           content: '•'
+        ul
+          li
+            @apply ml-0
+            &::before
+              @apply relative left-0 inline-block
+              content: ''
     ol
       @apply mb-6
       li
