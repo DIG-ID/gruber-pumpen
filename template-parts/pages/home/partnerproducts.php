@@ -1,4 +1,4 @@
-<section class="section-products">
+<section class="section-products relative z-10">
     <div class="theme-container theme-grid">
         
         <div class="col-span-2 md:col-span-6 xl:col-span-12 pt-8 md:pt-16 xl:pt-32 flex flex-col items-center">
