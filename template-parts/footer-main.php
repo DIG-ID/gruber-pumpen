@@ -99,7 +99,7 @@
 	<section class="border-b border-orange-shade-1 bg-blue-shade-4">
 		<div class="theme-container grid grid-cols-2 md:grid-cols-6 xl:grid-cols-12 xl:min-h-[439px]">
 		<!-- Logo && Socials -->
-			<div class="top-logo-footer w-full col-span-2 md:col-span-6 xl:col-span-4 order-1 xl:order-2 border-b lg:border-b-0 flex flex-col justify-evenly items-center lg:border-x border-orange-shade-1 lg:mx-auto">
+			<div class="top-logo-footer w-full col-span-2 md:col-span-6 xl:col-span-4 order-1 xl:order-2 flex flex-col justify-evenly items-center xl:border-x border-orange-shade-1 lg:mx-auto mb-4 xl:mb-0">
 				<div class="flex items-center">
 					<?php do_action('footer_theme_logo'); ?>
 				</div>
@@ -117,7 +117,7 @@
 
 			<!-- Menu -->
 			<div
-				class="border-b lg:border-b-0 border-orange-shade-1 col-span-2 md:col-span-3 xl:col-span-4 order-2 xl:order-1 flex flex-col py-8 md:py-20">
+				class="border-b xl:border-b-0 border-orange-shade-1 col-span-2 md:col-span-3 xl:col-span-4 order-2 xl:order-1 flex flex-col py-8 md:py-20">
 
 				<h4 class="text-orange-shade-1 border-b-2 border-orange-shade-1 text-xl font-bold max-w-[4rem] pb-4 mb-6">
 					<?php the_field('footer_menu_title', 'options'); ?>
@@ -139,7 +139,7 @@
 
 			<!-- Contact -->
 			<div
-				class="contact-section border-b md:border-l lg:border-none border-orange-shade-1 col-span-2 md:col-span-3 xl:col-span-4 order-3 xl:order-3 flex flex-col py-8 md:py-20 xl:pl-12">
+				class="contact-section border-b md:border-l xl:border-none border-orange-shade-1 col-span-2 md:col-span-3 xl:col-span-4 order-3 xl:order-3 flex flex-col py-8 md:py-20 md:pl-12">
 				<h3 class="text-orange-shade-1 border-b-2 border-orange-shade-1 text-xl font-bold max-w-[4rem] pb-4 mb-6">
 					<?php the_field('footer_contact_title', 'options') ?>
 				</h3>
@@ -155,7 +155,7 @@
 				<a href="<?php echo esc_url($booking_url); ?>" class="bot-header btn btn--primary">
 					<?php esc_html_e('KONTAKTIEREN SIE UNS', 'gruber-pumpen'); ?>
 				</a>
-				<div class="lg:hidden">
+				<div class="xl:hidden">
 					<?php do_action( 'socials' ); ?>
 				</div>
 			</div>
