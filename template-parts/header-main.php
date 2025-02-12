@@ -126,8 +126,8 @@
 						wp_nav_menu([
 							'theme_location' => 'main-mega-menu',
 							'menu_id' => 'main-menu',
-							'container_class' => 'main-menu-container pt-28 xl:pt-0',
-							'menu_class' => 'main-menu-top-level p-8',
+							'container_class' => 'main-menu-container bg-blue-shade-3 mt-16 md:mt-[104px] xl:mt-0 min-h-[94vh] xl:min-h-none',
+							'menu_class' => 'main-menu-top-level pt-20 pt px-4',
 							'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb' => '__return_false',
 							'walker' => new Custom_Walker_Nav_Menu(),

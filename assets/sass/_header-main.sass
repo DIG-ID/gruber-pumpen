@@ -109,7 +109,7 @@
         .menu-item:not(:nth-child(1))
             @apply xl:mt-11
         .menu-item
-            @apply text-left mt-6
+            @apply text-right mt-4
             a
                 @apply font-outfit text-[20px] xl:text-[30px] tracking-[3.2px] font-light text-blue-shade-4 normal-case hover:text-blue-shade-3 hover:tracking-[0.07rem]
                 transition: color .2s, letter-spacing .4s ease-out
@@ -221,6 +221,12 @@
     $background-color-second-level: #F5F0EF
     $hover-color: white
 
+    #main-menu
+        &.main-menu-top-level
+            .menu-item
+                @apply relative
+                a
+                    @apply font-outfit text-[30px] leading-[54px] text-[#F0F7FA] font-bold
 
     #header-main.menu-open
         .menu-toggle

@@ -21,7 +21,7 @@
                 <div class="mb-2">
                     <h3 class="text-overline text-blue-shade-5 mb-0"><?php echo esc_html($title); ?></h3>
                     <div class="flex items-center space-x-4">
-                        <div class="relative h-5 rounded-full w-full">
+                        <div class="relative bg-gray-200 h-5 rounded-full w-full">
                             <div 
                                 class="absolute left-0 top-0 h-full rounded-full bg-orange-shade-2" 
                                 style="width: <?php echo esc_attr($bar_width); ?>%; border-radius: 50px;">

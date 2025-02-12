@@ -13,7 +13,7 @@
             loop 
             playsinline>
         </video>
-        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute inset-0 bg-black opacity-60"></div>
     </div>
 
 
@@ -46,7 +46,7 @@
                 ?>
             </div>
 
-            <div class="flex gap-6 mt-10 invisible fade-in--noscroll">
+            <div class="flex flex-col md:flex-row gap-6 mt-10 invisible fade-in--noscroll">
                 <?php
                 $know_more_link = get_field('intro_know_more_link');
                 $contact_link = get_field('intro_contact_link');
@@ -54,7 +54,7 @@
                 if ($know_more_link):
                     $know_more_link_target = $know_more_link['target'] ? $know_more_link['target'] : '_self';
                     ?>
-                    <a class="btn btn--secondary uppercase" href="<?php echo esc_url($know_more_link['url']); ?>"
+                    <a class="btn btn--secondary uppercase self-start" href="<?php echo esc_url($know_more_link['url']); ?>"
                         target="<?php echo esc_attr($know_more_link_target); ?>"><?php echo esc_html($know_more_link['title']); ?></a>
                     <?php
                 endif;
@@ -62,7 +62,7 @@
                 if ($contact_link):
                     $contact_link_target = $contact_link['target'] ? $contact_link['target'] : '_self';
                     ?>
-                    <a class="btn btn--primary uppercase" href="<?php echo esc_url($contact_link['url']); ?>"
+                    <a class="btn btn--primary uppercase self-start" href="<?php echo esc_url($contact_link['url']); ?>"
                         target="<?php echo esc_attr($contact_link_target); ?>"><?php echo esc_html($contact_link['title']); ?></a>
                     <?php
                 endif;

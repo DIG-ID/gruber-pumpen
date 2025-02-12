@@ -99,7 +99,7 @@
 	<section class="border-b border-orange-shade-1 bg-blue-shade-4">
 		<div class="theme-container grid grid-cols-2 md:grid-cols-6 xl:grid-cols-12 xl:min-h-[439px]">
 		<!-- Logo && Socials -->
-			<div class="top-logo-footer w-full col-span-2 md:col-span-6 xl:col-span-4 order-1 xl:order-2 flex flex-col justify-evenly items-center xl:border-x border-orange-shade-1 lg:mx-auto mb-4 xl:mb-0">
+			<div class="top-logo-footer w-full col-span-2 md:col-span-6 xl:col-span-4 order-1 border-b xl:border-b-0 xl:order-2 flex flex-col justify-evenly items-center xl:border-x border-orange-shade-1 lg:mx-auto pb-9 xl:pb-0 pt-10 xl:pt-0">
 				<div class="flex items-center">
 					<?php do_action('footer_theme_logo'); ?>
 				</div>
