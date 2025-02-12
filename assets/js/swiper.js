@@ -4,6 +4,27 @@ import Swiper from "swiper/bundle";
 window.addEventListener(
   "load",
   () => {
+    if ( $(".page-template-page-home")[0] || $(".post-type-archive-eigenprodukte")[0] ) {
+      var productSlider = new Swiper(".products-slider", {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.products-swiper-button-next',
+            prevEl: '.products-swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+        }
+      });
+    }
     if ($(".page-template-page-about")[0]) {
       var aboutSwiper = new Swiper(".opinionSwiper", {
         slidesPerView: 1,
