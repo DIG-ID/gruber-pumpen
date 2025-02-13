@@ -1,6 +1,6 @@
 <section class="section-opinion py-14 md:py-16 xl:py-24 overflow-hidden">
 	<div class="theme-container theme-grid relative">
-		<div class="opinion--title col-span-2 md:col-span-6 xl:col-span-12 z-10 xl:absolute xl:left-[41%] xl:top-10">
+		<div class="opinion--title col-span-2 md:col-span-6 xl:col-span-12 z-10 xl:absolute xl:left-[47%] xl:top-10">
 			<div class="flex items-center gap-4 mb-4">
 				<h4 class="text-orange-shade-1"><?php the_field( 'opinion_eyebrow' ); ?></h4>
 				<hr class="border border-orange-shade-1  w-[4.5rem]" />

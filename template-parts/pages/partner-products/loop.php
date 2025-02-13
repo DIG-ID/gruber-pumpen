@@ -42,7 +42,7 @@
 						</div>
 						<div class="col-span-2 md:col-span-6 xl:col-start-8 xl:col-span-5">
 							<h2 class="text-title-h2 text-blue-shade-4 mb-6 md:mb-10 xl:mb-12"><?php the_title(); ?></h2>
-							<div class="text-p--2 "><?php the_content(); ?></div>
+							<div class="text-p--2 pb-8 md:pb-14"><?php the_content(); ?></div>
 							<?php
 							$blink = get_field( 'link' );
 							if ( $blink ) :
@@ -70,7 +70,7 @@
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-span-2 md:col-span-6 xl:col-span-12 odd-post theme-grid my-12 md:my-16 invisible fade-in' ); ?>>
 						<div class="col-span-2 md:col-span-6 xl:col-span-5 order-2 xl:order-1">
 							<h2 class="text-title-h2 text-blue-shade-4 mb-6 md:mb-10 xl:mb-12"><?php the_title(); ?></h2>
-							<div class="text-p--2"><?php the_content(); ?></div>
+							<div class="text-p--2 pb-8 md:pb-14"><?php the_content(); ?></div>
 							<?php
 							$blink = get_field( 'link' );
 							if ( $blink ) :

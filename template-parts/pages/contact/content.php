@@ -5,7 +5,7 @@
 			<h2 class="text-title-h2 text-blue-shade-4 mb-10"><?php the_field( 'intro_title' ); ?></h2>
 			<p class="text-p--2 mb-12"><?php the_field( 'intro_description' ); ?></p>
 			<div class="grid grid-cols-6 md:gap-6 gap-7">
-				<div class="col-span-6 md:col-span-3 box box--sm">
+				<div class="col-span-6 md:col-span-3 box box--sm !pr-3">
 					<h3 class="text-subtitle text-blue-shade-4 mb-2"><?php the_field( 'address_title' ); ?></h3>
 					<p class="text-p--2"><?php the_field( 'address_description' ); ?></p>
 				</div>
