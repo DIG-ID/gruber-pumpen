@@ -4,6 +4,7 @@
 			<h6 class="text-overline text-blue-shade-5 mb-7"><?php esc_html_e( 'Galerie', 'gruber-pumpen' ) ?></h6>
 			<?php
 			$images = get_field( 'gallery' );
+			var_dump($images);
 			if ( $images ) :
 				?>
 				<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
