@@ -82,9 +82,9 @@
                             ?>
                         </div>
                         <div class="col-span-1 pt-6 md:pt-10 pl-5 md:pl-12 md:pr-5">
-                            <p class="text-p--2 mb-9"><span class="font-bold text-xl text-[#063047] mb-4"><?php echo esc_html_e( 'Preis:', 'gruber pumpen' ) ?></span><br><?php the_field( 'price' ); ?></p>
-                            <p class="text-p--2 mb-9"><span class="font-bold text-xl text-[#063047] mb-4"><?php echo esc_html_e( 'Termine:', 'gruber pumpen' ) ?></span><br><?php the_field( 'appointments' ); ?></p>
-                            <p class="text-p--2 mb-9"><span class="font-bold text-xl text-[#063047] mb-4"><?php echo esc_html_e( 'Dauer:', 'gruber pumpen' ) ?></span><br><?php the_field( 'length' ); ?></p>
+                            <p class="text-p--2 mb-5 md:mb-9"><span class="font-bold text-xl text-[#063047] mb-4"><?php echo esc_html_e( 'Preis:', 'gruber pumpen' ) ?></span><br><?php the_field( 'price' ); ?></p>
+                            <p class="text-p--2 mb-5 md:mb-9"><span class="font-bold text-xl text-[#063047] mb-4"><?php echo esc_html_e( 'Termine:', 'gruber pumpen' ) ?></span><br><?php the_field( 'appointments' ); ?></p>
+                            <p class="text-p--2 mb-5 md:mb-9"><span class="font-bold text-xl text-[#063047] mb-4"><?php echo esc_html_e( 'Dauer:', 'gruber pumpen' ) ?></span><br><?php the_field( 'length' ); ?></p>
                             <p class="text-p--2"><span class="font-bold text-xl text-[#063047] mb-4"><?php echo esc_html_e( 'Anzahl:', 'gruber pumpen' ) ?></span><br><?php the_field( 'number' ); ?></p>
                         </div>
                     </div>

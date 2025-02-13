@@ -1,4 +1,4 @@
-<section class="section-trainings py-16 md:py-28 overflow-hidden bg-blue-shade-0">
+<section class="section-trainings pt-16 pb-5 md:py-28 overflow-hidden bg-blue-shade-0">
     <div class="theme-container theme-grid">
             <div class="col-span-2 md:col-span-6 xl:col-span-12 flex items-center justify-center gap-4 invisible fade-in">
                 <hr class="border border-orange-shade-1 w-[4.5rem]" />
@@ -62,7 +62,7 @@
                                     $sust_btn_title  = $sust_btn['title'];
                                     $sust_btn_target = $sust_btn['target'] ? $sust_btn['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--transparent-inverted self-start uppercase" href="/schulungen/" target="_self"><?php echo esc_html_e( 'Mehr Erfahren', 'gruber pumpen' ) ?></a>
+                                    <a class="btn btn--transparent-inverted self-start uppercase mb-11 md:mb-0" href="/schulungen/" target="_self"><?php echo esc_html_e( 'Mehr Erfahren', 'gruber pumpen' ) ?></a>
                                     <?php
                                 endif;
                                 ?>

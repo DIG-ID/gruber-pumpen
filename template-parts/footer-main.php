@@ -66,7 +66,7 @@
 				</div>
 			</div>
 
-			<div class="theme-container theme-grid flex justify-center mt-24">
+			<div class="theme-container theme-grid flex justify-center mt-10 md:mt-24">
 				<?php
 				$testimonials = get_field('footer_testimonials_list', 'options');
 				foreach ($testimonials as $testimonial):
