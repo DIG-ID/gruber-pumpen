@@ -122,17 +122,51 @@
 				<div class="col-span-12 px-0 py-0 xl:pl-8 xl:pt-12 bg-blue-shade-0 block xl:hidden mobile__nav">
 					<!-- Mobile Main Menu -->
 					<nav>
-						<?php
-						wp_nav_menu([
-							'theme_location' => 'main-mega-menu',
-							'menu_id' => 'main-menu',
-							'container_class' => 'main-menu-container bg-blue-shade-3 mt-16 md:mt-[104px] xl:mt-0 min-h-[94vh] xl:min-h-none',
-							'menu_class' => 'main-menu-top-level pt-20 pt px-4',
-							'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-							'fallback_cb' => '__return_false',
-							'walker' => new Custom_Walker_Nav_Menu(),
-						]);
-						?>
+						<div class="bg-blue-shade-3 mt-16 md:mt-[104px] xl:mt-0 min-h-[94vh] xl:min-h-none flex flex-col justify-between">
+							<div class="main-menu-container">
+								<?php
+								wp_nav_menu([
+									'theme_location' => 'main-mega-menu',
+									'menu_id' => 'main-menu',
+									'menu_class' => 'main-menu-top-level pt-20 pt px-4',
+									'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+									'fallback_cb' => '__return_false',
+									'walker' => new Custom_Walker_Nav_Menu(),
+								]);
+								?>
+							</div>
+							<div class=" pb-14">
+								<p class="gap-2 text-blue-shade-0 text-lg font-outfit font-medium items-center px-4 flex">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.21778 6.92444C4.49778 9.44 6.56 11.4933 9.07556 12.7822L11.0311 10.8267C11.2711 10.5867 11.6267 10.5067 11.9378 10.6133C12.9333 10.9422 14.0089 11.12 15.1111 11.12C15.6 11.12 16 11.52 16 12.0089V15.1111C16 15.6 15.6 16 15.1111 16C6.76444 16 0 9.23556 0 0.888889C0 0.4 0.4 0 0.888889 0H4C4.48889 0 4.88889 0.4 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"
+											fill="#F0F7FA" />
+									</svg>
+									<a href="tel:<?php the_field('header_phone', 'options') ?>"><?php the_field('header_phone', 'options') ?></a>
+								</p>
+								<div class="px-4">
+									<?php
+									$schedules = get_field('header_schedule', 'options');
+									if ( $schedules ) :
+										foreach ($schedules as $schedule):
+											$title = $schedule['title'];
+											$description = $schedule['description'];
+											if ($title && $description):
+												?>
+												<p class="font-dm text-blue-shade-0 font-bold text-[14px] leading-[28px] inline-block">
+													<?php echo $title ?>:&nbsp;
+												</p>
+												<p class="font-dm text-blue-shade-0 text-[14px] leading-[28px] inline-block">
+													<?php echo $description ?>
+												</p><br>
+												<?php
+											endif;
+										endforeach;
+									endif;
+									?>
+								</div>
+							</div>
+						</div>
 					</nav>
 
 					<!-- Additional Mobile Menus -->
