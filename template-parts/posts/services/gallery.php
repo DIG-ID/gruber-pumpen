@@ -3,7 +3,7 @@
 		<div id="gallery" class="col-span-2 md:col-span-6 xl:col-span-12">
 			<h6 class="text-overline text-blue-shade-5 mb-7"><?php esc_html_e( 'Galerie', 'gruber-pumpen' ) ?></h6>
 			<?php
-			$images = get_field( 'gallery' );
+			$images = get_field( 'galerie' );
 			var_dump($images);
 			if ( $images ) :
 				?>
