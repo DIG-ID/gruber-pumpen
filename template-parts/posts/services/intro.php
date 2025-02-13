@@ -20,7 +20,9 @@
 
 		<div class="col-span-2 md:col-span-6 xl:col-span-7 order-2 md:order-3 xl:order-3">
 			<h3 class="text-title-h4 text-blue-shade-4 mb-4 md:mb-7"><?php the_field( 'intro_subtitle' ); ?></h3>
-			<p class="text-p--2 mb-10 md:mb-14 xl:mb-0"><?php the_field( 'intro_description' ); ?></p>
+			<div class="service-single-content-wrapper mb-10 md:mb-14 xl:mb-0">
+				<?php the_field( 'intro_description' ); ?>
+			</div>
 		</div>
 
 		<div class="col-span-2 md:col-span-3 xl:col-span-4 xl:col-start-9 order-4 md:order-3">
