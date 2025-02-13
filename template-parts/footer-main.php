@@ -44,7 +44,7 @@
 
 	<?php if (is_front_page()): ?>
 
-		<section class="testimonials-section py-40 bg-blue-shade-0">
+		<section class="testimonials-section pt-16 pb-36 md:py-40 bg-blue-shade-0">
 			<div class="theme-container theme-grid flex flex-col gap-6">
 				<div class="col-span-2 md:col-span-6 xl:col-span-12 flex items-center justify-center gap-4 invisible fade-in">
 					<hr class="border border-orange-shade-1 w-[4.5rem]" />
@@ -75,9 +75,9 @@
 					$review = $testimonial['testimonial'];
 					if ($testimonial):
 						?>
-						<div class="testimonials-card col-span-2 md:col-span-6 xl:col-span-6 px-12 py-6 mb-12 xl:mb-14 invisible fade-in">
+						<div class="testimonials-card col-span-2 md:col-span-6 xl:col-span-6 px-5 md:px-12 py-4 md:py-6 mb-12 xl:mb-14 invisible fade-in">
 							<p
-								class="text-blue-shade-2 p-4 [leading-trim:both] [text-edge:cap] font-dm-sans text-base italic font-normal leading-[26px]">
+								class="text-blue-shade-2 p-4 [leading-trim:both] [text-edge:cap] font-dm-sans text-xs md:text-base italic font-normal leading-[26px]">
 								<?php echo $review ?>
 							</p>
 							<div>

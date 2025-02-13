@@ -25,6 +25,14 @@
       @apply bg-[#0B527A]
     &:active
       @apply bg-blue-shade-4
+  &--transparent-inverted
+    @apply text-blue-shade-4 border border-blue-shade-0 bg-transparent
+    &:hover
+      @apply bg-[#0B527A] text-blue-shade-0
+    &:focus
+      @apply bg-[#0B527A] text-blue-shade-0
+    &:active
+      @apply bg-blue-shade-4 text-blue-shade-0
   &--icon
     @apply w-11 h-11 flex flex-col justify-center items-center rounded-[0.625rem] transition-all duration-300 ease-in-out
     i

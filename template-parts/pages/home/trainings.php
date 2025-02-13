@@ -1,4 +1,4 @@
-<section class="section-about-us py-28 overflow-hidden bg-blue-shade-0">
+<section class="section-trainings py-16 md:py-28 overflow-hidden bg-blue-shade-0">
     <div class="theme-container theme-grid">
             <div class="col-span-2 md:col-span-6 xl:col-span-12 flex items-center justify-center gap-4 invisible fade-in">
                 <hr class="border border-orange-shade-1 w-[4.5rem]" />
@@ -9,7 +9,7 @@
                 <?php endif; ?>
                 <hr class="border border-orange-shade-1  w-[4.5rem]" />
             </div>
-             <div class="col-span-2 md:col-span-6 xl:col-span-12">
+            <div class="col-span-2 md:col-span-6 xl:col-span-12">
                 <?php
                 $trainings_title = get_field('trainings_title');
                 if ($trainings_title): ?>
@@ -19,7 +19,7 @@
                 <?php endif; ?>
             </div>
 
-            <div class="col-span-2 md:col-span-6 xl:col-span-12 grid grid-cols-2 md:grid-cols-6 xl:grid-cols-12 gap-x-6 mt-20 md:mt-16 xl:mt-20">
+            <div class="col-span-2 md:col-span-6 xl:col-span-12 grid grid-cols-2 md:grid-cols-6 xl:grid-cols-12 gap-x-6 mt-12 md:mt-16 xl:mt-20">
                 <?php
                 $training_args = array(
                     'post_type'   => 'training',
@@ -34,13 +34,13 @@
                     while ($training_query->have_posts()) :
                         $training_query->the_post();
                         ?>
-                        <div class="bg-transparent md:bg-white py-7 md:px-7 md:rounded-[1.25rem] col-span-2 md:col-span-6 xl:col-span-6 grid grid-cols-2 md:grid-cols-6 gap-x-6 mb-14 xl:mb-0">
-                            <div class="col-span-1 md:col-span-3">
+                        <div class="bg-transparent md:bg-white pt-4 pb-0 md:py-7 md:px-7 md:rounded-[1.25rem] col-span-2 md:col-span-6 xl:col-span-6 grid grid-cols-2 md:grid-cols-6 gap-x-6 mb-0 md:mb-14 xl:mb-0">
+                            <div class="col-span-2 md:col-span-3">
                                 <?php if (has_post_thumbnail()) : ?>
-                                    <div class="featured-image">
+                                    <div class="featured-image mb-4 md:mb-0">
                                         <?php 
                                         the_post_thumbnail('training-overview-img', [
-                                            'class' => 'training-overview-img rounded-[1.25rem] w-full lg:w-auto',
+                                            'class' => 'training-overview-img rounded-[1.25rem] w-4/5 md:w-auto',
                                             'alt' => get_the_title()
                                         ]); 
                                         ?>
@@ -52,9 +52,9 @@
                                 <?php endif; ?>
                                 
                             </div>
-                            <div class="col-span-1 md:col-span-3">
+                            <div class="col-span-2 md:col-span-3">
                                 <h3 class="text-title-h4 text-[#063047] mb-4 md:mb-6 xl:mb-7"><?php the_title(); ?></h3>
-                                <div class="text-p--2 mb-3 md:mb-4 xl:mb-6"><?php the_excerpt(); ?></div>
+                                <div class="text-p--2 mb-6 md:mb-4 xl:mb-6"><?php the_excerpt(); ?></div>
                                 <?php
                                 $sust_btn = get_field( 'button' );
                                 if ( $sust_btn ) :
@@ -62,7 +62,7 @@
                                     $sust_btn_title  = $sust_btn['title'];
                                     $sust_btn_target = $sust_btn['target'] ? $sust_btn['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--transparent self-start uppercase" href="/schulungen/" target="_self"><?php echo esc_html_e( 'Mehr Erfahren', 'gruber pumpen' ) ?></a>
+                                    <a class="btn btn--transparent-inverted self-start uppercase" href="/schulungen/" target="_self"><?php echo esc_html_e( 'Mehr Erfahren', 'gruber pumpen' ) ?></a>
                                     <?php
                                 endif;
                                 ?>

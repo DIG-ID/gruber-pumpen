@@ -4,10 +4,10 @@
             <?php
             $image = get_field('about_us_image');
             if ($image):
-                echo wp_get_attachment_image($image, 'full', false, array('class' => 'lg:max-w-[491px] lg:max-h-[502px] ml-[-15%] md:ml-0 rounded-[2rem] fade-in'));
+                echo wp_get_attachment_image($image, 'full', false, array('class' => 'lg:max-w-[491px] lg:max-h-[502px] ml-[-10%] md:ml-0 rounded-[2rem] fade-in'));
             endif;
             ?>
-            <span class="flex flex-col gap-4 justify-center items-center max-w-[108px] md:max-w-[176px] xl:max-w-[188px] bg-blue-shade-3 rounded-[30px] h-[117px] md:h-[192px] xl:h-[205px] absolute left-[-7rem] top-6 p-3 md:p-4 fade-in">
+            <span class="flex flex-col gap-4 justify-center items-center max-w-[108px] md:max-w-[176px] xl:max-w-[188px] bg-blue-shade-3 rounded-[30px] h-[117px] md:h-[192px] xl:h-[205px] absolute left-[-5rem] top-6 p-3 md:p-4 fade-in">
                 <?php
                 $minicard_value = get_field('about_us_minicard_value');
                 if ($minicard_value): ?>
