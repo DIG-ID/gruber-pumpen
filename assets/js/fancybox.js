@@ -3,7 +3,7 @@ import { Fancybox } from "@fancyapps/ui";
 //wait until images, links, fonts, stylesheets, and js is loaded
 window.addEventListener("load", () => {
 
-	if ($(".eigenprodukte-template")[0]) {
+	if ($(".eigenprodukte-template")[0] || $(".service-template-default")[0] ) {
 		Fancybox.bind("[data-fancybox='gallery']", {
 			Images: {
 				Panzoom: {
