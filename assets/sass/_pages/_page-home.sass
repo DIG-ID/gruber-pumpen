@@ -1,12 +1,16 @@
 
 .section-homepage-intro
-    @apply mt-16 md:mt-[104px] xl:mt-[145px] pb-14 md:pb-28 xl:pb-10
+    @apply mt-16 md:mt-[104px] xl:mt-[145px] pb-14 md:pb-28 xl:pb-10 pt-14 md:pt-0 xl:pt-0
     min-height: calc(100vh - 145px)
+
+@media (max-width: 768px)
+    .section-homepage-intro
+        min-height: calc(100vh - 64px)
 
 @media (max-width: 1024px)
     .section-homepage-intro
         @apply mt-16 md:mt-[104px] xl:mt-[145px] pb-14 md:pb-28 xl:pb-10
-        min-height: calc(100vh - 250px)
+        min-height: calc(100vh - 104px)
 
 @media (min-width:1200px)
     .bg-decor
