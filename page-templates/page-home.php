@@ -15,6 +15,7 @@ if ( have_posts() ) :
 		get_template_part( 'template-parts/pages/home/info-bar');
 		get_template_part( 'template-parts/pages/home/trainings');
 		do_action( 'after_main_content' );
+		get_template_part( 'template-parts/components/sticky-icon');
 	endwhile;
 endif;
 get_footer();

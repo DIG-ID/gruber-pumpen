@@ -1,4 +1,4 @@
-<section class="contact-section pt-40 pb-36">
+<section class="contact-section pt-12 md:pt-16 xl:pt-40 pb-11 md:pb-24 xl:pb-28">
 	<div class="theme-container theme-grid">
 
 		<div class="col-span-2 md:col-span-6 xl:col-span-6">
