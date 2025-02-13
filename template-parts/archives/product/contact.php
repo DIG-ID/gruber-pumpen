@@ -8,13 +8,13 @@
                     <?php echo $contact_title; ?>
                 </h2>
             <?php endif; ?>
-            <p class="text-p--2 !text-[10px] md:!text-[1rem] xl:!text-[1rem] xl:max-w-[360px] invisible fade-in"><?php the_field('products_contact_text', 'option'); ?></p>
+            <p class="text-p--2 !text-[11px] sm:!text-[1rem] md:!text-[1rem] xl:!text-[1rem] xl:max-w-[360px] !leading-[0.95rem] sm:!leading-[1.625rem] invisible fade-in"><?php the_field('products_contact_text', 'option'); ?></p>
             <?php
             $contact_link = get_field('products_contact_link', 'option');
             if ($contact_link):
                 $contact_link_target = $contact_link['target'] ? $contact_link['target'] : '_self';
                 ?>
-                <a class="btn btn--primary uppercase absolute bottom-0 left-0 inline-block" href="<?php echo esc_url($contact_link['url']); ?>"
+                <a class="btn btn--primary uppercase !px-3 md:!px-7 absolute bottom-0 left-0 inline-block" href="<?php echo esc_url($contact_link['url']); ?>"
                     target="<?php echo esc_attr($contact_link_target); ?>"><?php echo esc_html($contact_link['title']); ?></a>
             <?php endif; ?>
         </div>
