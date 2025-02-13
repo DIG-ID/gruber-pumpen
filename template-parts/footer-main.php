@@ -20,7 +20,7 @@
 					$services_title = $services_link['title'];
 					$services_target = $services_link['target'] ? $link['target'] : '_self';
 					?>
-					<a class="btn btn--primary mr-6" href="<?php echo esc_url($services_url); ?>"
+					<a class="btn btn--primary mr-6 mb-4 sm:mb-0" href="<?php echo esc_url($services_url); ?>"
 						target="<?php echo esc_attr($services_target); ?>"><?php echo esc_html($services_title); ?></a>
 					<?php
 				endif;

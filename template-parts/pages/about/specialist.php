@@ -1,4 +1,4 @@
-<section class="section-specialists py-28">
+<section class="section-specialists py-11 md:py-28">
 	<div class="theme-container theme-grid">
 		<div class="col-span-2 md:col-span-6 order-2 xl:order-1">
 			<div class="flex flex-col xl:justify-between xl:h-full">
