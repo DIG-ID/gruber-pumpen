@@ -4,7 +4,7 @@
 		$products_args = array(
 			'post_type'      => 'partnerprodukt',
 			'post_status'    => 'publish',
-			'post__not_in'   => array( 558, 556 ),
+			'post__not_in'   => array( 558, 556 ), // hide watts and saniboy posts.
 			'posts_per_page' => -1,
 			'orderby'        => 'date',
 			'order'          => 'DESC',
