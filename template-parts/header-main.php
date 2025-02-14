@@ -122,20 +122,20 @@
 				<div class="col-span-12 px-0 py-0 xl:pl-8 xl:pt-12 bg-blue-shade-0 block xl:hidden mobile__nav">
 					<!-- Mobile Main Menu -->
 					<nav>
-						<div class="bg-blue-shade-3 mt-16 md:mt-[104px] xl:mt-0 min-h-[94vh] xl:min-h-none flex flex-col justify-between">
+						<div class="bg-blue-shade-3 mt-16 md:mt-[104px] xl:mt-0 min-h-[calc(94svh-64px)] md:min-h-[calc(94svh-104px)] xl:min-h-none flex flex-col justify-between">
 							<div class="main-menu-container">
 								<?php
 								wp_nav_menu([
 									'theme_location' => 'main-mega-menu',
 									'menu_id' => 'main-menu',
-									'menu_class' => 'main-menu-top-level pt-20 pt px-4',
+									'menu_class' => 'main-menu-top-level pt-12 px-4',
 									'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 									'fallback_cb' => '__return_false',
 									'walker' => new Custom_Walker_Nav_Menu(),
 								]);
 								?>
 							</div>
-							<div class=" pb-14">
+							<div class="pb-20">
 								<p class="gap-2 text-blue-shade-0 text-lg font-outfit font-medium items-center px-4 flex">
 									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
