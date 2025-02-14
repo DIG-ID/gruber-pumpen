@@ -33,7 +33,7 @@ if ( ! empty($table) ) : ?>
             <?php foreach ( $table['body'] as $tr_index => $tr ) : ?>
                 <tr class="border-b border-blue-shade-2 last:border-b-0">
                     <?php foreach ( $tr as $td_index => $td ) : ?>
-                        <td class="px-4 py-2 text-p--2 <?php echo $tr_index === 0 ? '!font-bold' : ''; ?> <?php echo $td_index === 0 ? '!font-bold' : ''; ?>">
+                        <td class="px-2 md:px-4 py-2 text-p--2 <?php echo $tr_index === 0 ? '!font-bold' : ''; ?> <?php echo $td_index === 0 ? '!font-bold' : ''; ?>">
                             <?php echo esc_html($td['c']); ?>
                         </td>
                     <?php endforeach; ?>

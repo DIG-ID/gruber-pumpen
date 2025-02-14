@@ -4,7 +4,7 @@
 <?php
     if( have_rows('content_3_list') ):
         while( have_rows('content_3_list') ) : the_row(); ?>
-        <div class="col-span-2 md:col-span-2 xl:col-span-2">
+        <div class="col-span-1 md:col-span-2 xl:col-span-2 mb-8 md:mb-6 xl:mb-0">
             <h6 class="inline-block w-[33px] md:w-[56px] font-outfit text-[18px] md:text-[30px] font-semibold leading-[24px] md:leading-[52px] border-b-[3px] md:border-b-[5px] border-blue-shade-3 text-blue-shade-3 mb-4"><?php the_sub_field( 'title' ); ?></h6>
             <p class="text-overline text-blue-shade-5"><?php the_sub_field( 'subtitle' ); ?></p>
         </div>

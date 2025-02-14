@@ -51,7 +51,7 @@
 					<?php
 					$testimonials_eyebrow = get_field('footer_testimonials_eyebrow', 'options');
 					if ($testimonials_eyebrow): ?>
-						<h4 class="text-orange-shade-1 text-center uppercase"><?php echo $testimonials_eyebrow; ?></h4>
+						<h4 class="text-orange-shade-1 text-center text-eyebrow"><?php echo $testimonials_eyebrow; ?></h4>
 					<?php endif; ?>
 					<hr class="border border-orange-shade-1  w-[4.5rem]" />
 				</div>
