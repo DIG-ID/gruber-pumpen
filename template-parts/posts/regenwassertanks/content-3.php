@@ -11,7 +11,7 @@
 <?php   endwhile;
     endif; ?>
 
-<div class="col-span-2 md:col-span-6 xl:col-span-7 mt-14 xl:mt-24">
+<div class="col-span-2 md:col-span-6 xl:col-span-8 mt-14 xl:mt-24">
     <?php 
     $table = get_field('content_3_table'); 
 
@@ -40,7 +40,7 @@
                 <?php foreach ( $table['body'] as $tr_index => $tr ) : ?>
                     <tr class="<?php echo $tr_index === 0 ? 'pb-8' : 'border-b border-blue-shade-5'; ?> last:border-b-0">
                         <?php foreach ( $tr as $td_index => $td ) : ?>
-                            <td class="px-4 py-2 text-p--2 !text-blue-shade-5 <?php echo $tr_index === 0 ? '!font-bold pb-8' : ''; ?> <?php echo $td_index === 0 ? '!font-bold' : ''; ?> <?php echo $td_index === count($tr) - 1 ? '!font-bold' : ''; ?>">
+                            <td class="px-4 py-2 text-p--2 !text-xs md:!text-base !text-blue-shade-5 <?php echo $tr_index === 0 ? '!font-bold pb-8' : ''; ?> <?php echo $td_index === 0 ? '!font-bold' : ''; ?> <?php echo $td_index === count($tr) - 1 ? '!font-bold' : ''; ?>">
                                 <?php echo esc_html($td['c']); ?>
                             </td>
                         <?php endforeach; ?>

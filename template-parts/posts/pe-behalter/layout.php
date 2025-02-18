@@ -6,7 +6,7 @@
 		<div id="content-button" class="col-span-2 md:col-span-6 xl:col-span-7 col-start-1 my-12 order-2 xl:order-2">
 				<?php
 				$product_link = get_field( 'button' );
-				if ( $product_link ) :
+				if ( $product_link['title'] ) :
 					$product_link_target = $product_link['target'] ? $product_link['target'] : '_self';
 					?>
 					<a class="btn btn--secondary uppercase inline-block" href="<?php echo esc_url( $product_link['url'] ); ?>"target="<?php echo esc_attr( $product_link_target ); ?>"><?php echo esc_html( $product_link['title'] ); ?>

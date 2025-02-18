@@ -6,7 +6,7 @@
 <div class="mt-10 md:mt-12 xl:mt-14">
     <?php
     $product_link = get_field('button');
-    if ($product_link):
+    if ($product_link['title']):
         $product_link_target = $product_link['target'] ? $product_link['target'] : '_self';
         ?>
         <a class="btn btn--secondary uppercase inline-block" href="<?php echo esc_url($product_link['url']); ?>"
