@@ -9,12 +9,7 @@
 		</div>
 		<div class="col-span-2 md:col-span-6 xl:col-start-7 xl:col-span-6 invisible fade-in">
 			<p class="text-p--1 mb-8"><?php the_field( 'eigenprodukte_description_1' ); ?></p>
-			<p class="text-p--2"><?php the_field( 'eigenprodukte_description_2' ); ?></p>
-		</div>
-		<div class="col-span-2 md:col-span-6 xl:col-span-12 theme-grid pt-24 pb-12">
-			<?php get_template_part( 'template-parts/components/own-products-loop' ); ?>
-		</div>
-		<div class="col-span-2 md:col-span-6 xl:col-span-12 flex justify-center items-center">
+			<p class="text-p--2 mb-8"><?php the_field( 'eigenprodukte_description_2' ); ?></p>
 			<?php
 			$blink = get_field( 'eigenprodukte_link' );
 			if ( $blink ) :
@@ -26,6 +21,9 @@
 				<?php
 			endif;
 			?>
+		</div>
+		<div class="col-span-2 md:col-span-6 xl:col-span-12 theme-grid pt-24 pb-12">
+			<?php get_template_part( 'template-parts/components/own-products-loop' ); ?>
 		</div>
 	</div>
 </section>
