@@ -54,7 +54,7 @@
                 if ($know_more_link):
                     $know_more_link_target = $know_more_link['target'] ? $know_more_link['target'] : '_self';
                     ?>
-                    <a class="btn btn--secondary uppercase self-start !text-[10px] md:!text-sm" href="<?php echo esc_url($know_more_link['url']); ?>"
+                    <a class="btn btn--secondary uppercase self-start" href="<?php echo esc_url($know_more_link['url']); ?>"
                         target="<?php echo esc_attr($know_more_link_target); ?>"><?php echo esc_html($know_more_link['title']); ?></a>
                     <?php
                 endif;
@@ -62,7 +62,7 @@
                 if ($contact_link):
                     $contact_link_target = $contact_link['target'] ? $contact_link['target'] : '_self';
                     ?>
-                    <a class="btn btn--primary uppercase self-start !text-[10px] md:!text-sm" href="<?php echo esc_url($contact_link['url']); ?>"
+                    <a class="btn btn--primary uppercase self-start" href="<?php echo esc_url($contact_link['url']); ?>"
                         target="<?php echo esc_attr($contact_link_target); ?>"><?php echo esc_html($contact_link['title']); ?></a>
                     <?php
                 endif;

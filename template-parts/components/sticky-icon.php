@@ -1,4 +1,4 @@
-<div class="theme-container sticky bottom-14 right-0 z-50">
+<div class="theme-container sticky bottom-0 md:bottom-14 right-0 z-50">
     <div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-row justify-end min-h-[108px]">
         <a href="tel:<?php the_field('header_phone', 'options') ?>" >
             <svg width="220" height="108" viewBox="0 0 220 108" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[150px] md:w-full">
