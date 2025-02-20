@@ -12,8 +12,8 @@
 				<div class="col-span-6 md:col-span-3 box box--sm">
 					<h3 class="text-subtitle text-blue-shade-4 mb-2"><?php the_field( 'contacts_title' ); ?></h3>
 					<div class="flex flex-col">
-						<a class="text-p--2 inline-block" href="tel:">+41 61 511 80 18</a>
-						<a class="text-p--2 inline-block underline" href="mailto:">info@gruber-pumpen.ch</a>
+						<a class="text-p--2 inline-block" href="tel:0041615118018">0041 61 511 80 18</a>
+						<a class="text-p--2 inline-block underline" href="mailto:info@gruber-pumpen.ch">info@gruber-pumpen.ch</a>
 					</div>
 				</div>
 				<div class="col-span-6 box box--sm">
