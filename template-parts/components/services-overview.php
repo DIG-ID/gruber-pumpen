@@ -1,4 +1,4 @@
-<section class="section-services py-8 xl:py-40">
+<section class="section-services py-8 xl:py-40 invisible fade-in">
 	<div class="theme-container theme-grid">
 		<!-- Services -->
 		<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col">
@@ -10,11 +10,11 @@
 				<?php endif; ?>
 				<hr class="border border-orange-shade-1 w-[4.5rem]" />
 			</div>
-			<div class="flex items-center justify-between invisible fade-in">
+			<div class="flex items-center justify-between ">
 				<?php
 				$services_title = get_field('services_title');
 				if ($services_title): ?>
-					<h2 class="text-title-h2 text-blue-shade-4 py-8 invisible fade-in max-w-[500px]">
+					<h2 class="text-title-h2 text-blue-shade-4 py-8  max-w-[500px]">
 						<?php echo $services_title; ?>
 					</h2>
 				<?php endif; ?>
@@ -43,18 +43,18 @@
 			while ($services_query->have_posts()) :
 				$services_query->the_post();
 				?>
-				<div class="col-span-1 md:col-span-3 xl:col-span-3 fade-in md:bg-white md:px-9 xl:px-7 pt-6 pb-10 md:pt-10 md:pb-16 rounded-3xl">
+				<div class="col-span-1 md:col-span-3 xl:col-span-3  md:bg-white md:px-9 xl:px-7 pt-6 pb-10 md:pt-10 md:pb-16 rounded-3xl">
 					<div class="min-h-[55px]">
 						<?php
 						$image = get_field('icon');
 						if ($image):
-							echo wp_get_attachment_image($image, 'full', false, array('class' => 'fade-in'));
+							echo wp_get_attachment_image($image, 'full', false, array('class' => ''));
 						endif;
 						?>
 					</div>
-					<h2 class="text-title-h4 text-blue-shade-4 text-left mt-3 md:mt-6 mb-5 md:mb-6 fade-in"><?php the_field('title'); ?>
+					<h2 class="text-title-h4 text-blue-shade-4 text-left mt-3 md:mt-6 mb-5 md:mb-6 "><?php the_field('title'); ?>
 					</h2>
-					<p class="text-p--2 invisible fade-in"><?php the_field('text'); ?></p>
+					<p class="text-p--2"><?php the_field('text'); ?></p>
 				</div>
 			<?php
 			endwhile;

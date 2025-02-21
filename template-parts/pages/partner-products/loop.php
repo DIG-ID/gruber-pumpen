@@ -1,4 +1,4 @@
-<section class="section-own-products-loop">
+<section class="section-own-products-loop invisible fade-in">
 	<div class="theme-container theme-grid">
 		<?php
 		$products_args = array(
