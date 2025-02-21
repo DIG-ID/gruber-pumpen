@@ -2,7 +2,7 @@
 	<div class="theme-container theme-grid">
 		<!-- Services -->
 		<div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col">
-			<div class="flex items-center gap-4 invisible fade-in">
+			<div class="flex items-center gap-4">
 				<?php
 				$services_eyebrow = get_field('services_eyebrow');
 				if ($services_eyebrow): ?>
