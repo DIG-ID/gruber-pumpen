@@ -52,8 +52,8 @@
 						endif;
 						?>
 					</div>
-					<h2 class="text-title-h4 text-blue-shade-4 text-left mt-3 md:mt-6 mb-5 md:mb-6 fade-in"><?php the_field('title'); ?>
-					</h2>
+					<h3 class="text-title-h4 text-blue-shade-4 text-left mt-3 md:mt-6 mb-5 md:mb-6 fade-in"><?php the_field('title'); ?>
+					</h3>
 					<p class="text-p--2 invisible fade-in"><?php the_field('text'); ?></p>
 				</div>
 			<?php
