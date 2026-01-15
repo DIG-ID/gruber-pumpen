@@ -74,3 +74,28 @@
 		</div>
 	</div>
 </section>
+
+<section class="section-oficial-partners bg-blue-shade-0 pb-8 xl:pb-40">
+	<div class="theme-container theme-grid">
+		<div class="col-span-1 md:col-span-3 xl:col-span-3 xl:col-start-4 mb-9">
+			<div class="box box--sm w-full flex justify-center items-center min-h-32 ">
+				<?php
+				$extra_image_1 = get_field( 'services_partner_logo_01', 'options' );
+				if ( $extra_image_1 ) :
+					echo wp_get_attachment_image( $extra_image_1, 'full', false, array( 'class' => 'w-full max-w-full h-auto object-cover' ) );
+				endif;
+				?>
+			</div>
+		</div>
+		<div class="col-span-1 md:col-span-3 xl:col-span-3 mb-9">
+			<div class="box box--sm w-full flex justify-center items-center min-h-32">
+				<?php
+				$extra_image_2 = get_field( 'services_partner_logo_2', 'options' );
+				if ( $extra_image_2 ) :
+					echo wp_get_attachment_image( $extra_image_2, 'full', false, array( 'class' => 'w-full max-w-full h-auto object-cover' ) );
+				endif;
+				?>
+			</div>
+		</div>
+	</div>
+</section>
