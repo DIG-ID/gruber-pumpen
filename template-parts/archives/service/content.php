@@ -32,7 +32,7 @@
 <!------>
 
 <!-- Services -->
-<section class="section-services pb-8 xl:pb-40">
+<section class="section-services pb-8 xl:pb-20">
 	<div class="theme-container theme-grid">
 		<div class="col-span-2 md:col-span-6 xl:col-span-12 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 gap-x-6">
 			<?php
@@ -75,7 +75,7 @@
 	</div>
 </section>
 
-<section class="section-oficial-partners bg-blue-shade-0 pb-8 xl:pb-40">
+<section class="section-oficial-partners bg-blue-shade-0 pb-8 xl:pb-20">
 	<div class="theme-container theme-grid">
 		<div class="col-span-1 md:col-span-3 xl:col-span-3 xl:col-start-4 mb-9">
 			<div class="box box--sm w-full flex justify-center items-center min-h-32 ">
