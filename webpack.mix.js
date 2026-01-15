@@ -22,7 +22,7 @@ mix
 
   .browserSync({
     proxy: {
-      target: "http://gruber-pumpen.digid/",
+      target: "https://gruber-pumpen.digid/",
       ws: true
     },
     files: ["./**/*.php", "./dist/js/*.js", "./dist/css/*.css"]
