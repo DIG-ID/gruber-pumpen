@@ -20,7 +20,7 @@
 
     <div class="relative theme-container theme-grid">
         <div class="col-span-2 md:col-span-6 xl:col-span-12 flex flex-col w-full">
-            <div class="flex items-center gap-4 invisible fade-in--noscroll">
+            <div class="flex items-center gap-4 fade-in--noscroll">
                 <?php
                 $intro_eyebrow = get_field('intro_eyebrow');
                 if ($intro_eyebrow): ?>
@@ -28,7 +28,7 @@
                 <?php endif; ?>
                 <hr class="border border-orange-shade-1  w-[4.5rem]" />
             </div>
-            <div class="page-header--title xl:max-w-[60%] invisible fade-in--noscroll">
+            <div class="page-header--title xl:max-w-[60%] fade-in--noscroll">
                 <?php
                 $intro_title = get_field('intro_title');
                 if ($intro_title): ?>
@@ -36,7 +36,7 @@
                 <?php endif; ?>
             </div>
 
-            <div class="page-header--description invisible fade-in--noscroll md:w-2/3 xl:w-1/3 pt-4">
+            <div class="page-header--description fade-in--noscroll md:w-2/3 xl:w-1/3 pt-4">
                 <?php
                 $intro_description = get_field('intro_description');
                 if ($intro_description):
@@ -47,7 +47,7 @@
                 ?>
             </div>
 
-            <div class="flex flex-col md:flex-row gap-6 mt-10 invisible fade-in--noscroll">
+            <div class="flex flex-col md:flex-row gap-6 mt-10 fade-in--noscroll">
                 <?php
                 $know_more_link = get_field('intro_know_more_link');
                 $contact_link = get_field('intro_contact_link');

@@ -30,6 +30,12 @@ mix
   .disableNotifications();
   
 
+mix.webpackConfig({
+  output: {
+    publicPath: '/wp-content/themes/gruber-pumpen/dist/'
+  }
+});
+
 if (!mix.inProduction()) {
   mix
     .webpackConfig({
