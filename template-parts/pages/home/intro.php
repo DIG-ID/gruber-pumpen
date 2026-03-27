@@ -5,13 +5,14 @@
     ?>
 
     <div class="video-background absolute inset-0 w-full h-full overflow-hidden">
-        <video 
-            class="absolute top-0 left-0 w-full h-full object-cover" 
-            src="<?php echo esc_url($video_url); ?>" 
-            autoplay 
-            muted 
-            loop 
-            playsinline>
+        <video
+            class="absolute top-0 left-0 w-full h-full object-cover"
+            src="<?php echo esc_url($video_url); ?>"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none">
         </video>
         <div class="absolute inset-0 bg-black opacity-60"></div>
     </div>

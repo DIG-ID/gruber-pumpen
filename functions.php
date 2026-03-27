@@ -65,38 +65,22 @@ function gruber_pumpen_theme_footer_widgets_init() {
 
 add_action( 'widgets_init', 'gruber_pumpen_theme_footer_widgets_init' );
 
-if ( ! function_exists( 'gruber_pumpen_get_font_face_styles' ) ):
-
-	/**
-	 * Get font face styles.
-	 * Called by functions gruber_pumpen_theme_enqueue_styles() and twentytwentytwo_editor_styles() above.
-	 */
-	function gruber_pumpen_get_font_face_styles() {
-
-		return "
-			@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
-		";
-
-	}
-
-endif;
-
 if ( ! function_exists( 'gruber_pumpen_preload_webfonts' ) ) :
 
 	/**
-	 * Preloads the main web font to improve performance.
+	 * Preconnect and load Google Fonts stylesheet early via wp_head.
 	 */
 	function gruber_pumpen_preload_webfonts() {
 		?>
-		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap">
 		<?php
 	}
 
 endif;
 
-add_action( 'wp_head', 'gruber_pumpen_preload_webfonts' );
+add_action( 'wp_head', 'gruber_pumpen_preload_webfonts', 1 );
 
 /**
  * Enqueue styles and scripts
@@ -107,12 +91,8 @@ function gruber_pumpen_theme_enqueue_styles() {
 	$the_theme     = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
 
-	// Register Theme main style.
-	wp_register_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
-	// Add styles inline.
-	wp_add_inline_style( 'theme-styles', gruber_pumpen_get_font_face_styles() );
 	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'theme-styles' );
+	wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
 	//https://use.typekit.net/evg0ous.css first loaded fonts library backup
 	//wp_enqueue_style( 'theme-fonts', 'https://use.typekit.net/buy6qwo.css', array(), $theme_version );
 
@@ -156,6 +136,61 @@ function gruber_pumpen_theme_lower_yoast_metabox_priority( $priority ) {
 }
 
 add_filter( 'wpseo_metabox_prio', 'gruber_pumpen_theme_lower_yoast_metabox_priority' );
+
+
+/**
+ * Performance: remove unused WordPress features.
+ */
+function gruber_pumpen_cleanup_head() {
+	// Emoji
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
+	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+
+	// Unnecessary head tags
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
+	remove_action( 'wp_head', 'wp_generator' );
+	remove_action( 'wp_head', 'wp_shortlink_wp_head' );
+	remove_action( 'wp_head', 'rest_output_link_wp_head' );
+	remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+}
+add_action( 'init', 'gruber_pumpen_cleanup_head' );
+
+/**
+ * Performance: dequeue unused scripts/styles.
+ */
+function gruber_pumpen_dequeue_bloat() {
+	// WordPress embed script
+	wp_dequeue_script( 'wp-embed' );
+
+	// Dashicons on frontend (only needed in admin)
+	if ( ! is_admin() ) {
+		wp_dequeue_style( 'dashicons' );
+	}
+
+	// Gutenberg block library CSS (not using blocks on frontend)
+	wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library-theme' );
+	wp_dequeue_style( 'global-styles' );
+	wp_dequeue_style( 'classic-theme-styles' );
+}
+add_action( 'wp_enqueue_scripts', 'gruber_pumpen_dequeue_bloat', 100 );
+
+/**
+ * Performance: add async to Font Awesome kit script.
+ */
+function gruber_pumpen_async_font_awesome( $tag, $handle ) {
+	if ( 'font-awesome-kit' !== $handle ) {
+		return $tag;
+	}
+	return str_replace( ' src=', ' crossorigin="anonymous" async src=', str_replace( ' crossorigin="anonymous"', '', $tag ) );
+}
+add_filter( 'script_loader_tag', 'gruber_pumpen_async_font_awesome', 10, 2 );
 
 
 // Theme custom template tags.
