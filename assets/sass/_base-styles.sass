@@ -73,3 +73,8 @@ body:not(.home) main.main-content
 .fancybox
   &__backdrop
     @apply bg-[#0a161eed]
+
+.skip-link
+  @apply hidden lg:inline-flex absolute top-[-100%] left-0 z-[9999] font-dm font-bold text-xs md:text-sm leading-6 uppercase py-[0.7rem] xl:py-4 px-7 rounded-[0.625rem] transition-all duration-300 ease-in-out text-blue-shade-0 bg-blue-shade-3 lg:pl-9
+  &:focus
+    @apply top-4
