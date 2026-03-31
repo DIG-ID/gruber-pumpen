@@ -1,10 +1,9 @@
 <?php
 get_header();
 do_action( 'before_main_content' );
-<main id="main-content">
 get_template_part( 'template-parts/pages/page-header' );
 ?>
-<div class="section-news-content pb-28">
+<div id="main-content" class="section-news-content pb-28">
 	<div class="theme-container">
 		<div class="theme-grid gap-6">
 			<?php
@@ -66,7 +65,6 @@ get_template_part( 'template-parts/pages/page-header' );
 		</div>
 	</div>
 </div>
-</main>
 <?php
 do_action( 'after_main_content' );
 get_footer();

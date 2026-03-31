@@ -4,12 +4,10 @@ if ( have_posts() ) :
 	while ( have_posts() ) :
 		the_post();
 		do_action( 'before_main_content' );
-		<main id="main-content">
 			do_action( 'before_post_content' );
 				get_template_part( 'template-parts/posts/post-header' );
 				get_template_part( 'template-parts/posts/post-content' );
 			do_action( 'after_post_content' );
-		</main>
 		do_action( 'after_main_content' );
 	endwhile;
 endif;
